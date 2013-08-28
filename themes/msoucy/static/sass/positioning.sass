@@ -1,0 +1,100 @@
+// import the grid
+@import "_grid.scss"
+
+// establishes page width and centers
+$grid-column-width: 6.81%
+$grid-gutter-width: 1.52%
+$columns: 12
+
+.container
+  min-width: 300px
+  @include grid-page
+
+// main page sections
+[role="main"]
+  // true indicates a row is directly inside a page
+  @include grid-row(true)
+  margin: 0% 10%
+
+// recent posts column
+.row
+  @include grid-row
+  margin-bottom: $grid-gutter-width
+
+// listing of links
+.med-list
+  @include grid-column(3, 0)
+  min-width: 125px
+  max-width: 440px
+
+.quicklist
+  h3
+    padding: 0 0 5px 0
+    margin:
+      top: 0
+      bottom: 10px
+
+// snippet, like on the front page
+.snippet
+  @include grid-column(9, 0)
+  margin: 0
+  margin-left: 0.76%
+  margin-right: 0.76%
+
+// full page post column
+.fullpage
+  @include grid-column(12, 0)
+
+// header column
+.headline
+  @include grid-column(7, 0)
+
+// subheader column
+.subheadline
+  @include grid-column(5, 0)
+
+// add a clearfix rule, requires compass
+@import "_clearfix.scss"
+.clearfix
+  @include pie-clearfix
+
+@mixin mobile
+  .no-mobile
+    display: none
+  .snippet
+    @include grid-column(12, 0)
+  .container
+    margin: 0% 0%
+  .quicklist a
+    font-size: 0.8em
+
+.portrait-mobile
+  display: none
+
+@mixin landscape-mobile
+  @include mobile
+  .med-list
+    @include grid-column(4, 0)
+
+@mixin portrait-mobile
+  @include mobile
+  .med-list
+    @include grid-column(6, 0)
+  .no-portrait-mobile
+    display: none
+  .portrait-mobile
+    display: block
+
+// on mobile devices get rid of some elements
+@media only screen and (max-device-width: 760px)
+  @include landscape-mobile
+
+@media only screen and (max-width: 760px)
+  @include landscape-mobile
+
+// stop having lists side-by-side on really small mobile devices
+@media only screen and (max-device-width: 420px)
+  @include portrait-mobile
+
+@media only screen and (max-width: 420px)
+  @include portrait-mobile

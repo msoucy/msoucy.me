@@ -1,18 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+from __future__ import unicode_literals
 
-THEME = 'themes/msoucy'
+#THEME = 'themes/msoucy'
+THEME = 'notmyidea'
 AUTHOR = u'Matt Soucy'
 SITENAME = u'insoucyant'
 SITEURL = 'http://skaia.csh.rit.edu'
-
-RELATIVE_URLS = True
 
 GITHUB_URL = 'https://github.com/msoucy/'
 
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
+
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS = (('RIT FOSSBox', 'http://foss.rit.edu'),
@@ -26,10 +31,7 @@ PLUGIN_PATH = 'plugins'
 import minify
 PLUGINS = ['assets', 'sitemap', minify]
 
-#FEED_ALL_ATOM = "atom.xml"
-TRANSLATION_FEED_ATOM = None
-DIRECT_TEMPLATES = ('index', )
-#TAG_SAVE_AS, AUTHOR_SAVE_AS, CATEGORY_SAVE_AS = False, False, False
+SITEMAP = {"format": "xml"}
 
 DEFAULT_PAGINATION = 10
 
@@ -39,7 +41,21 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_EXCLUDES = ['seminars', 'pages']
 STATIC_PATHS = ['images', 'seminars', 'resources']
+# TODO: Add my .gpg file
 FILES_TO_COPY = [
     ('extras/resume.pdf', 'resume.pdf'),
     ('extras/ryansb.gpg', 'ryansb.gpg'),
 ]
+
+# Custom settings for the msoucy theme
+SEMINARS = (
+    ("D", "d"),
+    ("PGP", "pgp"),
+    ("Evil C", "evilC")
+)
+AUTHOR_DATA = {
+    "email": "msoucy@csh.rit.edu",
+    "g+": "http://gplus.to/msoucy",
+    "linkedin": "msoucy"
+}
+
