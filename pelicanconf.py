@@ -41,10 +41,9 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_EXCLUDES = ['seminars', 'pages']
 STATIC_PATHS = ['images', 'seminars', 'resources']
-# TODO: Add my .gpg file
 FILES_TO_COPY = [
     ('extras/resume.pdf', 'resume.pdf'),
-    ('extras/ryansb.gpg', 'ryansb.gpg'),
+    ('extras/msoucy.gpg', 'msoucy.gpg'),
 ]
 
 # Custom settings for the msoucy theme
