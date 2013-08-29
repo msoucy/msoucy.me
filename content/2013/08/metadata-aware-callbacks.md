@@ -3,7 +3,7 @@ Date: 2013-08-10 01:23
 Category: code
 
 The Problem
-===========
+-----------
 
 While working on a codebase at work, I came across a certain segment of code that did something close to the following:
 
@@ -63,10 +63,9 @@ For compatibility reasons, I couldn't change this DataSource library, as other p
 
 
 My Solution
-===========
+-----------
 
-Original attempt
-----------------
+### Original attempt
 
 Looking at the above code, there's one thing that stands out as being useful for solving this problem: the `void*` arguments used in the callbacks. 
 When tying the callback to the queue, the user specifies an argument (originally `NULL` in this example) that is passed to the callback each time the message type is received. 
@@ -118,8 +117,7 @@ With this in mind, I created the following:
 		}
 	};
 
-Generic attempt
----------------
+### Generic attempt
 
 Naturally, the original attempt had some issues, namely that I had to add that line to every callback.
 However, I was only doing that as an intermediate step towards the final product.
@@ -202,7 +200,7 @@ With these restrictions, I came up with the following:
 
 
 Postmortem
-==========
+----------
 
 I wrote this month ago. What are my thoughts on it now?
 

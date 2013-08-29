@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-#THEME = 'themes/msoucy'
-THEME = 'notmyidea'
+THEME = 'themes/msoucy'
+#THEME = 'notmyidea'
 AUTHOR = u'Matt Soucy'
 SITENAME = u'insoucyant'
 SITEURL = 'http://skaia.csh.rit.edu'
@@ -45,6 +45,8 @@ FILES_TO_COPY = [
     ('extras/resume.pdf', 'resume.pdf'),
     ('extras/msoucy.gpg', 'msoucy.gpg'),
 ]
+
+MD_EXTENSIONS = ['codehilite','extra', 'sane_lists']
 
 # Custom settings for the msoucy theme
 SEMINARS = (
