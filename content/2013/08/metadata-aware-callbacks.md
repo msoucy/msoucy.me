@@ -47,17 +47,17 @@ For compatibility reasons, I couldn't change this DataSource library, as other p
 	{
 		void threadMain()
 		{
-		DataSource data;
-		// tie is templated on the first parameter
-		// Declaration:
-		// template<typename MsgType> void tie(void(*)(MsgType*,void*),void*);
-		data.tie(handleGameOverMessage, NULL);
-		data.tie(handlePlayerStatusMessage, NULL);
-		
-		while(1)
-		{
-			data.pop();
-		}
+			DataSource data;
+			// tie is templated on the first parameter
+			// Declaration:
+			// template<typename MsgType> void tie(void(*)(MsgType*,void*),void*);
+			data.tie(handleGameOverMessage, NULL);
+			data.tie(handlePlayerStatusMessage, NULL);
+			
+			while(1)
+			{
+				data.pop();
+			}
 		}
 	};
 
@@ -107,8 +107,8 @@ With this in mind, I created the following:
 		{
 			DataSource data;
 			// Notice the different arguments
-			data.tie(handleGameOverMessage, &amp;amp;typedata);
-			data.tie(handlePlayerStatusMessage, &amp;amp;typedata);
+			data.tie(handleGameOverMessage, &typedata);
+			data.tie(handlePlayerStatusMessage, &typedata);
 			
 			while(1)
 			{
@@ -132,7 +132,7 @@ I took a look at the argument types for hints about how this could be done:
 With these restrictions, I came up with the following:
 
 	:::c++
-	// Our message types are unchanged form the originals
+	// Our message types are unchanged from the originals
 	class GameOverMessage{};
 
 	class PlayerStatusMessage
@@ -159,15 +159,17 @@ With these restrictions, I came up with the following:
 		Function func;
 		const char** type;
 		void* arg;
+
 		Callback(Function f, const char** t, void* a)
 		: func(f), type(t), arg(a)
 		{}
+
 		void operator()(MsgType* msg)
 		{
-		// Store our type info
-		*type = type_info(MsgType).name();
-		// Call with the required arguments
-		func(msg, a);
+			// Store our type info
+			*type = type_info(MsgType).name();
+			// Call with the required arguments
+			func(msg, a);
 		}
 	}
 
@@ -183,18 +185,21 @@ With these restrictions, I came up with the following:
 		const char* typedata(NULL);
 		void threadMain()
 		{
-		DataSource data;
-		// Create some Callback instances
-		// As far as I saw, the template types must be specifically stated
-		Callback<GameOverMessage> gameOverCallback(handleGameOverMessage, NULL);
-		data.tie(processCallback<GameOverMessage>, &amp;amp;gameOverCallback);
-		Callback<PlayerStatusMessage> playerStatusCallback(handlePlayerStatusMessage, NULL);
-		data.tie(processCallback<PlayerStatusMessage>, &amp;amp;playerStatusCallback);
-		
-		while(1)
-		{
-			data.pop();
-		}
+			DataSource data;
+
+			// Create some Callback instances
+			// As far as I saw, the template types must be specifically stated
+
+			Callback<GameOverMessage> gameOverCallback(handleGameOverMessage, NULL);
+			data.tie(processCallback<GameOverMessage>, &gameOverCallback);
+
+			Callback<PlayerStatusMessage> playerStatusCallback(handlePlayerStatusMessage, NULL);
+			data.tie(processCallback<PlayerStatusMessage>, &playerStatusCallback);
+			
+			while(1)
+			{
+				data.pop();
+			}
 		}
 	};
 
