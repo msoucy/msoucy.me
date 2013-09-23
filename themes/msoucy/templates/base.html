@@ -18,10 +18,10 @@
     <div class="container" role="main">
       <div class="row">
       <div class="headline title">
-        <h1><a href="/">insoucyant</a></h1>
+        <h1><a href="/">{{ SITENAME }}</a></h1>
       </div>
       <div class="subheadline no-mobile">
-        <div class="extra">Code, music, and sarcasm</div>
+        <div class="extra">{{ TAGLINE }}</div>
         <div class="author">{{ AUTHOR }}</div>
       </div>
       </div>
@@ -30,18 +30,14 @@
         {% endblock %}
       </div>
       <div class="row">
+	  	{% for category, arts in categories %}
         <div class="quicklist med-list">
-          <h3>general</h3>
-          {% for article in articles if article.category == 'general' %}
+          <h3>{{ category }}</h3>
+          {% for article in arts %}
           <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
           {% endfor %}
         </div>
-        <div class="quicklist med-list">
-          <h3>projects</h3>
-          {% for article in articles if article.category == 'projects' %}
-          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-          {% endfor %}
-        </div>
+		{% endfor %}
         <div class="quicklist med-list no-mobile">
           <h3>seminars</h3>
 		  {% for name, loc in SEMINARS %}

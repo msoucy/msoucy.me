@@ -3,9 +3,9 @@
 from __future__ import unicode_literals
 
 THEME = 'themes/msoucy'
-#THEME = 'notmyidea'
 AUTHOR = u'Matt Soucy'
 SITENAME = u'insoucyant'
+TAGLINE = u'Code, music, and sarcasm'
 SITEURL = 'http://skaia.csh.rit.edu'
 
 GITHUB_URL = 'https://github.com/msoucy/'
