@@ -46,7 +46,7 @@ FILES_TO_COPY = [
     ('extras/msoucy.gpg', 'msoucy.gpg'),
 ]
 
-MD_EXTENSIONS = ['codehilite','extra', 'sane_lists']
+MD_EXTENSIONS = ['codehilite','extra', 'sane_lists', 'nl2br']
 
 # Custom settings for the msoucy theme
 SEMINARS = (
