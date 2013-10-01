@@ -1,8 +1,7 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title|striptags }}{% endblock %}
+{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 {% block content %}
-<div id="post" class="fullpage content">
-  <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
+<article class="content">
   {% include 'article_infos.html' %}{{ article.content }}
-</div>
+</article>
 {% endblock %}

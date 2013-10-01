@@ -2,11 +2,7 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 {% set article = articles[0] %}
-<div class="snippet">
-  <div id="post" class="content">
-    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-    {% include 'article_infos.html' %}{{ article.content }}
-  </div>
-</div>
-{% include 'right_splash.html' %}
+<article>
+  {% include 'article_infos.html' %}{{ article.content }}
+</article>
 {% endblock content %}

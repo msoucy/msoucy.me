@@ -1,6 +1,7 @@
 $baseFontFamily: Verdana, helvetica, arial, clean, sans-serif
 $monoFontFamily: "Andale Mono",AndaleMono,Consolas,"Lucida Console",Monaco,monospace
-$content_background: rgba(1,1,1,0.05)
+$content-background: url("/theme/images/debut_med.png")
+$page-background: url("/theme/images/debut_dark.png")
 $quicklist_header_color: #3299BB
 $bare_link_hover: #BCBCBC
 $text_link_color: #3A000D
@@ -21,7 +22,7 @@ $default_rounded_amount: 3px
   -webkit-transition: all .35s ease-in-out
 
 h1
-  font-size: 5.5em
+  font-size: 1.66em
 h2
   font-size: 1.44em
 h3
@@ -32,8 +33,6 @@ ul
   list-style: square
 ul.posts span
   font-size: 0.8em
-body
-  font-size: 1em
 pre
   font-size: 1em
 #date 
@@ -47,14 +46,15 @@ pre
   font-size: 0.8em
 
 body
-  background-image: url("/theme/images/debut_light.png")
+  font-size: 1em
+  background-image: $page-background
   font-family: $baseFontFamily
 
 a
   color: $text_link_color
   text-decoration: none
 
-.content
+article, nav
   background: $content_background
   border: 1px solid black
   p a, ul a
@@ -72,7 +72,7 @@ p
   text-align: center
   color: $head_bottom_border
 
-#post img
+article img
   padding: 1em
   border: 0.1em solid #aaa
   background: #eee
@@ -86,18 +86,17 @@ ul.posts span
 /*
 /*****************************************************************************/
 
-.title
-  display: inline
-  h1
-    margin: 0
-    a
-      color: $header
-      margin-bottom: 20px
-      font:
-        weight: bold
-        family: $monoFontFamily
-      &:hover
-        text-decoration: none
+.title h1
+  margin: 0 0 0 10px
+  font-size: 5.5em
+  a
+    color: $header
+    margin-bottom: 20px
+    font:
+      weight: bold
+      family: $monoFontFamily
+    &:hover
+      text-decoration: none
 
 .subheadline
   div
@@ -132,6 +131,9 @@ ul.posts span
       color: white
       background: $header
 
+nav, article
+  @include round-corners
+
 .right-splash
   padding: 0px
   margin-top: 60px
@@ -158,7 +160,7 @@ h3
     family: $monoFontFamily
     weight: bold
 
-#post h3
+article h3
   margin-left: 1em
 
 
@@ -191,7 +193,7 @@ pre
   overflow: hidden
 
 
-#post
+article
   ul, ol
     list-style-type: disc
     text-align: left

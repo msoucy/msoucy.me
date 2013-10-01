@@ -1,0 +1,32 @@
+<div class="row">
+	{% for category, arts in categories %}
+	<div class="quicklist">
+		<h3><a href="/category/{{ category }}.html">{{ category }}</a></h3>
+		{% for article in arts %}
+		<a href="/{{ article.url }}">{{ article.title }}</a>
+		{% endfor %}
+  	</div>
+	{% endfor %}
+	<div class="quicklist no-mobile">
+		<h3>seminars</h3>
+		{% for name, loc in SEMINARS %}
+		<a href="/static/seminars/{{ loc }}">{{ name }}</a>
+		{% endfor %}
+	</div>
+	<div class="quicklist no-portrait-mobile">
+		<h3>contact</h3>
+		<a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a>
+		<a href="{{ AUTHOR_DATA['g+'] }}">google+</a>
+		<a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a>
+	</div>
+</div>
+<div class="row">
+	<div class="quicklist portrait-list portrait-mobile">
+		<h3>info</h3>
+		<a href="{{ SITEURL }}/about">about</a>
+		<a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a>
+		<a href="{{ GITHUB_URL }}">github</a>
+		<a href="{{ SITEURL }}/resume.pdf">resume</a>
+		<a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a>
+	</div>
+</div>

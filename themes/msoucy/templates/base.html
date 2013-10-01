@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!DOCTYPE html>
+<html xml:lang="en" lang="en-us">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
@@ -15,8 +13,7 @@
     {% endif %}
   </head>
   <body>
-    <div class="container" role="main">
-      <div class="row">
+    <header>
       <div class="headline title">
         <h1><a href="/">{{ SITENAME }}</a></h1>
       </div>
@@ -24,43 +21,13 @@
         <div class="extra">{{ TAGLINE }}</div>
         <div class="author">{{ AUTHOR }}</div>
       </div>
-      </div>
-      <div class="row">
-        {% block content %}
-        {% endblock %}
-      </div>
-      <div class="row">
-	  	{% for category, arts in categories %}
-        <div class="quicklist med-list">
-          <h3>{{ category }}</h3>
-          {% for article in arts %}
-          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-          {% endfor %}
-        </div>
-		{% endfor %}
-        <div class="quicklist med-list no-mobile">
-          <h3>seminars</h3>
-		  {% for name, loc in SEMINARS %}
-		  <a href="/static/seminars/{{ loc }}">{{ name }}</a>
-		  {% endfor %}
-        </div>
-        <div class="quicklist med-list no-portrait-mobile">
-          <h3>contact</h3>
-          <a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a>
-          <a href="{{ AUTHOR_DATA['g+'] }}">google+</a>
-          <a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="quicklist portrait-list portrait-mobile">
-          <h3>info</h3>
-          <a href="{{ SITEURL }}/about">about</a>
-          <a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a>
-          <a href="{{ GITHUB_URL }}">github</a>
-          <a href="{{ SITEURL }}/resume.pdf">resume</a>
-          <a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a>
-        </div>
-      </div>
-    </div>
+    </header>
+    <main>
+      <nav class="quicklist">
+	  {% include 'nav.html' %}
+	  </nav>
+      {% block content %}
+      {% endblock %}
+    </main>
   </body>
 </html>
