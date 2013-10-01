@@ -8,19 +8,16 @@ Who am I?
 
 I'm a college student.
 I spend hours each day trying to solve problems that sometimes surprise me in complexity.
-To me, learning is one of the most interesting things in life,
-and I love being able to surround myself with people to learn from - and help teach, when given a chance.
+To me, learning is one of the most interesting things in life, and I love being able to surround myself with people to learn from - and help teach, when given a chance.
 I spend most of my year at the [Rochester Institute of Technology][1], and participate in some rather [unique][2] [groups][3].
 
 I'm a hacker.
 Though not in the sense of modern media portrayals - I delight in tinkering,
 in exploring what is and isn't possible, and even trying to stretch those boundaries.
-I consider myself to be "fairly good" at programming, and am continuously trying to improve my software engineering knowledge,
-focusing on how things can be done and improved as well as the language itself.
+I consider myself to be "fairly good" at programming, and am continuously trying to improve my software engineering knowledge, focusing on how things can be done and improved as well as the language itself.
 I feel that [some languages][4] aren't as widely-used (or developed) as they should be.
 I have an internship (and judging from my boss, an almost certain full-time position after I graduate) at a company that wishes to remain unaffiliated with any blogging I do.
-I hope to encourage open source software development, and aid a younger generation in computer literacy - not merely using the computer,
-but controlling the computer and taking charge of it as a tool to help others.
+I hope to encourage open source software development, and aid a younger generation in computer literacy - not merely using the computer, but controlling the computer and taking charge of it as a tool to help others.
 
 I'm a musician.
 Though lately I haven't had much motivation, I still find comfort in creating music.
@@ -32,8 +29,7 @@ I draw the line at country music, though. That stuff just doesn't do it for me.
 
 I'm a geek.
 I enjoy playing some of the [craziest][5] [games][6] [imaginable][7] with friends.
-I get way too much enjoyment from a [couple][8] [of][9] [webcomics][10], can't wait for new Doctor Who episodes,
-and even have a tradition of watching horrible Nic Cage movies with my friends every New Year's Eve.
+I get way too much enjoyment from a [couple][8] [of][9] [webcomics][10], can't wait for new Doctor Who episodes, and even have a tradition of watching horrible Nic Cage movies with my friends every New Year's Eve.
 My bookshelf has Shakespeare next to Lewis Carroll next to Stephen King, with Tolkien and Stephenson just a few books away.
 
 I'm a person.

@@ -20,5 +20,5 @@ The Box is made of some rather "interesting" characters, such as:
 * A whole swarm of students of hackademia
 
 Most of us have some common interests - such as Python - but overall we have some amazingly diverse people and some even more amazing projects.
-We've got people working on everything from [repository visualization](https://github.com/FOSSRIT/gourciferous) to [Educational games](https://github.com/FOSSRIT/SkyTime) to [video chat software](https://github.com/FOSSRIT/Open-Video-chat).
+We've got people working on everything from [repository visualization](https://github.com/FOSSRIT/gourciferous) to [educational games](https://github.com/FOSSRIT/SkyTime) to [video chat software](https://github.com/FOSSRIT/Open-Video-chat).
 I always feel honored to work with this crew - we make mischief, all in the name of freedom.

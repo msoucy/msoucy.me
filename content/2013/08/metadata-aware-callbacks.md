@@ -70,8 +70,7 @@ My Solution
 Looking at the above code, there's one thing that stands out as being useful for solving this problem: the `void*` arguments used in the callbacks. 
 When tying the callback to the queue, the user specifies an argument (originally `NULL` in this example) that is passed to the callback each time the message type is received. 
 With this in mind, I thought about ways to differentiate the types used. 
-The easiest way I knew of for getting type information at runtime is the [type_info](http://cplusplus.com/type_info) class,
-but unfortunately in C++98 you can't store `type_info`.
+The easiest way I knew of for getting type information at runtime is the [type_info](http://cplusplus.com/type_info) class, but unfortunately in C++98 you can't store `type_info`.
 
 However, you can store a `const char*`, which is exactly what the name method of a `type_info` returns.
 
