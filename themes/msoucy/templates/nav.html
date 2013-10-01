@@ -2,31 +2,39 @@
 	{% for category, arts in categories %}
 	<div class="quicklist">
 		<h3><a href="/category/{{ category }}.html">{{ category }}</a></h3>
-		{% for article in arts %}
-		<a href="/{{ article.url }}">{{ article.title }}</a>
-		{% endfor %}
+		<ul>
+			{% for article in arts %}
+			<li><a href="/{{ article.url }}">{{ article.title }}</a></li>
+			{% endfor %}
+		</ul>
   	</div>
 	{% endfor %}
 	<div class="quicklist no-mobile">
 		<h3>seminars</h3>
-		{% for name, loc in SEMINARS %}
-		<a href="/static/seminars/{{ loc }}">{{ name }}</a>
-		{% endfor %}
+		<ul>
+			{% for name, loc in SEMINARS %}
+			<li><a href="/static/seminars/{{ loc }}">{{ name }}</a></li>
+			{% endfor %}
+		</ul>
 	</div>
 	<div class="quicklist no-portrait-mobile">
 		<h3>contact</h3>
-		<a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a>
-		<a href="{{ AUTHOR_DATA['g+'] }}">google+</a>
-		<a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a>
+		<ul>
+			<li><a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a></li>
+			<li><a href="{{ AUTHOR_DATA['g+'] }}">google+</a></li>
+			<li><a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a></li>
+		</ul>
 	</div>
 </div>
 <div class="row">
 	<div class="quicklist portrait-list portrait-mobile">
 		<h3>info</h3>
-		<a href="{{ SITEURL }}/about">about</a>
-		<a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a>
-		<a href="{{ GITHUB_URL }}">github</a>
-		<a href="{{ SITEURL }}/resume.pdf">resume</a>
-		<a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a>
+		<ul>
+			<li><a href="{{ SITEURL }}/about">about</a></li>
+			<li><a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a></li>
+			<li><a href="{{ GITHUB_URL }}">github</a></li>
+			<li><a href="{{ SITEURL }}/resume.pdf">resume</a></li>
+			<li><a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a></li>
+		</ul>
 	</div>
 </div>
