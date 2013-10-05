@@ -42,8 +42,6 @@ pre
     font-size: 1.4em
   .author
     font-size: 1em
-.quicklist a
-  font-size: 0.8em
 
 body
   font-size: 1em
@@ -56,7 +54,7 @@ a
 
 article, nav
   background: $content_background
-  border: 1px solid black
+  //border: 1px solid black
   p a, ul a
     @include fade-link
     font-weight: 800
@@ -109,6 +107,18 @@ ul.posts span
     color: #246E88
     margin-top: 0.4em
 
+@mixin hover-button($color: black, $bg: $bare_link_hover)
+  @include round-corners
+  @include fade-link
+  color: $color
+  display: block
+  background: $bg
+  &:hover
+    font-style: italic
+    color: white
+    background: $header
+  
+
 .quicklist
   padding: 0px
   text:
@@ -116,20 +126,22 @@ ul.posts span
     decoration: none
 
   h3
+    font-size: 1.31em
     color: $header
+    a
+      @include hover-button($header, rgba(0, 0, 0, 0))
 
-  a
-    @include round-corners
-    @include fade-link
-    color: black
-    display: block
-    padding: .25em
-    margin-bottom: .69em
-    background: $bare_link_hover
-    &:hover
-      font-style: italic
-      color: white
-      background: $header
+  ul
+    padding: 0
+    margin: 0
+
+  li
+    list-style: none
+    a
+      @include hover-button
+      padding: .25em
+      margin-bottom: .69em
+      font-size: 0.8em
 
 nav, article
   @include round-corners
@@ -204,8 +216,7 @@ table
   margin:
     left: 1em
     right: 1em
-  border-collapse: collapse
-  border: 1px solid black
+  width: 95%
 
 th, td
   padding: 0.25em

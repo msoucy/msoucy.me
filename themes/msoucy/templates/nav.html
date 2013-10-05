@@ -1,15 +1,21 @@
 <div class="row">
+	{% if not QUICKBAR_COUNT is defined %}
+	{% set QUICKBAR_COUNT = 5 %}
+	{% endif %}
 	{% for category, arts in categories %}
 	<div class="quicklist">
 		<h3><a href="/category/{{ category }}.html">{{ category }}</a></h3>
 		<ul>
-			{% for article in arts %}
+			{% for article in arts[0:QUICKBAR_COUNT] %}
 			<li><a href="/{{ article.url }}">{{ article.title }}</a></li>
 			{% endfor %}
+			{% if QUICKBAR_COUNT < arts|length %}
+			<li><a href="/category/{{ category }}.html">...</a></h3>
+			{% endif %}
 		</ul>
   	</div>
 	{% endfor %}
-	<div class="quicklist no-mobile">
+	<div class="quicklist">
 		<h3>seminars</h3>
 		<ul>
 			{% for name, loc in SEMINARS %}
@@ -17,24 +23,13 @@
 			{% endfor %}
 		</ul>
 	</div>
-	<div class="quicklist no-portrait-mobile">
-		<h3>contact</h3>
+	<div class="quicklist">
+		<h3><a href="{{ SITEURL }}/about">about</a></h3>
 		<ul>
 			<li><a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a></li>
-			<li><a href="{{ AUTHOR_DATA['g+'] }}">google+</a></li>
-			<li><a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a></li>
-		</ul>
-	</div>
-</div>
-<div class="row">
-	<div class="quicklist portrait-list portrait-mobile">
-		<h3>info</h3>
-		<ul>
-			<li><a href="{{ SITEURL }}/about">about</a></li>
-			<li><a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a></li>
-			<li><a href="{{ GITHUB_URL }}">github</a></li>
 			<li><a href="{{ SITEURL }}/resume.pdf">resume</a></li>
 			<li><a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a></li>
+			<li><a href="{{ AUTHOR_DATA['g+'] }}">google+</a></li>
 		</ul>
 	</div>
 </div>

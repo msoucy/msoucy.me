@@ -1,7 +1,6 @@
 // establishes page width and centers
 $grid-column-width: 6.81%
 $grid-gutter-width: 1.52%
-$columns: 12
 
 $max-size: 750px
 $nav-size: 210px
@@ -30,13 +29,13 @@ nav
 .quicklist h3
   padding: 0 0 5px 0
   margin:
-    top: 0
+    top: 10px
     bottom: 10px
 
 // full page post column
 article
   margin: 0 auto 1.76%
-  max-width: $screen-mult
+  //max-width: $screen-mult
 
 @media only screen and (min-width: $max-screen-size)
   article
@@ -48,8 +47,15 @@ article
     position: relative
     float: none
     margin: 0
+    width: 100%
   .subheadline
     display: none
+  .quicklist
+    //display: inline
+    li
+      display: none
+  div.quicklist
+    display: inline
 
 // Headers
 .headline
@@ -62,8 +68,6 @@ article
     display: none
   .container
     margin: 0% 0%
-  .quicklist a
-    font-size: 0.8em
 
 .portrait-mobile
   display: none

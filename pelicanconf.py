@@ -6,7 +6,7 @@ THEME = 'themes/msoucy'
 AUTHOR = u'Matt Soucy'
 SITENAME = u'insoucyant'
 TAGLINE = u'Code, music, and sarcasm'
-SITEURL = 'http://skaia.csh.rit.edu'
+SITEURL = 'http://msoucy.me'
 
 GITHUB_URL = 'https://github.com/msoucy/'
 
@@ -57,6 +57,9 @@ SEMINARS = (
 AUTHOR_DATA = {
     "email": "msoucy@csh.rit.edu",
     "g+": "http://gplus.to/msoucy",
-    "linkedin": "msoucy"
+    "linkedin": "msoucy",
+    "github": GITHUB_URL
 }
+
+QUICKBAR_COUNT = 3
 
