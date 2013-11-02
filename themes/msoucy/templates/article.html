@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 {% block content %}
-<article class="content">
-  {% include 'article_infos.html' %}{{ article.content }}
+<article>
+  {% include 'article_infos.html' %}
+  {{ article.content }}
+  {% include 'neighbors.html' %}
 </article>
 {% endblock %}

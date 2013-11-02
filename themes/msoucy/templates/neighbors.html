@@ -1,0 +1,31 @@
+<div class="prevnextparts">
+  <hr />
+  {% if article.metadata.parts_articles %}
+    <p><i>This post is part of a series:</i></p>
+    <ol class="parts">
+        {% for part_article in article.metadata.parts_articles %}
+            <li {% if part_article == article %}class="active"{% endif %}>
+                <a href='{{ SITEURL }}/{{ part_article.url }}'>{{ part_article.title }}</a>
+            </li>
+        {% endfor %}
+    </ol>
+  {% endif %}
+  <div class="prevnext">
+  {% if article.prev_article %}
+    <div class="prev">
+	  Previous:
+      <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+          {{ article.prev_article.title }}
+      </a>
+    </div>
+  {% endif %}
+  {% if article.next_article %}
+    <div class="next">
+	  Next:
+      <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+          {{ article.next_article.title }}
+      </a>
+    </div>
+  {% endif %}
+  </div>
+</div>

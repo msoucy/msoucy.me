@@ -29,7 +29,7 @@ LINKS = (('RIT FOSSBox', 'http://foss.rit.edu'),
 
 PLUGIN_PATH = 'plugins'
 import minify
-PLUGINS = ['assets', 'sitemap', minify]
+PLUGINS = ['assets', 'sitemap', 'multi_part', 'neighbors',  minify]
 
 SITEMAP = {"format": "xml"}
 
