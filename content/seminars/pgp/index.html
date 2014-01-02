@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>PGP Key-Signing Party</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="theme/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="theme/css/screen.css">
+    
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="theme/js/slides.js"></script>
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: 0_introduction.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>PGP Key-Signing Party</h1></header>
+            
+            
+            <section><h2>Cryptography and human recognition</h2>
+<ul>
+<li>Presented by Matthew Soucy <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#115;&#111;&#117;&#99;&#121;&#64;&#99;&#115;&#104;&#46;&#114;&#105;&#116;&#46;&#101;&#100;&#117;">&#109;&#115;&#111;&#117;&#99;&#121;&#64;&#99;&#115;&#104;&#46;&#114;&#105;&#116;&#46;&#101;&#100;&#117;</a></li>
+<li>Inspiration, guidance, and some slides by Ralph Bean</li>
+</ul>
+<p>4096R/B2370F0C 2013-04-20<br />
+33A9 6558 38DE 94B9 B85B  A0DC 7996 734F B237 0F0C</p>
+<p>Slides available at http://skaia.csh.rit.edu/presentations/gpg/</p>
+<p><img alt="Creative Commons Share-Alike" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="0_introduction.md">0_introduction.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 0_introduction.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>What is GPG (wikipedia quote time)</h1></header>
+            
+            
+            <section><p><em>Pretty Good Privacy (PGP)</em> is a data encryption and decryption program that provides cryptographic privacy and authentication for data communication.
+PGP is often used for signing, encrypting, and decrypting texts, e-mails, files, directories, and even whole disk partitions.</p>
+<p>GNU Privacy Guard (GnuPG or GPG) is a GPL Licensed alternative to the PGP suite of cryptographic software.</p>
+<p>X.509 is an ITU-T standard for a public key infrastructure (PKI) and a Privilege Management Infrastructure (PMI).
+It specifies, amongst other things, standard formats for public key certificates, certificate revocation lists,
+attribute certificates, and a certification path validation algorithm.
+It assumes a strict hierarchical system of certificate authorities (CAs) for issuing the certificates.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="0_introduction.md">0_introduction.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 0_introduction.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Why use GPG?</h1></header>
+            
+            
+            <section><ul>
+<li>Signing communications</li>
+<li>Your friend receives a fraudulent email from your address, asking them to give another person access to a shared project with proprietary information.
+    If you usually sign with GPG, and this email is not signed, then your friend is more likely to notice that something is wrong.</li>
+<li>Encrypting communications</li>
+<li>You are a sysadmin and you need to email someone a password.
+    Do it in plaintext? <strong>NO</strong>.
+    Encrypt the message using the <em>public key</em> of the <em>recipient</em>.</li>
+<li>Signing Data</li>
+<li>Uploading tarballs of project releases, you sign with a personal key first to show others that this release is legitimate.
+    Some projects use a project-specific key shared by all release managers.</li>
+<li>Encrypting Data</li>
+<li>Sometimes you need to share a dump of some proprietary information with another person, but it should not be put online.
+    Encrypt with the <em>public key</em> of the <em>recepient</em> so that only they can read the file.</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="0_introduction.md">0_introduction.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 1_creation.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Visualizing the Web of Trust</h1></header>
+            
+            
+            <section><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre>gpg --list-sigs --keyring ~/.gnupg/pubring.gpg | <span class="se">\</span>
+    sig2dot &gt; ~/.gnupg/pubring.dot
+neato -Tps ~/.gnupg/pubring.dot &gt; ~/.gnupg/pubring.ps
+convert ~/.gnupg/pubring.ps ~/.gnupg/pubring.gif
+eog ~/.gnupg/pubring.gif
+</pre></div>
+</td></tr></table>
+<p><img alt="Matt Soucy Web of Trust" src="soucy_small.gif" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="1_creation.md">1_creation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 1_creation.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>What signing another key means</h1></header>
+            
+            
+            <section><p>It means that you trust that the key belongs to the person that it says it does.</p>
+<p>It does <em>not</em> mean that you trust that person.</p>
+<p>If you receive an executable from somebody you don't know, but I've signed their key,
+it does <em>not</em> mean that I trust that they would not do anything malicious.
+It merely means "I trust that this person is actually the person who sent this to you".</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="1_creation.md">1_creation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 1_creation.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Creating your key</h1></header>
+            
+            
+            <section><p>Before you can sign any keys, you need a key of your own to sign <em>with</em>.</p>
+<p>You can do this with:</p>
+<pre><code>gpg --gen-key
+</code></pre>
+<p>Your key is stored in ~/.gnupg/
+To check your key, run the following:</p>
+<pre><code>gpg --fingerprint 'your@email.here'
+</code></pre>
+<p>Your <strong>fingerprint</strong> is a short identifier that represents your key.
+My output:</p>
+<pre><code>pub   096R/B2370F0C 2013-04-20
+      Key fingerprint = 33A9 6558 38DE 94B9 B85B  A0DC 7996 734F B237 0F0C
+uid                  Matthew Soucy &lt;msoucy@csh.rit.edu&gt;
+uid                  Matthew Soucy &lt;mas5997@rit.edu&gt;
+sub   4096R/2FD2F40B 2013-04-20
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="1_creation.md">1_creation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 1_creation.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Sending your key</h1></header>
+            
+            
+            <section><p>In order for other people to verify that a key belongs to you, and to sign it, you send it to a keyserver.</p>
+<p>This is your <strong><em>public</em></strong> key. Your private key should, as you might expect, stay private.</p>
+<pre><code>gpg --keyserver hkp://subkeys.pgp.net --send-key KEYNAME
+# So for my example:
+gpg --keyserver hkp://subkeys.pgp.net --send-key B2370F0C
+</code></pre>
+<p>The keyservers all synchronize, so in practice it doesn't matter which server you use.
+ However, since many people here just made their keys now, it's better to all use the same server
+ so that there are no delays or timing problems.</p>
+<p>You're able to add email addresses to your key later on.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="1_creation.md">1_creation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 2_parties.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Quick recap</h1></header>
+            
+            
+            <section><ul>
+<li>Signing a key is a sign of trust of <strong>IDENTITY</strong>, not <strong>CHARACTER</strong></li>
+<li>Keys can be used to sign or encrypt data and communications</li>
+<li>By being part of the Web of Trust, you help verify identities</li>
+<li>Key signing is a great way to meet people at conferences</li>
+<li>NEVER sign a key belonging to someone you have not met face-to-face</li>
+<li>NEVER sign a key if you have not verified that person's identity.</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="2_parties.md">2_parties.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 2_parties.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Key Signing Parties</h1></header>
+            
+            
+            <section><p>A key signing party is a way for a bunch of people to sign each others' keys.
+This helps build their web of trust.</p>
+<p>Everyone here should have a key generated at this point.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="2_parties.md">2_parties.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 2_parties.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Identification</h1></header>
+            
+            
+            <section><p>To verify someone's identity, one should
+Peoples' preferred forms of ID may differ, but typically the following are used:</p>
+<ul>
+<li>Passport (Any variety)</li>
+<li>Driver's license</li>
+<li>School ID (Least-preferred, least-secure)</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="2_parties.md">2_parties.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 2_parties.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Steps in a party</h1></header>
+            
+            
+            <section><ul>
+<li>The other person verifies that the key on the list is their key.</li>
+<li>You receive their key from the server</li>
+<li>You verify their identification</li>
+<li>You sign the key using your key</li>
+<li>You email the key to the email address listed in the key</li>
+<li>They send the key back to the keyserver</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="2_parties.md">2_parties.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 2_parties.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>The party, on a computer</h1></header>
+            
+            
+            <section><p>The typical flow for these commands looks like this:</p>
+<pre><code># Using my key as an example:
+# Download their key
+gpg --keyserver hkp://subkeys.pgp.net --recv-keys B2370F0C
+# Sign the key
+gpg --sign-key B2370F0C
+# Create an updated key that includes your signature
+# Email the resulting file to the email address
+gpg --armor --output B2370F0C.signed-by.YOUR_KEY.asc --export B2370F0C
+# Import the key that you received
+gpg --import YOUR_KEY.signed-by.B2370F0C.asc
+# Verify all signatures
+gpg --list-sigs YOUR_KEY
+# Send your newly-signed key to the server
+gpg --send-keys YOUR_KEY
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="2_parties.md">2_parties.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 3_conclusion.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Using keys</h1></header>
+            
+            
+            <section><p>You can use tools such as KGPG to manage keys.</p>
+<p>Many mail clients allow for pgp signing and encrypting, possibly with plugins:</p>
+<ul>
+<li>Thunderbird (OpenPGP)</li>
+<li>K-9 Mail (Android, integrates with APG</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="3_conclusion.md">3_conclusion.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: 3_conclusion.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Happy encrypting</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="3_conclusion.md">3_conclusion.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide1">PGP Key-Signing Party</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide2">What is GPG (wikipedia quote time)</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Why use GPG?</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Visualizing the Web of Trust</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">What signing another key means</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Creating your key</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Sending your key</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Quick recap</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Key Signing Parties</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Identification</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Steps in a party</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">The party, on a computer</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Using keys</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Happy encrypting</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>

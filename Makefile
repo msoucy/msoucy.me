@@ -8,9 +8,9 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-SSH_HOST=skaia.csh.rit.edu
+SSH_HOST=msoucy.me
 SSH_PORT=22
-SSH_USER=root
+SSH_USER=msoucy
 SSH_TARGET_DIR=/var/www/html
 
 help:
