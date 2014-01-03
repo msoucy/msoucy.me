@@ -64,5 +64,3 @@ AUTHOR_DATA = {
     "github": GITHUB_URL
 }
 
-QUICKBAR_COUNT = 3
-

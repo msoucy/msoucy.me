@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ author }} - {{ SITENAME }}{% endblock %}
 {% block content %}
-<article class="content">
+<article>
   <h2>{% block listtitle %}{% endblock %}</h2>
   <table>
     {% for article in articles %}

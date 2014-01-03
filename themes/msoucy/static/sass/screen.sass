@@ -52,7 +52,7 @@ a
   color: $text_link_color
   text-decoration: none
 
-article, nav
+article
   background: $content_background
   //border: 1px solid black
   p a, ul a
@@ -107,43 +107,39 @@ ul.posts span
     color: #246E88
     margin-top: 0.4em
 
-@mixin hover-button($color: black, $bg: $bare_link_hover)
+@mixin hover-button($color: black, $bg: $bare_link_hover, $ns: italic)
   @include round-corners
   @include fade-link
   color: $color
   display: block
   background: $bg
   &:hover
-    font-style: italic
+    font-style: $ns
     color: white
     background: $header
   
 
-.quicklist
+nav ul
   padding: 0px
   text:
     align: center
     decoration: none
-
-  h3
-    font-size: 1.31em
-    color: $header
-    a
-      @include hover-button($header, rgba(0, 0, 0, 0))
-
   ul
     padding: 0
     margin: 0
-
   li
-    list-style: none
-    a
+    ul li a
       @include hover-button
       padding: .25em
-      margin-bottom: .69em
       font-size: 0.8em
+    h3
+      font-size: 1.31em
+      color: $header
+      margin: 0
+      a
+        @include hover-button($header, rgba(0, 0, 0, 0), none)
 
-nav, article
+article
   @include round-corners
 
 .right-splash

@@ -2,10 +2,10 @@
 $grid-column-width: 6.81%
 $grid-gutter-width: 1.52%
 
-$max-size: 750px
+$max-size: 1080px
 $nav-size: 210px
 $screen-mult: 0.75
-$max-screen-size: #{185px + $max-size/$screen-mult + $nav-size}
+$max-screen-size: 1080px
 
 // recent posts column
 .row
@@ -19,43 +19,53 @@ header, footer, main
   margin: 0px 50px $grid-gutter-width
   clear: both
 
+// Dropdown menu
 nav
-  width: $nav-size
-  float: left
-  margin-left: 35px
-  position: fixed
+  ul
+    list-style: none
+    position: relative
+    display: inline-block
+    &:after
+      content: ""
+      clear: both
+      display: block
+    ul
+      position: absolute
+      top: 100%
+      li
+        float: none
+        position: relative
+      ul
+        position: absolute
+        //left: 100%
+        left: 0%
+        top: 0
+    li
+      float: left
+      &:hover > ul
+        display: block
+    ul
+      display: none
 
-
-.quicklist h3
-  padding: 0 0 5px 0
-  margin:
-    top: 10px
-    bottom: 10px
+nav
+  ul
+    margin: 0
+    width: 100%
+    li
+      width: 25%
 
 // full page post column
 article
-  margin: 0 auto 1.76%
+  margin: 1.76% auto 1.76%
   padding: 1em
 
-@media only screen and (min-width: $max-screen-size)
-  article
-    max-width: $max-size
+main
+  width: auto
+  margin: 0 auto
 
-@media only screen and (max-width: $max-screen-size)
-  nav
-    clear: both
-    position: relative
-    float: none
-    margin: 0
-    width: 100%
-  .subheadline
-    display: none
-  .quicklist
-    //display: inline
-    li
-      display: none
-  div.quicklist
-    display: inline
+@media only screen and (min-width: $max-screen-size)
+  main
+    max-width: $max-size
 
 // Headers
 .headline
@@ -74,13 +84,9 @@ article
 
 @mixin landscape-mobile
   @include mobile
-  .med-list
-    width: $grid-column-width * 4 + $grid-gutter-width * 3
 
 @mixin portrait-mobile
   @include mobile
-  .med-list
-    width: $grid-column-width * 6 + $grid-gutter-width * 5
   .no-portrait-mobile
     display: none
   .portrait-mobile
