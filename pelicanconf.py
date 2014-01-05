@@ -24,8 +24,8 @@ TRANSLATION_FEED_ATOM = None
 # Blogroll
 LINKS = (('RIT FOSSBox', 'http://foss.rit.edu'),
          ('Helixoide Blog', 'http://blog.helixoide.com'),
-         ('RIT CSH', 'http://csh.rit.edu/'),
-         ('ryansb', 'http://ryansb.com'),
+         ('RIT CSH', 'http://csh.rit.edu'),
+         ('ryansb', 'http://rsb.io'),
          ('[three]Bean', 'http://threebean.org'),
          )
 
@@ -43,7 +43,7 @@ SITEMAP = {"format": "xml"}
 #DEFAULT_PAGINATION = 10
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
+ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_EXCLUDES = ['seminars', 'pages']
