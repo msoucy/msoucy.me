@@ -20,39 +20,41 @@ header, footer, main
   clear: both
 
 // Dropdown menu
-nav
+nav ul
+  list-style: none
+  position: relative
+  display: inline-block
+  &:after
+    content: ""
+    clear: both
+    display: block
   ul
-    list-style: none
-    position: relative
-    display: inline-block
-    &:after
-      content: ""
-      clear: both
-      display: block
+    position: absolute
+    top: 100%
+    li
+      float: none
+      position: relative
     ul
       position: absolute
-      top: 100%
-      li
-        float: none
-        position: relative
-      ul
-        position: absolute
-        //left: 100%
-        left: 0%
-        top: 0
-    li
-      float: left
-      &:hover > ul
-        display: block
-    ul
-      display: none
-
-nav
+      //left: 100%
+      left: 0%
+      top: 0
+  li
+    float: left
+    &:hover > ul
+      display: block
   ul
-    margin: 0
-    width: 100%
-    li
+    display: none
+
+nav ul
+  margin: 0
+  width: 100%
+  li
+    width: 25%
+    ul
       width: 25%
+      li
+        width: 100%
 
 // full page post column
 article
