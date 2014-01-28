@@ -3,7 +3,7 @@
 {% endif %}
 <ul>
 	<li>
-		<h3><a href="{{ SITEURL }}/categories.html">categories</a></h3>
+		<h3>categories</h3>
 		<ul>
 {% for category, arts in categories %}
 			<li>
@@ -14,6 +14,24 @@
 					{% endfor %}
 					{% if arts|length > QUICKBAR_COUNT  %}
 					<li><a href="{{ SITEURL }}/category/{{ category }}.html">...</a></h3></li>
+					{% endif %}
+				</ul>
+			</li>
+{% endfor %}
+		</ul>
+	</li>
+	<li>
+		<h3>tags</h3>
+		<ul>
+{% for tag, arts in tags %}
+			<li>
+			<h3><a href="{{ SITEURL }}/tag/{{ tag }}.html">{{ tag }}</a></h3>
+				<ul>
+					{% for article in arts[0:QUICKBAR_COUNT] %}
+					<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+					{% endfor %}
+					{% if arts|length > QUICKBAR_COUNT  %}
+					<li><a href="{{ SITEURL }}/tag/{{ category }}.html">...</a></h3></li>
 					{% endif %}
 				</ul>
 			</li>
