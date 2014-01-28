@@ -2,24 +2,29 @@
 {% set QUICKBAR_COUNT = 5 %}
 {% endif %}
 <ul>
-{% for category, arts in categories %}
 	<li>
-		<h3><a href="/category/{{ category }}.html">{{ category }}</a></h3>
+		<h3><a href="{{ SITEURL }}/categories.html">categories</a></h3>
 		<ul>
-			{% for article in arts[0:QUICKBAR_COUNT] %}
-			<li><a href="/{{ article.url }}">{{ article.title }}</a></li>
-			{% endfor %}
-			{% if arts|length > QUICKBAR_COUNT  %}
-			<li><a href="/category/{{ category }}.html">...</a></h3></li>
-			{% endif %}
+{% for category, arts in categories %}
+			<li>
+			<h3><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a></h3>
+				<ul>
+					{% for article in arts[0:QUICKBAR_COUNT] %}
+					<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+					{% endfor %}
+					{% if arts|length > QUICKBAR_COUNT  %}
+					<li><a href="{{ SITEURL }}/category/{{ category }}.html">...</a></h3></li>
+					{% endif %}
+				</ul>
+			</li>
+{% endfor %}
 		</ul>
 	</li>
-{% endfor %}
     <li>
 		<h3><a href="{{ SITEURL }}/seminars">seminars</a></h3>
 		<ul>
 			{% for name, loc in SEMINARS %}
-			<li><a href="/seminars/{{ loc }}">{{ name }}</a></li>
+			<li><a href="{{ SITEURL }}/seminars/{{ loc }}">{{ name }}</a></li>
 			{% endfor %}
 		</ul>
 	</li>
