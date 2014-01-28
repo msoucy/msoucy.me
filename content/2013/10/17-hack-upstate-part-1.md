@@ -1,7 +1,5 @@
 Title: Hack Upstate, part 1
-Date: 2013-10-17
 Category: life
-Slug: hack-upstate-part-1
 Parts: HACK_UPSTATE_2013
 
 As part of the [FOSS Box][], I go to a lot of events. These events, called "hackathons", are typically crazy coding marathons that can last as long as 24 hours. Typically, the focus is on creating something unique that fits a certain theme.
@@ -22,7 +20,7 @@ By our powers combined, we were Captain Density!
 
 After winning a not-quite-insignificant number of awards for the team's work, we decided that we weren't quite finished yet. Alex and I have been emailing Andrew and Derek about their plans for the future. We're all fairly excited about it, as we have some cool uses planned for them - and to help us out, Andrew and Derek gave Greg, Alex, and I each one of the prototype Density boxes so that we can continue development. We're currently arranging times to have phone conferences about this continuing development.
 
-[FOSS Box]: |filename|/2013/09/foss-box.md "Thinking Inside the (FOSS) Box"
+[FOSS Box]: |filename|/2013/09/19-foss-box.md "Thinking Inside the (FOSS) Box"
 [Hack Upstate]: http://hackupstate.com
 [FOSS Box Results]: http://foss.rit.edu/hackupstate-fall-2013-results "Hack Upstate Fall 2013 Results"
 [Paddy Foran]: http://paddy.io/posts/hackathons/ "Paddy Foran"

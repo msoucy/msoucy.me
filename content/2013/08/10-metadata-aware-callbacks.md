@@ -1,5 +1,4 @@
 Title: Metadata-aware Callbacks
-Date: 2013-08-10 01:23
 Category: code
 
 The Problem

@@ -1,7 +1,5 @@
 Title: Hack Upstate, part 2
-Date: 2013-10-30
 Category: life
-Slug: hack-upstate-part-2
 Parts: HACK_UPSTATE_2013
 
 What is a hackathon?

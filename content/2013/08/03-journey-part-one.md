@@ -1,7 +1,5 @@
 Title: Journey, part one
-Date: 2013-08-03 15:04
 Category: life
-Slug: journey-part-one
 
 Six years ago, I did a program at MIT where high school students could take courses taught by college students.
 I had my share of interesting adventures, and made some terrific friends.

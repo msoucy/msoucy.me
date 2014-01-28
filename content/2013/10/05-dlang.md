@@ -1,7 +1,5 @@
 Title: D, or "C++ Done Right(er)"
-Date: 2013-10-05
 Category: code
-Slug: dlang
 
 One of the languages that I spend a lot of time using is the [D Programming Language](http://dlang.org).
 I've gotten quite a bit of (mostly) good-natured ribbing at my choice of language, but I normally just respond by showing people some of the more interesting features that I consider to be a huge improvement over C++, such as:

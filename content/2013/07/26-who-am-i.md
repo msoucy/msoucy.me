@@ -1,7 +1,5 @@
 Title: Who am I?
-Date: 2013-07-26 03:21
 Category: life
-Slug: who-am-i
 Summary: Who am I? I'm a college student. I'm a hacker. I'm a musician. I'm a geek. I'm a person.
 
 Who am I?

@@ -1,7 +1,5 @@
 Title: Journey, part two
-Date: 2013-08-04 14:53
 Category: life
-Slug: journey-part-two
 
 
 Yesterday, I boarded a bus leaving from Concord. Today, I boarded a bus heading to Concord. What's changed this weekend? I got a little taste of paradise.

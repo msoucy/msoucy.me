@@ -42,6 +42,7 @@ SITEMAP = {"format": "xml"}
 
 #DEFAULT_PAGINATION = 10
 
+PATH_METADATA = r'(?P<date>\d{4}/\d{2}/(\d{2})?)-(?P<slug>.*)\.md'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 PAGE_URL = '{slug}/'
