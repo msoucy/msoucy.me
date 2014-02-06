@@ -1,0 +1,15 @@
+#!/usr/bin/sh
+
+if [ -z $1 ]
+then
+	echo "Missing a slug"
+	exit 0
+fi
+slug=$1
+
+#TODO: drafts/slug.md -> 20XX/YY/ZZ-slug.md
+fold=$(date +"%Y/%m")
+mkdir -p $fold
+
+mv drafts/${slug}.md "$fold/$(date +'%d')-${slug}.md"
+
