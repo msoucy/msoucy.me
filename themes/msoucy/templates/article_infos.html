@@ -1,8 +1,8 @@
 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-<div id="date">
-    <abbr class="published" title="{{ article.date.isoformat() }}">
-	<time>
-	{{ article.locale_date }}
-	</time>
-	</abbr>
+<div id="meta">
+	<abbr class="published" title="{{ article.date.isoformat() }}">
+		<time>
+		{{ article.locale_date }}
+		</time>
+	</abbr> - <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Comments</a>
 </div>
