@@ -292,11 +292,11 @@ In order to use it as anything other than just a pointer, it must be cast</p>
  8
  9
 10</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">#include &lt;stdio.h&gt;</span>
-<span class="kt">void</span> <span class="n">printPtr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+<span class="kt">void</span> <span class="nf">printPtr</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
     <span class="o">*</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">p</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%p&quot;</span><span class="p">,</span><span class="n">p</span><span class="p">);</span> <span class="c1">// Pointer printf</span>
 <span class="p">}</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
     <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">;</span>
     <span class="n">printPtr</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
@@ -463,9 +463,9 @@ In order to use it as anything other than just a pointer, it must be cast</p>
 3
 4
 5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">int</span> <span class="n">foo</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="mi">5</span><span class="p">;}</span>
-<span class="kt">int</span> <span class="n">bar</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="mi">6</span><span class="p">;}</span>
-<span class="kt">int</span> <span class="n">baz</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="mi">7</span><span class="p">;}</span>
+6</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">int</span> <span class="nf">foo</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="mi">5</span><span class="p">;}</span>
+<span class="kt">int</span> <span class="nf">bar</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="mi">6</span><span class="p">;}</span>
+<span class="kt">int</span> <span class="nf">baz</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="mi">7</span><span class="p">;}</span>
 
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">foo</span><span class="p">(),</span><span class="n">bar</span><span class="p">(),</span><span class="n">baz</span><span class="p">());</span>
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">x</span><span class="p">;</span> <span class="c1">// Outputs 7</span>
@@ -564,9 +564,9 @@ Care must be taken to arrange bitfields to end on a WORD boundry.</p>
 3
 4
 5</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">struct</span> <span class="n">Bitfield</span> <span class="p">{</span>
-    <span class="kt">unsigned</span> <span class="nl">x:</span><span class="mi">2</span><span class="p">;</span> <span class="c1">// 2 bits</span>
-    <span class="kt">unsigned</span> <span class="nl">y:</span><span class="mi">16</span><span class="p">;</span> <span class="c1">// 16 bits</span>
-    <span class="kt">unsigned</span> <span class="nl">z:</span><span class="mi">14</span><span class="p">;</span> <span class="c1">// 14 bits</span>
+    <span class="kt">unsigned</span> <span class="n">x</span><span class="o">:</span><span class="mi">2</span><span class="p">;</span> <span class="c1">// 2 bits</span>
+    <span class="kt">unsigned</span> <span class="n">y</span><span class="o">:</span><span class="mi">16</span><span class="p">;</span> <span class="c1">// 16 bits</span>
+    <span class="kt">unsigned</span> <span class="n">z</span><span class="o">:</span><span class="mi">14</span><span class="p">;</span> <span class="c1">// 14 bits</span>
 <span class="p">};</span>
 </pre></div>
 </td></tr></table></section>
@@ -725,7 +725,7 @@ Care must be taken to arrange bitfields to end on a WORD boundry.</p>
 5
 6</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">#include &lt;stdio.h&gt;</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&gt;</span><span class="mi">2</span><span class="p">)</span><span class="o">?</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Fail&quot;</span><span class="p">)</span><span class="o">:</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Expected&quot;</span><span class="p">);</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">);</span>
 <span class="p">}</span>
@@ -736,7 +736,7 @@ Care must be taken to arrange bitfields to end on a WORD boundry.</p>
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">;</span>
 <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">x</span><span class="o">&gt;&gt;</span><span class="n">y</span><span class="p">;</span>
-<span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="p">)</span><span class="o">?</span><span class="nl">x:</span><span class="n">y</span><span class="p">;</span> <span class="c1">// Sets z to the higher of x and y</span>
+<span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="p">)</span><span class="o">?</span><span class="n">x</span><span class="o">:</span><span class="n">y</span><span class="p">;</span> <span class="c1">// Sets z to the higher of x and y</span>
 </pre></div>
 </td></tr></table>
 <p>Or, if you want to get REALLY crazy:</p>
@@ -746,7 +746,7 @@ Care must be taken to arrange bitfields to end on a WORD boundry.</p>
 4</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span>
 <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">x</span><span class="o">&gt;&gt;</span><span class="n">y</span><span class="p">;</span>
 <span class="c1">// Sets the lower of x and y to the inverse of the other</span>
-<span class="p">((</span><span class="n">x</span><span class="o">&lt;</span><span class="n">y</span><span class="p">)</span><span class="o">?</span><span class="nl">x:</span><span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="o">-</span><span class="p">((</span><span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="p">)</span><span class="o">?</span><span class="nl">x:</span><span class="n">y</span><span class="p">);</span>
+<span class="p">((</span><span class="n">x</span><span class="o">&lt;</span><span class="n">y</span><span class="p">)</span><span class="o">?</span><span class="n">x</span><span class="o">:</span><span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="o">-</span><span class="p">((</span><span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="p">)</span><span class="o">?</span><span class="n">x</span><span class="o">:</span><span class="n">y</span><span class="p">);</span>
 </pre></div>
 </td></tr></table></section>
             
@@ -800,7 +800,7 @@ Care must be taken to arrange bitfields to end on a WORD boundry.</p>
     <span class="p">}</span>
 <span class="p">}</span> <span class="n">wrapper</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
@@ -861,19 +861,19 @@ The syntax is rather ugly though...</p>
 23
 24</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">#include &lt;stdio.h&gt;</span>
 
-<span class="kt">int</span> <span class="n">f</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">f</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="kt">int</span> <span class="n">g</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">g</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="kt">int</span> <span class="n">h</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">h</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="mi">3</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="k">typedef</span> <span class="kt">int</span><span class="p">(</span><span class="o">*</span><span class="n">FunctionPointer</span><span class="p">)(</span><span class="kt">int</span><span class="p">);</span> <span class="c1">// Create a type FunctionPointer</span>
+<span class="k">typedef</span> <span class="nf">int</span><span class="p">(</span><span class="o">*</span><span class="n">FunctionPointer</span><span class="p">)(</span><span class="kt">int</span><span class="p">);</span> <span class="c1">// Create a type FunctionPointer</span>
 <span class="c1">// This type points to a function taking an int and returning an int</span>
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">FunctionPointer</span> <span class="n">todo</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">h</span><span class="p">};</span> <span class="c1">// Array of function pointers</span>
     <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
     <span class="k">for</span><span class="p">(</span><span class="kt">unsigned</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -980,9 +980,9 @@ He even described it as "the most important <strong>const</strong> I ever wrote.
 3
 4
 5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">Derived</span> <span class="n">factory</span><span class="p">();</span> <span class="c1">// construct a Derived object</span>
+6</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">Derived</span> <span class="nf">factory</span><span class="p">();</span> <span class="c1">// construct a Derived object</span>
 
-<span class="kt">void</span> <span class="n">g</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">void</span> <span class="nf">g</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">const</span> <span class="n">Base</span><span class="o">&amp;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">factory</span><span class="p">();</span> <span class="c1">// calls Derived::Derived here</span>
   <span class="c1">// … use b …</span>
 <span class="p">}</span> <span class="c1">// calls Derived::~Derived directly here — not Base::~Base + virtual dispatch!</span>
@@ -1047,44 +1047,11 @@ He even described it as "the most important <strong>const</strong> I ever wrote.
             
             
             <section><p>In order to support those poor programmers who don't have access to such exotic keys as {}, C/C++ support the following:</p>
-<table>
-<thead>
-<tr>
-<th align="center">Trigraph</th>
-<th align="center">Equivalent</th>
-<th align="center">Trigraph</th>
-<th align="center">Equivalent</th>
-<th align="center">Trigraph</th>
-<th align="center">Equivalent</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">??=</td>
-<td align="center">#</td>
-<td align="center">??/</td>
-<td align="center">\</td>
-<td align="center">??'</td>
-<td align="center">^</td>
-</tr>
-<tr>
-<td align="center">??(</td>
-<td align="center">[</td>
-<td align="center">??)</td>
-<td align="center">]</td>
-<td align="center">??!</td>
-<td align="center">&#124;</td>
-</tr>
-<tr>
-<td align="center">??&lt;</td>
-<td align="center">{</td>
-<td align="center">??&gt;</td>
-<td align="center">}</td>
-<td align="center">??-</td>
-<td align="center">~</td>
-</tr>
-</tbody>
-</table>
+<p>| Trigraph | Equivalent | Trigraph | Equivalent | Trigraph | Equivalent |
+|:--------:|:----------:|:--------:|:----------:|:--------:|:----------:|
+| ??= | # | ??/ | \ | ??' | ^ |
+| ??( | [ | ??) | ] | ??! | &#124; |
+| ??&lt; | { | ??&gt; | } | ??- | ~ |</p>
 <p>Important:</p>
 <ul>
 <li>These require the -trigraphs flag in GCC.</li>
@@ -1123,36 +1090,15 @@ He even described it as "the most important <strong>const</strong> I ever wrote.
             
             
             <section><p>There are also digraphs, meant to be more readable:</p>
-<table>
-<thead>
-<tr>
-<th>Digraph</th>
-<th>Equivalent</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;:</td>
-<td>[</td>
-</tr>
-<tr>
-<td>&gt;:</td>
-<td>]</td>
-</tr>
-<tr>
-<td>&lt;%</td>
-<td>{</td>
-</tr>
-<tr>
-<td>%&gt;</td>
-<td>}</td>
-</tr>
-<tr>
-<td>%:</td>
-<td>#</td>
-</tr>
-</tbody>
-</table>
+<p>Digraph | Equivalent
+---------|-----------
+ &lt;: | [</p>
+<blockquote>
+<p>: | ]
+ &lt;% | {
+ %&gt; | }
+ %: | #</p>
+</blockquote>
 <p>Differences between trigraphs and digraphs:</p>
 <ul>
 <li>Digraphs within strings will NOT be replaced</li>
@@ -1254,17 +1200,17 @@ However, </p>
 
 <span class="cp">#define X(a) a,</span>
 <span class="k">enum</span> <span class="n">COLOR</span> <span class="p">{</span>
-  <span class="cp">#include &quot;colors.def&quot;</span>
+  <span class="err">#</span><span class="n">include</span> <span class="s">&quot;colors.def&quot;</span>
 <span class="p">};</span>
 <span class="cp">#undef X</span>
 
 <span class="cp">#define X(a) #a,</span>
 <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">color_name</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="cp">#include &quot;colors.def&quot;</span>
+  <span class="err">#</span><span class="n">include</span> <span class="s">&quot;colors.def&quot;</span>
 <span class="p">};</span>
 <span class="cp">#undef X</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">enum</span> <span class="n">COLOR</span> <span class="n">c</span> <span class="o">=</span> <span class="n">red</span><span class="p">;</span>
   <span class="n">printf</span><span class="p">(</span><span class="s">&quot;c=%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">color_name</span><span class="p">[</span><span class="n">c</span><span class="p">]);</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
@@ -1333,7 +1279,7 @@ However, </p>
   <span class="s">&quot;blue&quot;</span>
 <span class="p">};</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">enum</span> <span class="n">COLOR</span> <span class="n">c</span> <span class="o">=</span> <span class="n">red</span><span class="p">;</span>
   <span class="n">printf</span><span class="p">(</span><span class="s">&quot;c=%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">color_name</span><span class="p">[</span><span class="n">c</span><span class="p">]);</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
@@ -1505,7 +1451,7 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">f</span><span class="p">(</span><span class="n">T</span> <span class="k">const</span><span class="o">&amp;</span><span class="p">);</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="c1">// fails to link - tries to get the address of &quot;Foo::value&quot;!</span>
   <span class="n">f</span><span class="p">(</span><span class="n">Foo</span><span class="o">::</span><span class="n">value</span><span class="p">);</span>
 
@@ -1564,7 +1510,7 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">f</span><span class="p">(</span><span class="n">T</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">a</span><span class="p">,</span> <span class="n">T</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">);</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
   <span class="kt">int</span> <span class="n">b</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
   <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span> <span class="c1">// won&#39;t work! different values for &quot;T&quot;!</span>
@@ -1618,16 +1564,16 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 12
 13
 14</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">switch</span><span class="p">(</span> <span class="n">x</span> <span class="p">)</span> <span class="p">{</span>
-<span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+<span class="k">case</span> <span class="mi">0</span>:
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Case 0</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">break</span><span class="p">;</span>
-<span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+<span class="k">case</span> <span class="mi">1</span>:
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Case 1</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">break</span><span class="p">;</span>
-<span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+<span class="k">case</span> <span class="mi">2</span>:
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Case 2</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">break</span><span class="p">;</span>
-<span class="k">default</span><span class="o">:</span>
+<span class="nl">default:</span>
     <span class="c1">// do nothing</span>
     <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1678,16 +1624,16 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 12
 13
 14</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">switch</span><span class="p">(</span> <span class="n">x</span> <span class="p">)</span> <span class="p">{</span>
-<span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+<span class="k">case</span> <span class="mi">0</span>:
     <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;int: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
-<span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+<span class="k">case</span> <span class="mi">1</span>:
     <span class="kt">char</span> <span class="n">y</span> <span class="o">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span> <span class="c1">// Error: y is already an int</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;char: %c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
-<span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+<span class="k">case</span> <span class="mi">2</span>:
     <span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">1.66</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;float: %f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
-<span class="k">default</span><span class="o">:</span>
+<span class="nl">default:</span>
     <span class="c1">// do nothing</span>
     <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1741,19 +1687,19 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 16
 17
 18</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">switch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
-<span class="k">case</span> <span class="mi">0</span><span class="o">:</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">0</span>: <span class="p">{</span>
     <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;int: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="k">case</span> <span class="mi">1</span><span class="o">:</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">1</span>: <span class="p">{</span>
     <span class="kt">char</span> <span class="n">y</span> <span class="o">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span> <span class="c1">// Error: y is already an int</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;char: %c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="k">case</span> <span class="mi">2</span><span class="o">:</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">2</span>: <span class="p">{</span>
     <span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">1.66</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;float: %f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="k">default</span><span class="o">:</span> <span class="p">{</span>
+<span class="nl">default:</span> <span class="p">{</span>
     <span class="c1">// do nothing</span>
     <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
@@ -1812,22 +1758,22 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 20
 21
 22</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">switch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
-<span class="k">case</span> <span class="mi">0</span><span class="o">:</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">0</span>: <span class="p">{</span>
     <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;int: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
 <span class="p">}</span> <span class="k">if</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="k">case</span> <span class="mi">1</span><span class="o">:</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">1</span>: <span class="p">{</span>
     <span class="kt">char</span> <span class="n">y</span> <span class="o">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span> <span class="c1">// Error: y is already an int</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;char: %c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
 <span class="p">}</span> <span class="k">if</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="k">case</span> <span class="mi">2</span><span class="o">:</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">2</span>: <span class="p">{</span>
     <span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;float: %f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="k">case</span> <span class="mi">3</span><span class="o">:</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">3</span>: <span class="p">{</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Gets run iff x is 0, 1, 2, or 3</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span> <span class="k">if</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="k">default</span><span class="o">:</span> <span class="p">{</span>
+<span class="nl">default:</span> <span class="p">{</span>
     <span class="c1">// do nothing</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Not a valid choice!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">break</span><span class="p">;</span>
@@ -1890,19 +1836,19 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 23
 24
 25</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">switch</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="p">{</span>
-<span class="k">case</span> <span class="nl">PARSE_MODE_COMMAND:</span>
+<span class="k">case</span> <span class="n">PARSE_MODE_COMMAND</span>:
     <span class="c1">// We have a null command!</span>
     <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;Illegal null command</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
     <span class="k">break</span><span class="p">;</span>
-<span class="k">case</span> <span class="nl">PARSE_MODE_PIPE:</span>
-<span class="k">case</span> <span class="nl">PARSE_MODE_ARGUMENT:</span>
+<span class="k">case</span> <span class="n">PARSE_MODE_PIPE</span>:
+<span class="k">case</span> <span class="n">PARSE_MODE_ARGUMENT</span>:
     <span class="k">if</span><span class="p">(</span><span class="n">allowLT</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// Set the mode</span>
         <span class="n">mode</span> <span class="o">=</span> <span class="n">PARSE_MODE_INREDIR</span><span class="p">;</span>
-        <span class="n">allowLT</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="n">allowLT</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-<span class="k">default</span><span class="o">:</span>
+<span class="nl">default:</span>
         <span class="c1">// It&#39;s a illegal redirect</span>
         <span class="k">if</span><span class="p">(</span><span class="n">currentArg</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">argCount</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;%s: Illegal input redirect</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
@@ -1961,18 +1907,18 @@ When this happens, you can use + to create a "temporary reference" to a value.</
 12
 13
 14
-15</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">void</span> <span class="n">duff</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">to</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">from</span><span class="p">,</span> <span class="kt">short</span> <span class="n">count</span><span class="p">)</span>
+15</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">void</span> <span class="nf">duff</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">to</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">from</span><span class="p">,</span> <span class="kt">short</span> <span class="n">count</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kt">char</span> <span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">7</span><span class="p">)</span> <span class="o">/</span> <span class="mi">8</span><span class="p">;</span>
     <span class="k">switch</span><span class="p">(</span><span class="n">count</span> <span class="o">%</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>     <span class="k">do</span> <span class="p">{</span>     <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">7</span><span class="o">:</span>              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">6</span><span class="o">:</span>              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">5</span><span class="o">:</span>              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">4</span><span class="o">:</span>              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">0</span>:     <span class="k">do</span> <span class="p">{</span>     <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">7</span>:              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">6</span>:              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">5</span>:              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">4</span>:              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">3</span>:              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">2</span>:              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">1</span>:              <span class="o">*</span><span class="n">to</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">from</span><span class="o">++</span><span class="p">;</span>
                 <span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="o">--</span><span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -2285,10 +2231,10 @@ This means that a template value can be used in the place of any other compile-t
 11</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">#include &lt;cstdio&gt;</span>
 
 <span class="k">template</span><span class="o">&lt;</span><span class="kt">int</span> <span class="n">N</span><span class="o">&gt;</span> <span class="k">class</span> <span class="nc">BitField</span> <span class="p">{</span>
-    <span class="kt">unsigned</span> <span class="nl">x:</span><span class="n">N</span><span class="p">;</span> <span class="c1">// Generate a compiler error if N==0</span>
+    <span class="kt">unsigned</span> <span class="n">x</span><span class="o">:</span><span class="n">N</span><span class="p">;</span> <span class="c1">// Generate a compiler error if N==0</span>
 <span class="p">};</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">Bitfield</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">;</span> <span class="c1">// Booleans &quot;graduate&quot; to integers, so this is legal</span>
     <span class="c1">//Bitfield&lt;(1&gt;2)&gt; y; // Creates a zero-width bitfield, so illegal</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
@@ -2352,7 +2298,7 @@ These can make some of the standard library's functions much more usable.</p>
 10
 11</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">#include &lt;stdio.h&gt;</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">// Harmless example</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,[]{</span><span class="k">return</span> <span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">;}());</span>
     <span class="p">[](){}();</span> <span class="c1">// Does absolutely nothing but scare future readers</span>
@@ -2468,10 +2414,10 @@ These can make some of the standard library's functions much more usable.</p>
 23
 24</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Count</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">step</span><span class="p">;</span>
-<span class="k">public</span><span class="o">:</span>
+<span class="nl">public:</span>
     <span class="k">class</span> <span class="nc">iterator</span> <span class="p">{</span>
         <span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">step</span><span class="p">;</span>
-    <span class="k">public</span><span class="o">:</span>
+    <span class="nl">public:</span>
         <span class="n">iterator</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="kt">int</span> <span class="n">step</span><span class="p">)</span> <span class="o">:</span> <span class="n">val</span><span class="p">(</span><span class="n">val</span><span class="p">),</span> <span class="n">step</span><span class="p">(</span><span class="n">step</span><span class="p">)</span> <span class="p">{}</span>
         <span class="n">iterator</span> <span class="k">operator</span><span class="o">++</span><span class="p">()</span> <span class="p">{</span>
             <span class="n">val</span><span class="o">+=</span><span class="n">step</span><span class="p">;</span>
@@ -2593,13 +2539,13 @@ In fact, you can leave the return out of the end of a void function.</p>
  7
  8
  9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">void</span> <span class="n">f</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
-<span class="kt">void</span> <span class="n">g</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">f</span><span class="p">();</span> <span class="p">}</span>
-<span class="kt">void</span> <span class="n">h</span><span class="p">(</span><span class="kt">void</span><span class="p">(</span><span class="o">*</span><span class="n">k</span><span class="p">)())</span> <span class="p">{</span>
+10</pre></div></td><td class="code"><div class="highlight"><pre><span class="kt">void</span> <span class="nf">f</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+<span class="kt">void</span> <span class="nf">g</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">f</span><span class="p">();</span> <span class="p">}</span>
+<span class="kt">void</span> <span class="nf">h</span><span class="p">(</span><span class="kt">void</span><span class="p">(</span><span class="o">*</span><span class="n">k</span><span class="p">)())</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">k</span><span class="p">();</span>
 <span class="p">}</span>
 
-<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">h</span><span class="p">(</span><span class="n">g</span><span class="p">);</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
