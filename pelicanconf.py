@@ -56,7 +56,9 @@ MD_EXTENSIONS = ['codehilite','extra', 'sane_lists', 'nl2br']
 SEMINARS = (
     ("D", "D"),
     ("PGP", "pgp"),
-    ("Evil C", "evilC")
+    ("Evil C", "evilC"),
+    ("Style Guidelines", "style"),
+    ("Python++", "python"),
 )
 AUTHOR_DATA = {
     "email": "msoucy@csh.rit.edu",
