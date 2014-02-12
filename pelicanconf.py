@@ -51,6 +51,7 @@ ARTICLE_EXCLUDES = ['seminars', 'pages']
 STATIC_PATHS = ['images', 'seminars', 'resources', 'extras']
 
 MD_EXTENSIONS = ['codehilite','extra', 'sane_lists', 'nl2br']
+DEFAULT_DATE = "fs"
 
 # Custom settings for the msoucy theme
 SEMINARS = (
