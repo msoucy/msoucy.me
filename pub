@@ -11,5 +11,5 @@ slug=$1
 fold=$(date +"%Y/%m")
 mkdir -p $fold
 
-mv drafts/${slug}.md "$fold/$(date +'%d')-${slug}.md"
+mv drafts/${slug}.md "content/$fold/$(date +'%d')-${slug}.md"
 

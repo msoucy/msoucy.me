@@ -7,6 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+DRAFTDIR=drafts
 
 SSH_HOST=msoucy.me
 SSH_PORT=22
@@ -54,7 +55,7 @@ stopserver:
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 drafts:
-	rsync -ruv drafts content/drafts
+	rsync -ruv $(DRAFTDIR) $(INPUTDIR)
 
 publish: drafts
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
@@ -69,4 +70,4 @@ pub rsync_upload: publish
 dropbox_upload: publish
 	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload drafts
