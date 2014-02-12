@@ -653,7 +653,7 @@
 13</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">def</span> <span class="nf">getLines</span><span class="p">(</span><span class="n">allFilenames</span><span class="p">):</span>
     <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">allFilenames</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
             <span class="k">if</span> <span class="s">&quot;&gt;&gt;&quot;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
                 <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
     <span class="k">return</span> <span class="n">data</span>
@@ -661,7 +661,7 @@
 <span class="k">def</span> <span class="nf">getLines</span><span class="p">(</span><span class="n">allFilenames</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
             <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">allFilenames</span>
-            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
             <span class="k">if</span> <span class="s">&quot;&gt;&gt;&quot;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">]</span>
 </pre></div>
 </td></tr></table></section>
@@ -867,7 +867,7 @@
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>Decorators</h1></header>
+            <header><h1>Closures</h1></header>
             
             
             <section><p>You can pass functions into other functions...</p>
@@ -1181,7 +1181,7 @@
       
       
       <tr id="toc-row-18">
-        <th><a href="#slide18">Decorators</a></th>
+        <th><a href="#slide18">Closures</a></th>
         <td><a href="#slide18">18</a></td>
       </tr>
       
