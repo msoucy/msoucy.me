@@ -1,5 +1,6 @@
 Title: Hack Upstate, part 2
 Category: life
+Tags: hackathons
 Parts: HACK_UPSTATE_2013
 
 What is a hackathon?

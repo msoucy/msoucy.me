@@ -1,5 +1,6 @@
 Title: Journey, part two
 Category: life
+Parts: JOURNEY_CONCERT_2013
 
 
 Yesterday, I boarded a bus leaving from Concord. Today, I boarded a bus heading to Concord. What's changed this weekend? I got a little taste of paradise.
@@ -15,3 +16,8 @@ This morning, we woke up and went for a ride on the jet ski. I've never between 
 Throughout the weekend, we kept looking at each other and saying, "Life is amazing. We decided to do this on a whim, and look at where we are now." Life is too short to just stand by, amazing things happen when you just jump on an opportunity.
 
 Right now, we're all on the bus, half-asleep, knowing that tomorrow we're all returning to work. However, this weekend happened, and I know that we'll remember it for a long time.
+
+_Edit 04/09/2014_: My [awesome friend][] posted about her experiences! Read her take on it [here][]
+
+[awesome friend]: http://thebostonbuzz.wordpress.com/
+[here]: http://thebostonbuzz.wordpress.com/2014/04/09/journey/

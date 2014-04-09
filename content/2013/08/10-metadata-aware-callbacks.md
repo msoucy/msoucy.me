@@ -88,14 +88,14 @@ With this in mind, I created the following:
 	{
 		cout << "Game over, you lose.\n";
 		// Here we assign the pointer to point to the info for this message type
-		*(const char**)typedata = type_info(msg).name();
+		*(const char**)typedata = typeid(msg).name();
 	}
 
 	void handlePlayerStatusMessage(PlayerStatusMessage* msg, void* typedata)
 	{
 		cout << "Player has " << msg->lives << " lives\n";
 		// Here we assign the pointer to point to the info for this message type
-		*(const char**)typedata = type_info(msg).name();
+		*(const char**)typedata = typeid(msg).name();
 	}
 
 	class PopThread
@@ -165,7 +165,7 @@ With these restrictions, I came up with the following:
 		void operator()(MsgType* msg)
 		{
 			// Store our type info
-			*type = type_info(MsgType).name();
+			*type = typeid(MsgType).name();
 			// Call with the required arguments
 			func(msg, a);
 		}
@@ -188,10 +188,10 @@ With these restrictions, I came up with the following:
 			// Create some Callback instances
 			// As far as I saw, the template types must be specifically stated
 
-			Callback<GameOverMessage> gameOverCallback(handleGameOverMessage, NULL);
+			Callback<GameOverMessage> gameOverCallback(handleGameOverMessage, &typedata, NULL);
 			data.tie(processCallback<GameOverMessage>, &gameOverCallback);
 
-			Callback<PlayerStatusMessage> playerStatusCallback(handlePlayerStatusMessage, NULL);
+			Callback<PlayerStatusMessage> playerStatusCallback(handlePlayerStatusMessage, &typedata, NULL);
 			data.tie(processCallback<PlayerStatusMessage>, &playerStatusCallback);
 			
 			while(1)

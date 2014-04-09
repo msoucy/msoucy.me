@@ -1,5 +1,6 @@
 Title: Hack Upstate, part 1
 Category: life
+Tags: hackathons
 Parts: HACK_UPSTATE_2013
 
 As part of the [FOSS Box][], I go to a lot of events. These events, called "hackathons", are typically crazy coding marathons that can last as long as 24 hours. Typically, the focus is on creating something unique that fits a certain theme.
