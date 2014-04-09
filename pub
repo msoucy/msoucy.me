@@ -7,9 +7,10 @@ then
 fi
 slug=$1
 
-#TODO: drafts/slug.md -> 20XX/YY/ZZ-slug.md
-fold=$(date +"%Y/%m")
+fold=$(date +"content/%Y/%m")
 mkdir -p $fold
+NEWFILE="$fold/$(date +'%d')-${slug}.md"
 
-mv drafts/${slug}.md "content/$fold/$(date +'%d')-${slug}.md"
+mv drafts/${slug}.md "$NEWFILE"
+perl -ni -e 'print unless $_ eq "Status: draft\n"' "$NEWFILE"
 
