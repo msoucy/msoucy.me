@@ -38,5 +38,5 @@ Some of these are just "change your way of thinking", some are "personal prefere
 
 [Hack Upstate]: http://hackupstate.com/
 [Issue 9]: https://code.google.com/p/go/issues/detail?id=9
-[One member]: http://blog.gonyeo.com
+[One friend]: http://blog.gonyeo.com
 [the other friend]: http://github.com/robgssp
