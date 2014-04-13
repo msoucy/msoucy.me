@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html xml:lang="en" lang="en-us">
+<html xml:lang="en" lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
     <meta name="author" content="{{ AUTHOR }}" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    {% assets filters="sass,cssmin", output="css/main.css", "sass/positioning.sass", "sass/screen.sass", "sass/pygments.sass" %}
+    {% assets filters="scss,cssmin", output="css/main.css", "sass/positioning.scss", "sass/screen.scss", "sass/pygments.scss" %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
     {% if FEED_ALL_ATOM %}
@@ -30,6 +30,6 @@
       {% endblock %}
       {% include 'comment_count.html' %}
     </main>
-  </body>
   {% include 'analytics.html' %}
+  </body>
 </html>

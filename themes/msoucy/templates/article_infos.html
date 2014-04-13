@@ -1,7 +1,7 @@
 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
 <div id="meta">
 	<abbr class="published" title="{{ article.date.isoformat() }}">
-		<time>{{ article.locale_date }}</time>
+		<time datetime="{{article.date.isoformat()}}">{{ article.locale_date }}</time>
 	</abbr>
 	in {{ article.category }} -
 	<a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Comments</a>
