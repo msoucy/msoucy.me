@@ -36,6 +36,7 @@ PLUGINS = [
     'sitemap',
     'multi_part',
     'neighbors',
+    'render_math',
 ]
 
 SITEMAP = {"format": "xml"}
