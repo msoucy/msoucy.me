@@ -2,57 +2,57 @@
 {% set QUICKBAR_COUNT = 5 %}
 {% endif %}
 <ul>
-	<li>
-		<h3>categories</h3>
-		<ul>
+  <li>
+    <h3>categories</h3>
+    <ul>
 {% for category, arts in categories %}
-			<li>
-			<h3><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a></h3>
-				<ul>
-					{% for article in arts[0:QUICKBAR_COUNT] %}
-					<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
-					{% endfor %}
-					{% if arts|length > QUICKBAR_COUNT  %}
-					<li><a href="{{ SITEURL }}/category/{{ category }}.html">...</a></li>
-					{% endif %}
-				</ul>
-			</li>
+      <li>
+      <h3><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a></h3>
+        <ul>
+          {% for article in arts[0:QUICKBAR_COUNT] %}
+          <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% endfor %}
+          {% if arts|length > QUICKBAR_COUNT  %}
+          <li><a href="{{ SITEURL }}/category/{{ category }}.html">...</a></li>
+          {% endif %}
+        </ul>
+      </li>
 {% endfor %}
-		</ul>
-	</li>
-	<li>
-		<h3>tags</h3>
-		<ul>
+    </ul>
+  </li>
+  <li>
+    <h3>tags</h3>
+    <ul>
 {% for tag, arts in tags %}
-			<li>
-			<h3><a href="{{ SITEURL }}/tag/{{ tag }}.html">{{ tag }}</a></h3>
-				<ul>
-					{% for article in arts[0:QUICKBAR_COUNT] %}
-					<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
-					{% endfor %}
-					{% if arts|length > QUICKBAR_COUNT  %}
-					<li><a href="{{ SITEURL }}/tag/{{ tag }}.html">...</a></li>
-					{% endif %}
-				</ul>
-			</li>
+      <li>
+      <h3><a href="{{ SITEURL }}/tag/{{ tag }}.html">{{ tag }}</a></h3>
+        <ul>
+          {% for article in arts[0:QUICKBAR_COUNT] %}
+          <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% endfor %}
+          {% if arts|length > QUICKBAR_COUNT  %}
+          <li><a href="{{ SITEURL }}/tag/{{ tag }}.html">...</a></li>
+          {% endif %}
+        </ul>
+      </li>
 {% endfor %}
-		</ul>
-	</li>
+    </ul>
+  </li>
     <li>
-		<h3><a href="{{ SITEURL }}/seminars">seminars</a></h3>
-		<ul>
-			{% for name, loc in SEMINARS %}
-			<li><a href="{{ SITEURL }}/seminars/{{ loc }}">{{ name }}</a></li>
-			{% endfor %}
-		</ul>
-	</li>
-	<li>
-		<h3><a href="{{ SITEURL }}/about">about</a></h3>
-		<ul>
-			<li><a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a></li>
-			<li><a href="{{ SITEURL }}/extras/resume.pdf">resume</a></li>
-			<li><a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a></li>
-			<li><a href="{{ AUTHOR_DATA['g+'] }}">google+</a></li>
-		</ul>
-	</li>
+    <h3><a href="{{ SITEURL }}/seminars">seminars</a></h3>
+    <ul>
+      {% for name, loc in SEMINARS %}
+      <li><a href="{{ SITEURL }}/seminars/{{ loc }}">{{ name }}</a></li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    <h3><a href="{{ SITEURL }}/about">about</a></h3>
+    <ul>
+      <li><a href="mailto:{{ AUTHOR_DATA['email'] }}">email</a></li>
+      <li><a href="{{ SITEURL }}/extras/resume.pdf">resume</a></li>
+      <li><a href="http://www.linkedin.com/in/{{ AUTHOR_DATA['linkedin'] }}">linkedin</a></li>
+      <li><a href="{{ AUTHOR_DATA['g+'] }}">google+</a></li>
+    </ul>
+  </li>
 </ul>

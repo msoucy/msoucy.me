@@ -24,10 +24,9 @@
     </header>
     <main>
       <nav>
-       {% include 'nav.html' %}
-	  </nav>
-      {% block content %}
-      {% endblock %}
+        {% include 'nav.html' %}
+      </nav>
+      {% block content %}{% endblock %}
       {% include 'comment_count.html' %}
     </main>
   {% include 'analytics.html' %}

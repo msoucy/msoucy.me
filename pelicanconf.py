@@ -23,10 +23,11 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS = (('RIT FOSSBox', 'http://foss.rit.edu'),
-         ('Helixoide Blog', 'http://blog.helixoide.com'),
          ('RIT CSH', 'http://csh.rit.edu'),
+         ('Helixoide Blog', 'http://blog.helixoide.com'),
          ('ryansb', 'http://rsb.io'),
          ('[three]Bean', 'http://threebean.org'),
+         ('DGonyeo', 'http://blog.gonyeo.com')
          )
 
 PLUGIN_PATH = 'plugins'

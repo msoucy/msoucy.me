@@ -1,12 +1,6 @@
 <tr>
-  <td>
-    <a href="/{{ article.url }}">{{ article.title }}</a>
-  </td>
-  <td>
-    <a href="/author/{{ article.author.slug }}">{{ article.author }}</a>
-  </td>
-  <td>
-    <a href="/category/{{ article.category }}">{{ article.category }}</a>
-  </td>
+  <td><a href="/{{ article.url }}">{{ article.title }}</a></td>
+  <td><a href="/author/{{ article.author.slug }}">{{ article.author }}</a></td>
+  <td><a href="/category/{{ article.category }}">{{ article.category }}</a></td>
   <td>{{ article.locale_date }}</td>
 </tr>

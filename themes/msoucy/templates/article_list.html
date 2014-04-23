@@ -2,10 +2,18 @@
 {% block title %}{{ author }} - {{ SITENAME }}{% endblock %}
 {% block content %}
 <article>
-  <h2>{% block listtitle %}{% endblock %}</h2>
+  <h2>
+    {% if FEED_LOC_ATOM %}
+      <a href="{{SITEURL}}/{{FEED_LOC_ATOM}}" class="feed"></a>
+    {% endif %}
+    {% if FEED_LOC_RSS %}
+      <a href="{{SITEURL}}/{{FEED_LOC_RSS}}" class="feed"></a>
+    {% endif %}
+    {% block listtitle %}{% endblock %}
+  </h2>
   <table>
     {% for article in articles %}
-	{% include "article_blurb.html" %}
+      {% include "article_blurb.html" %}
     {% endfor %}
   </table>
 </article>
