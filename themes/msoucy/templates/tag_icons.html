@@ -1,0 +1,8 @@
+{% block feed %}
+{% if FEED_ALL_ATOM %}
+  <a href="{{SITEURL}}/{{FEED_LOCATION_ATOM" class="feed"></a>
+{% endif %}
+{% if FEED_ALL_RSS %}
+  <a href="{{SITEURL}}/{{FEED_LOCATION_RSS}}" class="feed"></a>
+{% endif %}
+{% endblock %}

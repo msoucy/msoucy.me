@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+{% set article = articles[0] %}
+<article>
+  {% include 'article_infos.html' %}
+  {{ article.content }}
+  {% include 'neighbors.html' %}
+</article>
+{% endblock content %}
