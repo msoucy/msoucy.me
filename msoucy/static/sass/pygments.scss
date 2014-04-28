@@ -1,0 +1,98 @@
+.hll {
+  background-color: blue;
+}
+
+.c {
+  color: lime;
+}
+
+/* Comment */
+
+.k {
+  color: red;
+}
+
+/* Keyword */
+
+.cm {
+  color: lime;
+}
+
+/* Comment.Multiline */
+
+.cp {
+  color: #e5e5e5;
+}
+
+/* Comment.Preproc */
+
+.c1, .cs {
+  color: lime;
+}
+
+/* Comment.Single */
+/* Comment.Special */
+
+.kc, .kd, .kn, .kp, .kr {
+  color: red;
+}
+
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* Keyword.Namespace */
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+
+.kt {
+  color: violet;
+}
+
+/* Keyword.Type */
+
+.s {
+  color: skyblue;
+}
+
+/* Literal.String */
+
+.no {
+  color: aquamarine;
+}
+
+/* Name.Constant */
+
+.nf {
+  color: yellow;
+}
+
+/* Name.Function */
+
+.nv {
+  color: #eedd82;
+}
+
+/* Name.Variable */
+
+.sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss {
+  color: skyblue;
+}
+
+/* Literal.String.Backtick */
+/* Literal.String.Char */
+/* Literal.String.Doc */
+/* Literal.String.Double */
+/* Literal.String.Escape */
+/* Literal.String.Heredoc */
+/* Literal.String.Interpol */
+/* Literal.String.Other */
+/* Literal.String.Regex */
+/* Literal.String.Single */
+/* Literal.String.Symbol */
+
+.vc, .vg, .vi {
+  color: #eedd82;
+}
+
+/* Name.Variable.Class */
+/* Name.Variable.Global */
+/* Name.Variable.Instance */
