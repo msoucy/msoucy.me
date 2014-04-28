@@ -27,18 +27,6 @@ $default_rounded_amount: 3px;
   -webkit-transition: all 0.35s ease-in-out;
 }
 
-h1 {
-  font-size: 1.66em;
-}
-
-h2 {
-  font-size: 1.44em;
-}
-
-h3 {
-  font-size: 1.31em;
-}
-
 ol {
   list-style: decimal;
 }
@@ -196,20 +184,6 @@ nav ul {
 
 article {
   @include round-corners;
-}
-
-.right-splash {
-  padding: 0px;
-  margin-top: 60px;
-  text: {
-    align: center;
-    decoration: none;
-  };
-  a {
-    color: black;
-    font-weight: normal;
-    margin: 0px;
-  }
 }
 
 h2 {
