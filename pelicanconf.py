@@ -69,4 +69,3 @@ AUTHOR_DATA = {
     "linkedin": "msoucy",
     "github": GITHUB_URL
 }
-DISQUS_SITENAME = 'insoucyant'
