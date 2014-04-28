@@ -14,6 +14,12 @@ Dylan Ayrey      | dxa4481@rit.edu | Multimedia Asset Development
 My team chose to start a project called [Math Island][], which is a fraction based puzzle game.
 Students can xplore mazes and combine fractions to help Karel the robot escape the dreaded Math Island!
 
+This fulfills the curriculum requirement:
+
+> **Extend understanding of fraction equivalence and ordering.**
+  1. Explain why a fraction $\frac{a}{b}$ is equivalent to a fraction $\frac{n \cdot a}{n \cdot b}$ by using visual fraction models, with attention to how the number and size of the parts differ even though the two fractions themselves are the same size. Use this principle to recognize and generate equivalent fractions.
+  2. Compare two fractions with different numerators and different denominators, e.g., by creating common denominators or numerators, or by comparing to a benchmark fraction such as $\frac{1}{2}$. Recognize that comparisons are valid only when the two fractions refer to the same whole. Record the results of comparisons with symbols $&gt;$, $=$, or $&lt;$, and justify the conclusions, e.g., by using a visual fraction model. 
+
 What are the easy parts?
 
 * The Math
