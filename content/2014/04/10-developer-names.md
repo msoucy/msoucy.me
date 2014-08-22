@@ -23,6 +23,7 @@ After talking with [a friend][], we started debating the names given to programm
 - [Perl](http://perl.org)
 	- Perl monk
 	- RNG ("What's the difference between a Perl Monk and an RNG?" "What?" "A beard")
+	- Masochist
 - [Java](http://www.java.com)
 	- Coffee Addict
 	- Jittery m-f
