@@ -7,3 +7,5 @@ Here are the slides from some of the presentations I've given in the past:
 * ["Evil" C and C++](|filename|/seminars/evilC/index.html)
 * [The D Programming Language](|filename|/seminars/D/index.html)
 * [PGP Keysigning Party](|filename|/seminars/pgp/index.html)
+* [Fixing the CS Curriculum with Python](|filename|/seminars/python/index.html)
+* [Code Style](|filename|/seminars/style/index.html)
