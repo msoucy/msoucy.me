@@ -30,7 +30,7 @@ LINKS = (('RIT FOSSBox', 'http://foss.rit.edu'),
          ('DGonyeo', 'http://blog.gonyeo.com')
          )
 
-PLUGIN_PATH = 'plugins'
+PLUGIN_PATHS = ['plugins']
 #import minify
 PLUGINS = [
     'assets',
@@ -46,7 +46,7 @@ SITEMAP = {"format": "xml"}
 
 PATH_METADATA = r'(?P<date>\d{4}/\d{2}/(\d{2})?)-(?P<slug>.*)\.md'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
-ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
+ARTICLE_SAVE_AS = ARTICLE_URL + "index.html"
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_EXCLUDES = ['seminars', 'pages']
