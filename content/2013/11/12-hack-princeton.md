@@ -1,7 +1,7 @@
 Title: Hack Princeton: The Good, The Bad, and The Ugly
 Category: life
 
-Last Friday, I found myself walking across campus for a different purpose than usual. Typically, Friday mornings are devoted to Physics class, but this time I walked straight past the College of Science building, heading toward a particular bus stop. Once there, I met up with several of my friends, before boarding the bus to Princeton. What was the occasion? [Hack Princeton][], another hackathon.
+Last Friday, I found myself walking across campus for a different purpose than usual. Typically, Friday mornings are devoted to Physics class, but this time I walked straight past the College of Science building, heading toward a particular bus stop. Once there, I met up with several of my friends, before boarding the bus to Princeton. What was the occasion? [Hack Princeton], another hackathon.
 
 We sat. We sat for hours. We took a tiny break for lunch, then we sat for several more hours. At last, we arrived, slightly later than anticipated, missing only the opening ceremonies and demonstrations.
 

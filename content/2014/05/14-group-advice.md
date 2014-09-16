@@ -13,7 +13,7 @@ There's no easy way to magically fix this - you can't wish away a project, you c
 This last week was one of the least pleasant I've had in a while. I had, all due within one week:
 
 - A language parser and analyzer in C++ (by far the easiest assignment)
-- [Prim's Algorithm][] in Java
+- [Prim's Algorithm] in Java
 - A level editor for the HFOSS project, written in Python
 - A "group project" focused on refactoring in Java
 
@@ -22,7 +22,7 @@ This last one was, by far, the bane of my existence. Due to a lack of communicat
 - If your groupmates don't show up to meetings, and don't explain why, send out reminders and ask them what's going on
     - If needed, include any supervisor/higher-up in the mailing list, that way they have records of your issues ahead of time
 - Do NOT delete any of the messages sent or received. These can be used to remind teammates of things that they committed to, as well as keep a log of all plans and completed work.
-- Use some sort of version control. As simple as this sounds, it can save a ton of time in the long run. [Git][] is distributed, so it allows people to get started on a testing box, before moving the actual group project to a centralized location, and people can work without being connected to the server.
+- Use some sort of version control. As simple as this sounds, it can save a ton of time in the long run. [Git] is distributed, so it allows people to get started on a testing box, before moving the actual group project to a centralized location, and people can work without being connected to the server.
     - It also keeps logs. Like the first two points, this shows how much work each team member contributed to the project, or at least to the code portions.
 	- Lock down access as much as possible. If you're using "feature-branch", try to find a way to prevent anybody but the "QA/SCM" person from pushing to master, for instance.
 - Make sure that your group is on the same page with requirements and deadlines. In my project, the presentation was worth 15%, the implementation was worth 15%, and "Reverse Engineering, Refactoring, and Documentation" was worth 70% of the final grade. On the last day, when the largest refactoring wasn't done yet, my groupmates were complaining that I was spending too much time on the code and not enough on the documentation. As I was the one with the best understanding of the entire program architecture, to the point at which one teammate could ask about any class and I would say what it did and how it interacted, I felt that I was the only one suited to earning those "Reverse Engineering/Refactoring" points that we desperately needed. My group disagreed, believing that the point of the project was solely documenting "what would we do if we had time".

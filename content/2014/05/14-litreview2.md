@@ -23,7 +23,7 @@ Tags: hfoss
 	- Are there situations where some of these might be acceptable?
 	- What are ways to avoid using these?
 - The Review
-	- A fairly good graphic, useful to review and get an idea of some of the most common fallacies. 8/8 [Stallman Beards][]
+	- A fairly good graphic, useful to review and get an idea of some of the most common fallacies. 8/8 [Stallman Beards]
 
 [Infographic]: http://hfoss-fossrit.rhcloud.com/static/books/rhetological_fallacies.png
 [Stallman Beards]: |filename|/2014/02/19-stallman-beard.md

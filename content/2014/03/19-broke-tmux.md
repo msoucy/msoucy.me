@@ -3,7 +3,7 @@ Category: code
 
 Normally I like making things, but on occasion I've been known to break them.
 
-Today it was [tmux][].
+Today it was [tmux].
 
 As it turns out, some updates change the protocol. When this happens, the updated application can't connect to sessions on the old protocol.
 

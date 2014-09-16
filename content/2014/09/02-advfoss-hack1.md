@@ -1,16 +1,17 @@
 Title: Advanced FOSS: Hack 1
 Category: code
 Tags: advfoss
+Parts: RESTZZZ
 
 # Hack 1: ZTTP
 
-ZTTP is designed to be a [0mq][]-to-HTTP bridge. The idea is that it would provide a way to push data to a server over 0mq to stream out to clients via HTTP.
+ZTTP is designed to be a [0mq]-to-HTTP bridge. The idea is that it would provide a way to push data to a server over 0mq to stream out to clients via HTTP.
 
 It relies on zmq and http.server libraries, possibly others depending on storage plans.
 
-It will be uploaded to [pypi][], and is meant to be simple enough to run on a Raspberry Pi. The anticipated license will be BSD 3-clause.
+It will be uploaded to [pypi], and is meant to be simple enough to run on a Raspberry Pi. The anticipated license will be BSD 3-clause.
 
-My upstream mentor will be [Ryan Brown][], a crazy Python hacker who has familiarity with HTTP servers in Python and whom I've worked with in the past.
+My upstream mentor will be [Ryan Brown], a crazy Python hacker who has familiarity with HTTP servers in Python and whom I've worked with in the past.
 
 Milestones:
 

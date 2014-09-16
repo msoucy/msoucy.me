@@ -11,7 +11,7 @@ Liam Middlebrook | ljm2906@rit.edu | Gameplay Programmer
 Derek Gonyeo     | dwg7868@rit.edu | Engine Developer
 Dylan Ayrey      | dxa4481@rit.edu | Multimedia Asset Development
 
-My team chose to start a project called [Math Island][], which is a fraction based puzzle game.
+My team chose to start a project called [Math Island], which is a fraction based puzzle game.
 Students can xplore mazes and combine fractions to help Karel the robot escape the dreaded Math Island!
 
 This fulfills the curriculum requirement:

@@ -2,7 +2,7 @@ Title: Metadata-aware Callbacks Revised
 Category: code
 Tags: c++
 
-As I mentioned in [an earlier post][], I wasn't completely happy with the final result of my changes. There were a few things I felt were problematic:
+As I mentioned in [an earlier post], I wasn't completely happy with the final result of my changes. There were a few things I felt were problematic:
 
 - Creating a callback required two statements
 - Code was less intuitive

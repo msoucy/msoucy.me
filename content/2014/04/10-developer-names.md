@@ -2,7 +2,7 @@ Title: Developer Names
 Category: code
 Tags: humor
 
-After talking with [a friend][], we started debating the names given to programmers who develop in different languages. Here are some of the gems:
+After talking with [a friend](http://rsb.io "Ryan Scott Brown"), we started debating the names given to programmers who develop in different languages. Here are some of the gems:
 
 - [Go](http://golang.org)
 	- go-nut
@@ -34,5 +34,3 @@ After talking with [a friend][], we started debating the names given to programm
 	- Miner
 
 ###### These are all meant as jokes, no offense is meant.
-
-[a friend]: http://rsb.io "Ryan Scott Brown"

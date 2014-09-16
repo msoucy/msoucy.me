@@ -2,7 +2,7 @@ Title: Playing with Golang
 Category: code
 Tags: hackathons
 
-As part of the Spring 2014 [Hack Upstate][], my team decided to create our project in Go (AKA Golang, AKA [Issue 9][]). [One friend][] will be using it for an upcoming co-op, and [the other friend][] and I figured that it would be an interesting language to learn. Here are some of the random thoughts we have on the language:
+As part of the Spring 2014 [Hack Upstate], my team decided to create our project in Go (AKA Golang, AKA [Issue 9]). [One friend] will be using it for an upcoming co-op, and [the other friend] and I figured that it would be an interesting language to learn. Here are some of the random thoughts we have on the language:
 
 - Lack of generics wasn't much of an issue, despite my using them frequently in other languages
 - A lack of a standardized constructor is limiting - sometimes the "0-value" is less than useful, but there's no standard way to make a new instance of a struct without having special `NewT()` or `MakeT()` functions, which don't play nicely with `make([]T, N)` and `new([]T)`.

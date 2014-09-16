@@ -47,7 +47,7 @@ As Alexandrescu proposed, a nicer implementation is to return to the GoF...and t
 
 Mouthful, right? Not really, actually. All of the functions are straightforward, and build off of each other.
 
-Take a look at the "Experience with Ranges" and "Higher-Order Ranges" sections of the article to see some real-world applicability of this - from using them extensively, I feel that by sticking closer to the GoF, it resulted in a much more usable system, and gives extra power - it's difficult to implement something that matches a STL iterator but gives "lazy" support - something like D's [std.range.iota][] or Python's [range (xrange in Python 2)][range], both of which compute numeric sequences without storing the entire sequence.
+Take a look at the "Experience with Ranges" and "Higher-Order Ranges" sections of the article to see some real-world applicability of this - from using them extensively, I feel that by sticking closer to the GoF, it resulted in a much more usable system, and gives extra power - it's difficult to implement something that matches a STL iterator but gives "lazy" support - something like D's [std.range.iota] or Python's [range (xrange in Python 2)][range], both of which compute numeric sequences without storing the entire sequence.
 
 Basically, the point I'm trying to get at is that following the pattern, particularly the simple ones, usually helps create much nicer interfaces, but there are times when mixing it up can create something even more convenient.
 

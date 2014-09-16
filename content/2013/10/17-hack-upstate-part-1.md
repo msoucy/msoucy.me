@@ -3,9 +3,9 @@ Category: life
 Tags: hackathons
 Parts: HACK_UPSTATE_2013
 
-As part of the [FOSS Box][], I go to a lot of events. These events, called "hackathons", are typically crazy coding marathons that can last as long as 24 hours. Typically, the focus is on creating something unique that fits a certain theme.
+As part of the [FOSS Box], I go to a lot of events. These events, called "hackathons", are typically crazy coding marathons that can last as long as 24 hours. Typically, the focus is on creating something unique that fits a certain theme.
 
-This past weekend, 16 of us (as well as some FOSS Box alumni) traveled to Syracuse, NY to participate in [Hack Upstate][]. Once there, we divided into many teams, and we were [somewhat successful][FOSS Box Results].
+This past weekend, 16 of us (as well as some FOSS Box alumni) traveled to Syracuse, NY to participate in [Hack Upstate]. Once there, we divided into many teams, and we were [somewhat successful][FOSS Box Results].
 
 Along the way, I met up (again) with some [cool people][Paddy Foran] as well as met some other [awesome people][Rounded] with some neat ideas. A friend and I had an interesting idea, but as soon as we started talking with Rounded representatives, we knew that we could have much more fun with their project, called Density. We decided to work with them on a project that was jokingly named "Mass over Volume".
 

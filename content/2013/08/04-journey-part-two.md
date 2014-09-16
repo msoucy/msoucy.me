@@ -17,7 +17,7 @@ Throughout the weekend, we kept looking at each other and saying, "Life is amazi
 
 Right now, we're all on the bus, half-asleep, knowing that tomorrow we're all returning to work. However, this weekend happened, and I know that we'll remember it for a long time.
 
-_Edit 04/09/2014_: My [awesome friend][] posted about her experiences! Read her take on it [here][]
+_Edit 04/09/2014_: My [awesome friend] posted about her experiences! Read her take on it [here].
 
 [awesome friend]: http://thebostonbuzz.wordpress.com/
 [here]: http://thebostonbuzz.wordpress.com/2014/04/09/journey/

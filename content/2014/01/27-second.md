@@ -1,7 +1,7 @@
 Title: SECOND: Returning to FIRST
 Category: life
 
-Over winter break I try to stay busy. A little bit of intern work, a little bit of video games...and a little bit of [FIRST][].
+Over winter break I try to stay busy. A little bit of intern work, a little bit of video games...and a little bit of [FIRST].
 
 Back in high school, I spent most of my winters working with my team, as first a software team member then later as the software lead. This break, I returned to my team, but in a new role as the "second-in-command Software Mentor".
 
