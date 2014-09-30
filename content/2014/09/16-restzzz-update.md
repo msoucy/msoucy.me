@@ -22,7 +22,7 @@ Currently, RESTZZZ is somewhat functional - it can load from a configuration fil
 
 Things that I still need to do include allowing one socket to support connecting to multiple endpoints, for aggregating data sources easily.
 
-[project]: |filename|/2014/09/02-advfoss-hack1.md
+[project]: |filename|/2014/09/02-advfoss-hack0.md
 [source]: http://code.msoucy.me/RESTZZZ
 [Cornice]: http://cornice.readthedocs.org/en/latest/
 [Pyramid]: http://www.pylonsproject.org/
