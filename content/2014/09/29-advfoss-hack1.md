@@ -20,5 +20,6 @@ The idea is that the addon would take any page sent using any of the MIME types 
 - ** Libraries**: Some library that allows for media playing and graphics drawing. Can probably be written in Python.
 - Distribution: [PyPI]
 
+[ADVFOSS]: http://advfoss-ritigm.rhcloud.com/
 [CommonMark]: http://commonmark.org/
 [PyPI]: https://pypi.python.org/
