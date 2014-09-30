@@ -59,7 +59,12 @@ stopserver:
 drafts:
 	rsync -ruv --delete $(DRAFTDIR) $(INPUTDIR)
 
-publish: drafts
+presentations:
+	$(MAKE) -C Presentations
+	mkdir -p $(OUTPUTDIR)
+	cp -r Presentations/output $(OUTPUTDIR)/seminars
+
+publish: drafts presentations
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	find output -name ".webassets-cache" | xargs rm -rf 
 
