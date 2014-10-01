@@ -22,13 +22,15 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('RIT FOSSBox', 'http://foss.rit.edu'),
-         ('RIT CSH', 'http://csh.rit.edu'),
-         ('Helixoide Blog', 'http://blog.helixoide.com'),
-         ('ryansb', 'http://rsb.io'),
-         ('[three]Bean', 'http://threebean.org'),
-         ('DGonyeo', 'http://blog.gonyeo.com')
-         )
+LINKS = (
+        ('My Code', 'http://code.msoucy.me'),
+        ('RIT FOSSBox', 'http://foss.rit.edu'),
+        ('RIT CSH', 'http://csh.rit.edu'),
+        ('Helixoide Blog', 'http://blog.helixoide.com'),
+        ('ryansb', 'http://rsb.io'),
+        ('[three]Bean', 'http://threebean.org'),
+        ('DGonyeo', 'http://blog.gonyeo.com')
+ )
 
 PLUGIN_PATHS = ['plugins']
 #import minify
