@@ -41,6 +41,7 @@ $(OUTPUTDIR)/%.html:
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
+	$(MAKE) -C Presentations clean
 
 regenerate: clean
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -61,12 +62,14 @@ drafts:
 
 presentations:
 	$(MAKE) -C Presentations
-	mkdir -p $(OUTPUTDIR)
-	cp -r Presentations/output $(OUTPUTDIR)/seminars
+	mkdir -p $(OUTPUTDIR)/seminars
+	cp Presentations/output/* $(OUTPUTDIR)/seminars/
 
-publish: drafts presentations
+publish: drafts
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	find output -name ".webassets-cache" | xargs rm -rf 
+	# Pelican overwrites the output dir, so do this last
+	$(MAKE) presentations
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)

@@ -59,7 +59,7 @@ DEFAULT_DATE = "fs"
 
 # Custom settings for the msoucy theme
 SEMINARS = (
-    ("D Programming", "D"),
+    ("D Programming", "d"),
     ("PGP", "pgp"),
     ("Evil C", "evilC"),
     ("Style Guidelines", "style"),

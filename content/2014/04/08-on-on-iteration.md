@@ -51,7 +51,7 @@ Take a look at the "Experience with Ranges" and "Higher-Order Ranges" sections o
 
 Basically, the point I'm trying to get at is that following the pattern, particularly the simple ones, usually helps create much nicer interfaces, but there are times when mixing it up can create something even more convenient.
 
-[evil C]: http://msoucy.me/seminars/evilC/ "My Evil C Seminar"
+[evil C]: http://msoucy.me/seminars/evilC.html "My Evil C Seminar"
 [On Iteration]: http://www.informit.com/articles/printerfriendly/1407357
 [std.range.iota]: http://dlang.org/phobos/std_range#iota
 [range]: https://docs.python.org/2/library/functions.html#xrange
