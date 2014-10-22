@@ -63,7 +63,7 @@ drafts:
 presentations:
 	$(MAKE) -C Presentations
 	mkdir -p $(OUTPUTDIR)/seminars
-	cp Presentations/output/* $(OUTPUTDIR)/seminars/
+	cp -r Presentations/output/* $(OUTPUTDIR)/seminars/
 
 publish: drafts
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
