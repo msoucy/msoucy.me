@@ -18,6 +18,7 @@ CATEGORY_FEED_ATOM = 'feeds/category/%s.atom.xml'
 TAG_FEED_ATOM = 'feeds/tag/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
+LOAD_CONTENT_CACHE = True
 
 # Following items are often useful when publishing
 

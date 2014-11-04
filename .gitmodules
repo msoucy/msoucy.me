@@ -7,3 +7,4 @@
 [submodule "Presentations"]
 	path = Presentations
 	url = git@github.com:msoucy/Presentations.git
+	ignore = dirty

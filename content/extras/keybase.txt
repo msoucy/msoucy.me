@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/msoucy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://msoucy.me
+  * I am msoucy (https://keybase.io/msoucy) on keybase.
+  * I have a public key with fingerprint 33A9 6558 38DE 94B9 B85B  A0DC 7996 734F B237 0F0C
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "33a9655838de94b9b85ba0dc7996734fb2370f0c",
+            "host": "keybase.io",
+            "key_id": "7996734fb2370f0c",
+            "uid": "da42c10c4dc1974ad6692a9f35f87d00",
+            "username": "msoucy"
+        },
+        "revoke": {
+            "sig_ids": [
+                "0d8508793d6f150b5296ee7a56f0a2b2e03e00b6ed51a56c30b8a8260b0e08f70f"
+            ]
+        },
+        "service": {
+            "hostname": "msoucy.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1414613772,
+    "expire_in": 157680000,
+    "prev": "f14c254cfe1ded7fb699de8e60649c727f1575a66b940067d1ad09e59b0c2b03",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.3
+Comment: https://keybase.io/crypto
+
+yMM6AnicbVJtUFRVGF4+gx2QIJmafjBydZRgwXO/791qRCOnGRxEpSBho/tx7noF
+9q77AawbpqQVBEW6QCIMMlIgBU6EQgMqrNjw1QdQJFjS9INCaAiqwc2PupepH810
+/pxznvO8z/O875zB8ACd3s9VY9/dSUeE+Y0OPOfUZexJDXMjvCK6EKMbyYNrmyRb
+zNBmtckWB2JEcJxjKZJkcEaELMGzPEPyHBAFmmUpGickHsNpIAEBMSAHFLtWocrw
+nB0myYqKqZdcWVTR/+E71x5EjsAEFAiEKKAsTXAiRbEYx0o4KTG0CIBGtEObhSuA
+KrvArjgFF1JiQGywUMmDWmC7bFY97IgxGwEiQwKGZnGRklAS8CTGUhDSHElJgMN4
+DAIcAsBTUCRRFRRwwDMcg1GABxAwkpoMManaql+hLKyJa039xztJPRsQq01xKIKS
+r8IHHA6rUUvkcFk1WhHkc/8RyOVli6iOUy0ohDa7rFgQI6oyBYesKaIESlAoTtOY
+AYHFVtkGc2WNQdIUA9Sl2cBCVVJCCQEjCUGCqAhFWuIplhUhAylAEaxAY7TaLE1y
+FMWzBAAULaKcCFhIsjwQMB7giNbSIYuCGGk1JmdWJdWhWTiH0waREu9ATqDOT68L
+DvLXPoROH/rwv9+k+deIv9Jnj4f0PoIHjvSdW6+EhNWXh3UXIY3FW8qPvHcMi4p5
+zS/2w+BTW02bpmwtLU/ejMtij6BflBApX6dYU3wPjcXsq8hJzdpyLrZnYrxlyLzg
+rtuA+1/KdqEVBR5Ykmwnb/+wnK1vujelb8579kedJcd54Wbrzut/0oErI89g1aNX
+gxK6VrfWhBunMxsXWM+DjutPVKb4Rt//xrcYOVNZ/9Ji6PP03cOr55X0TbM1nqo3
+vIeuys6io1UVfsN75+LHtzs7W7f1bKhZ6ePvdMScL12YkHbQFx9Nak8PvjY5Ib6c
+YWzsDEj7zau7kBz3beQ49inevVSWP3MJTvlez2wNGB0r8QZFp0163/lurlCMbUvc
+57jcpbcOzp9c2W1p4JdCLs8mvhIuJWxuT5sxpVI3yr4Epr1/7Gd2BfWbRpbRmf5t
+N6xuMxZKZnLbVw+6ieDI30t7s+721tT2NPoMdY5PmAcfvbhuz9uT2fbFW+7utz4o
+i31zaqjZET/8U8axg6vrhl59t/i2kHzRlXBYjvr8+45T0ctH53Fve3hUw0Ba4pWz
++RH7T/jOxId4Nj7etv6a0105vDnzqdodn53MC7zi3zcYXcZW2MburDBd/kvT96p+
++XlX1M6xqFuJy6Wmplrm/gvT3eVtsSsjkSNNcWc/3jhzuqH/eP1Xj1XPG6pP3E/s
+NT9dXumZq/sbAiarHw==
+=p/OO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/msoucy
+
+==================================================================
