@@ -36,8 +36,7 @@ html: clean $(OUTPUTDIR)/index.html
 
 $(OUTPUTDIR)/%.html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
-	find output -size 0 -type f | xargs rm
-	find output -size 0 -type d | xargs rmdir
+	find output -empty -delete
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete

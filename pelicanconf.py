@@ -33,18 +33,15 @@ LINKS = (
  )
 
 PLUGIN_PATHS = ['plugins']
-#import minify
 PLUGINS = [
     'assets',
     'sitemap',
-    'multi_part',
+    'series',
     'neighbors',
     'render_math',
 ]
 
 SITEMAP = {"format": "xml"}
-
-#DEFAULT_PAGINATION = 10
 
 PATH_METADATA = r'(?P<date>\d{4}/\d{2}/(\d{2})?)-(?P<slug>.*)\.md'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
@@ -75,3 +72,7 @@ AUTHOR_DATA = {
     "linkedin": "msoucy",
     "github": GITHUB_URL
 }
+
+ASSET_SOURCE_PATHS = (
+    'static',
+)
