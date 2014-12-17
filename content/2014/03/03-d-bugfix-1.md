@@ -1,7 +1,6 @@
 Title: Fixing Bugs: D/Phobos
 Category: code
 Tags: hfoss
-Parts: HFOSS_BUGFIX_PHOBOS
 
 A large part of open development is giving back to projects that you use.
 

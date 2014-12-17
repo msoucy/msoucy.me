@@ -1,6 +1,6 @@
 Title: Journey, part two
 Category: life
-Parts: JOURNEY_CONCERT_2013
+Series: Journey Concert 2013
 
 
 Yesterday, I boarded a bus leaving from Concord. Today, I boarded a bus heading to Concord. What's changed this weekend? I got a little taste of paradise.
@@ -9,7 +9,7 @@ When I boarded the bus, I went down the aisle until I saw a familiar face, sitti
 
 My friend described the concert as an almost religious experience, which summed it up pretty well. Night Ranger was the opening act. That's right, the OPENING act. When a band like Night Ranger is merely beginning the show, you can tell that the rest is going to be incredible. Their music was breathtaking, and we were surprised by how many of their songs we recognized. We actually got some approving looks from some of the other concert-goers, who said that they thought that we couldn't possibly be Journey fans due to our ages.
 
-Finally, as the sun started to set, Journey took the stage. There were some beautiful piano solos where we could merely stand in awe, and the new lead singer sounded really good-he fit with the band very well, and brought some fantastic energy to the stage. As the band played "Don't Stop Believin'", we knew that our night was drawing to a close - but not before the encore, an amazing performance of "Lovin', Touchin', Squeezin'" that had the whole audience singing along. 
+Finally, as the sun started to set, Journey took the stage. There were some beautiful piano solos where we could merely stand in awe, and the new lead singer sounded really good-he fit with the band very well, and brought some fantastic energy to the stage. As the band played "Don't Stop Believin'", we knew that our night was drawing to a close - but not before the encore, an amazing performance of "Lovin', Touchin', Squeezin'" that had the whole audience singing along.
 
 This morning, we woke up and went for a ride on the jet ski. I've never between a huge fan of water activities, but I decided that there were only so many chances to try something new like that. So that's how I found myself hanging on to the waist of a guy I had only met the day before as we rushed across a lake. Although I was pretty nervous at first, I quickly found that it was exhilarating, and was grinning as I stepped back onto dry land. We had breakfast, hung out at a beach, walked around a boardwalk, and before we knew it, it was time to board the bus once more.
 

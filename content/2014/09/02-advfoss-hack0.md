@@ -1,7 +1,7 @@
 Title: Advanced FOSS: Hack 0
 Category: code
 Tags: advfoss
-Parts: RESTZZZ
+Series: RESTZZZ
 
 # Hack 1: ZTTP
 
