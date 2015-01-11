@@ -62,13 +62,11 @@ drafts:
 presentations:
 	$(MAKE) -C Presentations
 	mkdir -p $(OUTPUTDIR)/seminars
-	cp -r Presentations/output/* $(OUTPUTDIR)/seminars/
+	cp -r Presentations/output/* $(INPUTDIR)/seminars
 
-publish: drafts
+publish: presentations drafts
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
-	find output -name ".webassets-cache" | xargs rm -rf 
-	# Pelican overwrites the output dir, so do this last
-	$(MAKE) presentations
+	find output -name ".webassets-cache" | xargs rm -rf
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
