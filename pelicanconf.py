@@ -60,11 +60,17 @@ DEFAULT_DATE = "fs"
 
 # Custom settings for the msoucy theme
 SEMINARS = (
-    ("D Programming", "d"),
-    ("PGP", "pgp"),
-    ("Evil C", "evilC"),
+    ('"Evil" C and C++', "evilC"),
+    ("The D Programming Language", "d"),
+    ("PGP Keysigning Party", "pgp"),
+    ("Fixing the CS Curriculum with Python", "python"),
     ("Style Guidelines", "style"),
-    ("Python++", "python"),
+    ("Injecting code into Python", "inject"),
+    ("Using Python with C Libraries", "cpy"),
+    ("Lightning Talk on Firefox Packaging", "mozpack"),
+    ("Using Aspect-Oriented Observers", "aspects"),
+    ("Build Systems Suck", "bss"),
+    ("Using Git in an FRC Team", "git-frc"),
 )
 AUTHOR_DATA = {
     "email": "msoucy@csh.rit.edu",
