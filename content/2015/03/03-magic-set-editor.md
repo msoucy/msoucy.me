@@ -1,6 +1,6 @@
 Title: Magic Set Editor
 Category: code
-Tags: linux-dev,foss,c++
+Tags: linux-dev,foss,c++,bizlegfoss
 
 I haven't been able to post much about actual projects I've been working on lately, so I figured that I'd at least do a little introduction.
 
@@ -8,7 +8,7 @@ Back when I was in high school, some of my friends were really into [Magic the G
 More interestingly, they were fond of a tool called [Magic Set Editor][], which allows people to create their own custom cards and sets, as well as generate packs of cards based on rarity.
 It seemed like a fairly usable program back then, for mocking up not just Magic cards but custom games as well.
 
-For some reason (that I still don't quite remember), I thought about it recently and wondered about the feasibility of making it build in Linux - I had remembered that there was some preliminary work, but wasn't sure about its development status.
+I thought about the program again recently (brought on by some upcoming game-development events) and wondered about the feasibility of making it build in Linux - I had remembered that there was some preliminary work, but wasn't sure about its development status.
 
 The last commit was in April 2012, and the last release February 2011.
 
