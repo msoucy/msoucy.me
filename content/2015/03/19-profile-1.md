@@ -1,5 +1,5 @@
 Title: Project Profile: Investors
-Category: code
+Category: class
 Tags: bizlegfoss,foss
 
 [Profile 1][proposal] (because they're zero-indexed) is now [posted][presentation]

@@ -1,5 +1,5 @@
 Title: Project Profile: Enterprise
-Category: code
+Category: class
 Tags: bizlegfoss,foss
 
 The project profile that was [proposed][proposal] has been [posted][presentation].

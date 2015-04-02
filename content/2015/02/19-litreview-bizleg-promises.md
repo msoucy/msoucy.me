@@ -1,5 +1,5 @@
 Title: Lit Review: Company Promises
-Category: code
+Category: class
 Tags: bizlegfoss
 
 One interesting thing that some companies do is create promises concerning software patents.

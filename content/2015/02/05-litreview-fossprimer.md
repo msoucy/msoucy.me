@@ -1,5 +1,5 @@
 Title: Lit Review: FOSS Primer
-Category: code
+Category: class
 Tags: bizlegfoss
 
 The other piece that we needed to review was the first two chapters of the [FOSS Primer][].

@@ -1,5 +1,5 @@
 Title: Project Profile Team Profile 1: Organization
-Category: code
+Category: class
 Tags: bizlegfoss,foss
 
 >  Team Members

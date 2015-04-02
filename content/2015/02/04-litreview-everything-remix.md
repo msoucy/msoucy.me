@@ -1,5 +1,5 @@
 Title: Lit Review: Everything's a Remix
-Category: code
+Category: class
 Tags: bizlegfoss
 
 Everything is a Remix.

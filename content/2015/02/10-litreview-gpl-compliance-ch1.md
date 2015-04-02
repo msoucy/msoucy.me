@@ -1,5 +1,5 @@
 Title: Lit Review: Guide to GPL Compliance
-Category: code
+Category: class
 Tags: bizlegfoss
 
 This week we reviewed the [Software Freedom Law Center Guide to GPL Compliance][SFLCGGC], written by Eben Moglen and Mishi Choudhary and published October 31, 2014.

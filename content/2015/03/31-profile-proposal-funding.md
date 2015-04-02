@@ -1,5 +1,5 @@
 Title: Project Profile Team Profile 3: Funding
-Category: code
+Category: class
 Tags: bizlegfoss,foss
 
 > List your other team members below
