@@ -20,6 +20,8 @@ TAG_FEED_ATOM = 'feeds/tag/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 LOAD_CONTENT_CACHE = True
 
+CACHE_CONTENT = True
+
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = 'insoucyant'

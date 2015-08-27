@@ -29,7 +29,8 @@ LINKS = (
         ('Helixoide Blog', 'http://blog.helixoide.com'),
         ('ryansb', 'http://rsb.io'),
         ('[three]Bean', 'http://threebean.org'),
-        ('DGonyeo', 'http://blog.gonyeo.com')
+        ('DGonyeo', 'http://blog.gonyeo.com'),
+        ('loothelion', 'http://loothelion.rocks'),
  )
 
 PLUGIN_PATHS = ['plugins']
@@ -55,7 +56,7 @@ EXTRA_PATH_METADATA = {
     "extras/keybase.txt": {"path": "keybase.txt"}
 }
 
-MD_EXTENSIONS = ['codehilite','extra', 'sane_lists', 'nl2br']
+MD_EXTENSIONS = ['codehilite', 'extra', 'sane_lists']
 DEFAULT_DATE = "fs"
 
 # Custom settings for the msoucy theme
