@@ -1,5 +1,5 @@
 Title: Review: Fantasy Life
-Category: code
+Category: games
 
 This time around, I decided to review a charming little 3DS game called [Fantasy Life][].
 A friend of mine, [Alex][], played it during November and gave her impressions, so I figured that while she's writing about Bravely Default like I did [a few months ago][Bravely Default review], I'll write about Fantasy Life.
