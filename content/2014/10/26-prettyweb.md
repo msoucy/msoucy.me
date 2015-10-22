@@ -10,7 +10,7 @@ PrettyWeb is meant to be a way to view any page that appears as "plaintext" usin
 
 Tonight I took a look at the existing code, and attempted to get it up to date with the new organization for CommonMark. This week I'll be packaging it up and attempting to publish it on Mozilla's [addon directory]
 
-[my ideas]: |filename|/2014/09/29-advfoss-hack1.md
-[Hack Upstate]: |filename|/2014/10/09-hack-upstate-fall-2014.md
+[my ideas]: {filename}/2014/09/29-advfoss-hack1.md
+[Hack Upstate]: {filename}/2014/10/09-hack-upstate-fall-2014.md
 [CommonMark]: http://commonmark.org/
 [addon directory]: https://addons.mozilla.org/en-US/firefox/

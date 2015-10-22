@@ -25,7 +25,7 @@ Because I had the parser (`stmd.js`, which was renamed to `commonmark.js` while 
 
 The [code] is available on GitHub.
 
-[PrettyWeb]: |filename|/2014/10/26-prettyweb.md
+[PrettyWeb]: {filename}/2014/10/26-prettyweb.md
 [XUL]: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL
 [Cloud-to-Butt]: https://github.com/Qalthos/cloud-to-butt-mozilla
 [code]: https://github.com/msoucy/PrettyWeb "PrettyWeb"

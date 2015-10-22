@@ -44,4 +44,4 @@ Overall, Fantasy Life is a fantastic game that deserves way more attention than 
 
 [Fantasy Life]: http://fantasylife.nintendo.com/
 [Alex]: http://ghost-alexandriamack.rhcloud.com/the-end-of-the-november-game-challenge/
-[Bravely Default review]: |filename|/2014/10/21-bravely-default.md
+[Bravely Default review]: {filename}/2014/10/21-bravely-default.md

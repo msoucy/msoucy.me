@@ -13,4 +13,4 @@ I can be contacted via [email][Email], [LinkedIn], or [Google+], and my resume c
 [Email]: mailto:msoucy@csh.rit.edu
 [LinkedIn]: http://www.linkedin.com/in/msoucy
 [Google+]: http://gplus.to/msoucy
-[Resume]: |filename|/extras/resume.pdf
+[Resume]: {filename}/extras/resume.pdf
