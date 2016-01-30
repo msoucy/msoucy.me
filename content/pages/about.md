@@ -2,7 +2,7 @@ Title: About
 Slug: about
 Date: 1970-01-01 00:01
 
-I'm a fifth year student at the Rochester Institute of Technology.
+I'm a recent graduate from the Rochester Institute of Technology.
 
 I spend most of my time tinkering with programming languages, but I'm always open to trying new things.
 
