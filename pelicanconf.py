@@ -4,9 +4,10 @@ from __future__ import unicode_literals
 
 THEME = 'themes/msoucy'
 AUTHOR = u'Matt Soucy'
-SITENAME = u'insoucyant'
-TAGLINE = u'Code, music, and sarcasm'
+SITENAME = u'msoucy.me'
+TAGLINE = u'Code, games, and sarcasm'
 SITEURL = 'http://msoucy.me'
+META_IMAGE = SITEURL + '/images/me.png'
 
 GITHUB_URL = 'https://github.com/msoucy/'
 
@@ -23,7 +24,6 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS = (
-        ('My Code', 'http://code.msoucy.me'),
         ('RIT FOSSBox', 'http://foss.rit.edu'),
         ('RIT CSH', 'http://csh.rit.edu'),
         ('Helixoide Blog', 'http://blog.helixoide.com'),
@@ -77,7 +77,8 @@ AUTHOR_DATA = {
     "email": "msoucy@csh.rit.edu",
     "g+": "http://gplus.to/msoucy",
     "linkedin": "msoucy",
-    "github": GITHUB_URL
+    "github": GITHUB_URL,
+    "twitter": "msoucy93"
 }
 
 ASSET_SOURCE_PATHS = (
