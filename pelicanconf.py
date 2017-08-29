@@ -56,7 +56,13 @@ EXTRA_PATH_METADATA = {
     "extras/keybase.txt": {"path": "keybase.txt"}
 }
 
-MD_EXTENSIONS = ['codehilite', 'extra', 'sane_lists']
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite' : {},
+        'markdown.extensions.extra' : {},
+        'markdown.extensions.sane_lists' : {}
+    }
+}
 DEFAULT_DATE = "fs"
 
 # Custom settings for the msoucy theme
@@ -81,6 +87,6 @@ AUTHOR_DATA = {
     "twitter": "msoucy93"
 }
 
-ASSET_SOURCE_PATHS = (
+ASSET_SOURCE_PATHS = [
     'static',
-)
+]
