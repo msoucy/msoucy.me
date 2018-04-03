@@ -49,7 +49,7 @@ public class RaiseElevator extends Command {
 
 While this is concise, it can be made even more clear and easy to read:
 
-```cs
+```csharp
 public class RaiseElevator extends Command {
 
     public RaiseArm() {
