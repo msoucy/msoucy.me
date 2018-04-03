@@ -25,4 +25,3 @@ CACHE_CONTENT = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = 'insoucyant'
-GOOGLE_ANALYTICS = "UA-47605500-1"
