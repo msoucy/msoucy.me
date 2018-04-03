@@ -26,7 +26,7 @@ Its primary purpose is to allow commands to be written inline with the subsystem
 
 ```java
 class Lift {
-	// ...
+    // ...
 
     public Command GoUp() {
         return new SubsystemCommand(this) {
@@ -45,7 +45,7 @@ class Lift {
                 return false;
             }
         };
-	}
+    }
 }
 ```
 
@@ -59,10 +59,10 @@ It's designed for instant commands that just call a single function:
 
 ```java
 class Lift {
-	// ...
-	public Command Brake() {
+    // ...
+    public Command Brake() {
         return new ActionCommand("Brake", this, this::engageBrake);
-	}
+    }
 }
 ```
 
@@ -71,10 +71,10 @@ Instead of passing in a function reference, a developer can pass a lambda direct
 
 ```java
 class Lift {
-	// ...
-	public Command GoHigh() {
-		return new ActionCommand("Go High", this, () -> setHeight(Heights.HIGH));
-	}
+    // ...
+    public Command GoHigh() {
+        return new ActionCommand("Go High", this, () -> setHeight(Heights.HIGH));
+    }
 }
 ```
 
@@ -84,16 +84,16 @@ Where the other two are mainly meant for running single actions, [CommandChain][
 
 ```java
 class Lift {
-	// ...
-	public Command ClimbUp() {
-			return new CommandChain("Climb Up")
-						.then(DisengageBrake())
-						.then(ShiftToHighGear())
-						.then(GoToHeight(LiftHeights.kClimb, true))
-						.then(ShiftToLowGear())
-						.then(GoToHeight(LiftHeights.kScaleLow, false))
-						.then(Brake());
-	}
+    // ...
+    public Command ClimbUp() {
+        return new CommandChain("Climb Up")
+                   .then(DisengageBrake())
+                   .then(ShiftToHighGear())
+                   .then(GoToHeight(LiftHeights.kClimb, true))
+                   .then(ShiftToLowGear())
+                   .then(GoToHeight(LiftHeights.kScaleLow, false))
+                   .then(Brake());
+    }
 }
 ```
 
