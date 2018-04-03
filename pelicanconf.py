@@ -84,7 +84,8 @@ AUTHOR_DATA = {
     "g+": "http://gplus.to/msoucy",
     "linkedin": "msoucy",
     "github": GITHUB_URL,
-    "twitter": "msoucy93"
+    "twitter": "msoucy93",
+    "mastodon": "http://mastodon.social/@msoucy"
 }
 
 ASSET_SOURCE_PATHS = [
