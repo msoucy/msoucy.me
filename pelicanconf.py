@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from collections import OrderedDict
 
 THEME = 'themes/msoucy'
 AUTHOR = u'Matt Soucy'
@@ -79,14 +80,14 @@ SEMINARS = (
     ("Build Systems Suck", "bss"),
     ("Using Git in an FRC Team", "git-frc"),
 )
-AUTHOR_DATA = {
-    "email": "msoucy@csh.rit.edu",
-    "g+": "http://gplus.to/msoucy",
-    "linkedin": "msoucy",
-    "github": GITHUB_URL,
-    "twitter": "msoucy93",
-    "mastodon": "http://mastodon.social/@msoucy"
-}
+AUTHOR_DATA = OrderedDict([
+    ("email", "mailto:msoucy@csh.rit.edu"),
+    ("resume", SITEURL + "/extras/resume.pdf"),
+    ("github", GITHUB_URL),
+    ("linkedin", "http://www.linkedin.com/in/msoucy"),
+    ("mastodon", "http://mastodon.social/@msoucy"),
+    ("twitter", "http://twitter.com/msoucy93"),
+])
 
 ASSET_SOURCE_PATHS = [
     'static',
