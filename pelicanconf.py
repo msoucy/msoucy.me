@@ -84,9 +84,9 @@ AUTHOR_DATA = OrderedDict([
     ("email", "mailto:msoucy@csh.rit.edu"),
     ("resume", SITEURL + "/extras/resume.pdf"),
     ("github", GITHUB_URL),
-    ("linkedin", "http://www.linkedin.com/in/msoucy"),
-    ("mastodon", "http://mastodon.social/@msoucy"),
-    ("twitter", "http://twitter.com/msoucy93"),
+    ("linkedin", "https://www.linkedin.com/in/msoucy"),
+    ("mastodon", "https://mastodon.social/@msoucy"),
+    ("twitter", "https://twitter.com/msoucy93"),
 ])
 
 ASSET_SOURCE_PATHS = [
