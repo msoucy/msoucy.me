@@ -4,3 +4,4 @@ output
 drafts
 cache
 .venv
+__pycache__/
