@@ -32,6 +32,7 @@ LINKS = (
         ('[three]Bean', 'http://threebean.org'),
         ('DGonyeo', 'http://blog.gonyeo.com'),
         ('loothelion', 'http://loothelion.rocks'),
+        ('coldsauce', 'https://blog.stefanaleksic.com'),
  )
 
 PLUGIN_PATHS = ['plugins']
