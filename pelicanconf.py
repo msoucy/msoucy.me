@@ -25,7 +25,7 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS = (
-        ('RIT FOSSBox', 'http://foss.rit.edu'),
+        ('RIT FOSSBox', 'http://fossr.it'),
         ('RIT CSH', 'http://csh.rit.edu'),
         ('Helixoide Blog', 'http://blog.helixoide.com'),
         ('ryansb', 'http://rsb.io'),

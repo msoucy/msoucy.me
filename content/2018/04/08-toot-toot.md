@@ -59,10 +59,8 @@ Toot controls
 
 Much like Twitter posts, toots can be embedded:
 
-<center>
-	<iframe src="https://mastodon.social/@msoucy/99825585254720557/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe>
-	<script src="https://mastodon.social/embed.js" async="async"></script>
-</center>
+<iframe src="https://mastodon.social/@msoucy/99825585254720557/embed" class="mastodon-embed" width="400"></iframe>
+<script src="https://mastodon.social/embed.js" async="async"></script>
 
 Pictures can be attached, as well, and any particular instance can have their own nonstandard "emoji" that get displayed.
 Naturally, topics (or for all those darn kids, "hashtags") also exist, and can be created with familiar `#topic` syntax.
@@ -82,9 +80,9 @@ Suggested follows
 So far, I've found a few accounts that I follow that I'd like to shout out to:
 
 - [Gargron](https://mastodon.social/@Gargron), the Mastodon lead developer
-- [rowletbot](https://mastodon.social/@rowletbot), a cute and open source Pokemon character bot that brightens your day
 - [FSF](https://status.fsf.org/fsf), the Free Software Foundation
 - [cwebber](https://octodon.social/@cwebber), a developer for ActivityPub, a technology used by Mastodon
+- [rowletbot](https://mastodon.social/@rowletbot), a cute and open source Pokemon character bot that brightens your day
 
 Conclusion
 ==========
