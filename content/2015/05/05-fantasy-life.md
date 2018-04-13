@@ -4,7 +4,7 @@ Category: games
 This time around, I decided to review a charming little 3DS game called [Fantasy Life][].
 A friend of mine, [Alex][], played it during November and gave her impressions, so I figured that while she's writing about Bravely Default like I did [a few months ago][Bravely Default review], I'll write about Fantasy Life.
 
-###### Note: this review was started in February 2015, but I only had a chance to write the last bits in May
+*Note: this review was started in February 2015, but I only had a chance to write the last bits in May*
 
 Fantasy Life's big concept is its job system - there are twelve classes, called Lifes, that are divided into three categories:
 
@@ -28,7 +28,7 @@ It's entirely possible to go through the main story while only working on one li
 I found that it was frustrating to rely on stores to sell powerful items, so I started changing Lifes more frequently, felling trees, collecting ore, then becoming a Carpenter to shape a powerful wand.
 This gave me more control over the items and abilities I had, though it took longer to progress. For most of the game, this didn't feel like a typical grind - hunting down rare creatures and ores was an adventure, and the bounty system made it interesting to juggle what you wanted most from your adventure. (In the bounty system, certain creatures/trees/rocks drop bounty items that follow you around. Only three bounty items can exist at a time, and they all have health, so you have to protect your bounty or you lose it)
 
-One interesting thing was how they did Gather-type Lifes. Combat is easy to understand, it's essentially "fight monsters, get experience". Crafting has you working to create specific things. But gathering? The way that Miner and Woodcutter work is that there are specific locations (ore deposits and trees) that you go to, and through proper timing and positioning (each tree/deposit as a Sweet Spot that takes extra damage) you whittle down its health while avoiding reducing your own stamina bar too much. "Boss Rocks" and "Boss Trees" have the additional challenges of regenerating health and a moving Sweet Spot, so even though you're essentially fighting a rock it still FEELS exciting.
+One interesting thing was how they did Gather-type Lifes. Combat is easy to understand, it's essentially "fight monsters, get experience". Crafting has you working to create specific things. But gathering? The way that Miner and Woodcutter work is that there are specific locations (ore deposits and trees) that you go to, and through proper timing and positioning (each tree/deposit has a Sweet Spot that takes extra damage) you whittle down its health while avoiding reducing your own stamina bar too much. "Boss Rocks" and "Boss Trees" have the additional challenges of regenerating health and a moving Sweet Spot, so even though you're essentially fighting a rock it still FEELS exciting.
 Fishing is similar, but instead of moving around you choose when to reel, timing it so that your stamina stays high and the line doesn't snap. You also have to worry about the fish pulling in a specific direction, at which point you put slack into the line in that direction or the line will get closer to breaking. "Boss Fish" are like "Boss Rocks", with regenerating health, but also specific patterns in when they pull in a direction.
 With all of the Gather-type Lifes, you have a few special moves that you can use to deal massive "damage", at the expense of stamina. This helps add some more strategy to the mix.
 
