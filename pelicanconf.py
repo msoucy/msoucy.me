@@ -60,9 +60,9 @@ EXTRA_PATH_METADATA = {
 
 MARKDOWN = {
     'extension_configs': {
-        'markdown.extensions.codehilite' : {},
-        'markdown.extensions.extra' : {},
-        'markdown.extensions.sane_lists' : {}
+        'markdown.extensions.codehilite': {},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.sane_lists': {}
     }
 }
 DEFAULT_DATE = "fs"

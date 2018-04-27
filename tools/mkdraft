@@ -19,7 +19,8 @@ def parse_args(argv):
     parser.add_argument('--title', '-t', help="Page title", default="")
     parser.add_argument("--category", "-c", help="Page category", default="")
     parser.add_argument("--tags", nargs="+", default=[], help="Page tags")
-    parser.add_argument("--parts", "-p", nargs="+", default=[], help="Page parts")
+    parser.add_argument("--parts", "-p",
+                        nargs="+", default=[], help="Page parts")
     return parser.parse_args(argv)
 
 
