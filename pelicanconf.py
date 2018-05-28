@@ -25,13 +25,13 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS = (
-        ('RIT FOSSBox', 'http://fossr.it'),
+        # ('RIT FOSSBox', 'http://fossr.it'),
         ('RIT CSH', 'http://csh.rit.edu'),
-        ('Helixoide Blog', 'http://blog.helixoide.com'),
+        # ('Helixoide Blog', 'http://blog.helixoide.com'),
         ('ryansb', 'http://rsb.io'),
         ('[three]Bean', 'http://threebean.org'),
-        ('DGonyeo', 'http://blog.gonyeo.com'),
-        ('loothelion', 'http://loothelion.rocks'),
+        # ('DGonyeo', 'http://blog.gonyeo.com'),
+        # ('loothelion', 'http://loothelion.rocks'),
         ('coldsauce', 'https://blog.stefanaleksic.com'),
  )
 

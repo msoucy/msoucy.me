@@ -10,6 +10,7 @@ pelican = "*"
 markdown = "*"
 pyscss = "*"
 cssmin = "*"
+webassets = "*"
 
 [requires]
 python_version = "3.6"
