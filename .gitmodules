@@ -3,9 +3,9 @@
 	url = https://github.com/getpelican/pelican-plugins.git
 [submodule "themes"]
 	path = themes
-	url = git@github.com:msoucy/insoucyant.theme.git
+	url = https://github.com/msoucy/insoucyant.theme.git
 	ignore = dirty
 [submodule "Presentations"]
 	path = Presentations
-	url = git@github.com:msoucy/Presentations.git
+	url = https://github.com/msoucy/Presentations.git
 	ignore = dirty
