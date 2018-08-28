@@ -79,6 +79,20 @@ def mastodonSnippet(text):
 
     return wrapper
 
+def youtubeSnippet(text):
+    from markdown.util import etree
+
+    video = etree.Element('iframe')
+    video.set('width', '560')
+    video.set('height', '315')
+    video.set('src', 'https://www.youtube-nocookie.com/embed/' + text +
+              '?rel=0')
+    video.set('frameborder', '0')
+    video.set('allow', 'autoplay; encrypted-media')
+    video.set('allowfullscreen', 'allowfullscreen')
+    return video
+
+
 
 MARKDOWN = {
     'extension_configs': {
@@ -87,7 +101,8 @@ MARKDOWN = {
         'markdown.extensions.sane_lists': {},
         'mdx_snippets': { 'configs': {
                 'handlers': {
-                    'mastodon': mastodonSnippet
+                    'mastodon': mastodonSnippet,
+                    'youtube': youtubeSnippet
                 }
             }
         }
