@@ -58,11 +58,39 @@ EXTRA_PATH_METADATA = {
     "extras/keybase.txt": {"path": "keybase.txt"}
 }
 
+
+def mastodonSnippet(text):
+    from urllib import parse
+    from markdown.util import etree
+
+    wrapper = etree.Element('div')
+
+    element = etree.SubElement(wrapper, 'iframe')
+    element.set('src', text + '/embed')
+    element.set('class', 'mastodon-embed')
+    element.set('style', 'max-width: 100%; border: 0')
+    element.set('width', '400')
+
+    embedElement = etree.SubElement(wrapper, 'script')
+    embedElement.set('async', 'async')
+    url = parse.urlparse(text)
+    embedUrl = parse.urlunparse(('https', url.netloc, 'embed.js', '', '', ''))
+    embedElement.set("src", embedUrl)
+
+    return wrapper
+
+
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {},
         'markdown.extensions.extra': {},
-        'markdown.extensions.sane_lists': {}
+        'markdown.extensions.sane_lists': {},
+        'mdx_snippets': { 'configs': {
+                'handlers': {
+                    'mastodon': mastodonSnippet
+                }
+            }
+        }
     }
 }
 DEFAULT_DATE = "fs"

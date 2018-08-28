@@ -59,8 +59,7 @@ Toot controls
 
 Much like Twitter posts, toots can be embedded:
 
-<iframe src="https://mastodon.social/@msoucy/99825585254720557/embed" class="mastodon-embed" width="400"></iframe>
-<script src="https://mastodon.social/embed.js" async="async"></script>
+{{< mastodon "https://mastodon.social/@msoucy/99825585254720557" >}}
 
 Pictures can be attached, as well, and any particular instance can have their own nonstandard "emoji" that get displayed.
 Naturally, topics (or for all those darn kids, "hashtags") also exist, and can be created with familiar `#topic` syntax.
