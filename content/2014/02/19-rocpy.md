@@ -1,6 +1,8 @@
+---
 Title: RocPy: Rochester Python Meetup
 Category: life
 Tags: hfoss
+---
 
 This week, I went to a meeting of [RocPY], the Rochester Python user group. [A friend] and I travelled with the HFOSS class as part of the curriculum. I was interested at the thought of attending my first user group meetup, but I was sad to say that it left a bit to be desired.
 

@@ -1,6 +1,8 @@
+---
 Title: Home Stretch Hackathon
 Category: code
 Tags: advfoss,hackathons
+---
 
 Another recent hackathon that occurred was the Home Stretch Hackathon.
 

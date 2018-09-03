@@ -1,7 +1,8 @@
+---
 Title: Journey, part two
 Category: life
 Series: Journey Concert 2013
-
+---
 
 Yesterday, I boarded a bus leaving from Concord. Today, I boarded a bus heading to Concord. What's changed this weekend? I got a little taste of paradise.
 

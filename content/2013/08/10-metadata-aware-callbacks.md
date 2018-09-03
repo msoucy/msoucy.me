@@ -1,6 +1,8 @@
+---
 Title: Metadata-aware Callbacks
 Category: code
 Tags: c++
+---
 
 The Problem
 -----------

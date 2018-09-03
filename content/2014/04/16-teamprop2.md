@@ -1,6 +1,8 @@
+---
 Title: HFOSS Final Project Team Proposal
 Category: code
 Tags: hfoss
+---
 
 My team members and our roles
 

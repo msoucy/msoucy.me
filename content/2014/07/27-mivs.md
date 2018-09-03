@@ -1,5 +1,7 @@
+---
 Title: MIVS: Medical Image Viewing System
 Category: code
+---
 
 Last semester at school, I decided to take a course on software architecture. The class was heavily focused on two main assignments, exercises in creating a design for a program and refactoring an existing design into something that resembled sane.
 

@@ -1,5 +1,7 @@
+---
 Title: Review: Etrian Odyssey 2 Untold
 Category: games
+---
 
 Most recently, the game I've been sinking time into is Etrian Odyssey Untold 2, by Atlus.
 

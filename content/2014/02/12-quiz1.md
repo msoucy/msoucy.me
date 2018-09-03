@@ -1,7 +1,9 @@
+---
 Title: HFOSS Quiz 1
 Category: code
 Tags: hfoss
 slug: hfoss-quiz1
+---
 
 What are the titles of each Pillar?
 

@@ -1,7 +1,9 @@
+---
 Title: FIRST Software Architecture: Command Based Programming
 Category: code
 Series: FIRST Software Architecture
 Tags: frc
+---
 
 *This post is a modified and expanded form of a [presentation] given to my FIRST Robotics Competition team*
 

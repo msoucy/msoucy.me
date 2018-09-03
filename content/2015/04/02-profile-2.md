@@ -1,6 +1,8 @@
+---
 Title: Project Profile: Hardware
 Category: class
 Tags: bizlegfoss,foss
+---
 
 [Profile 2][proposal] (because they're zero-indexed) is now [posted][presentation]
 

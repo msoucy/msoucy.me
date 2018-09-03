@@ -1,5 +1,7 @@
+---
 Title: Review: Simon Tatham's Puzzles
 Category: games
+---
 
 Sometimes, you stumble across something that's just too good not to share.
 By sheer chance, I stumbled across one such collection over a decade ago, and it's stayed with me since.

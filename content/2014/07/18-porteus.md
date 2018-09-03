@@ -1,5 +1,7 @@
+---
 Title: Playing with Portable Linux
 Category: code
+---
 
 The other day, I came to a realization: I have too many flash drives.
 Because of modern network speeds, I hardly have a use for most of them now, and the most use that they've gotten is passing around installers and wifi keys to a set of computers.

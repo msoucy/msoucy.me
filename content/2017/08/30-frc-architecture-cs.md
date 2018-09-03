@@ -1,7 +1,9 @@
+---
 Title: FIRST Software Architecture: Programming in C#
 Category: code
 Series: FIRST Software Architecture
 Tags: frc
+---
 
 # Introduction
 

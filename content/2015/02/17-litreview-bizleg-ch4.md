@@ -1,6 +1,8 @@
+---
 Title: Lit Review: Patent Defenses for FOSS Developers
 Category: class
 Tags: bizlegfoss,foss
+---
 
 The most recent assignment was to read chapter 4 of the [FOSS Primer][foss-primer].
 

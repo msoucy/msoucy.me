@@ -1,6 +1,8 @@
+---
 Title: HFOSS Quiz 2: Rhetological Fallacies
 Category: life
 Tags: hfoss
+---
 
 When?
 

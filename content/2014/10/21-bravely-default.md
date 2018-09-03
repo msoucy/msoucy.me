@@ -1,5 +1,7 @@
+---
 Title: Review: Bravely Default
 Category: games
+---
 
 So, most of my blog posts so far have been about code, with the occasional discussion of things I do (concerts, hackathons). Today, I woke up with a weird urge to write about something different: a game.
 

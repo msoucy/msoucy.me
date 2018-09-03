@@ -1,6 +1,8 @@
+---
 Title: Intersecting Interfaces in Java
 Category: code
 Tags: java
+---
 
 During the off-season for FIRST Robotics, I like to examine the code that was produced and try to find ways to improve.
 Sometimes this involves looking at other teams' code.

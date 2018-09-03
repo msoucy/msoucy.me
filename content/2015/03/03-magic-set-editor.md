@@ -1,6 +1,8 @@
+---
 Title: Magic Set Editor
 Category: code
 Tags: linux-dev,foss,c++,bizlegfoss
+---
 
 I haven't been able to post much about actual projects I've been working on lately, so I figured that I'd at least do a little introduction.
 

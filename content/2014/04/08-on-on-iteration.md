@@ -1,7 +1,9 @@
+---
 Title: On "On Iteration"
 Category: code
+---
 
-###### This post was originally on an internal group for a class I'm in involving design patterns and architecture. It was slightly updated to suit this blog.
+*This post was originally on an internal group for a class I'm in involving design patterns and architecture. It was slightly updated to suit this blog.*
 
 Very few people would accuse C++ of being a well-thought-out language. It has quite a few inconsistencies, weird syntax rules, and [some rather strange things that it allows][evil C]. With that said, I feel that its attempt to be backwards-compatible with C caused one of the ugliest mistakes it has: Iterators.
 

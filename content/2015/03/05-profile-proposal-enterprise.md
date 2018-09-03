@@ -1,6 +1,8 @@
+---
 Title: Project Profile Team Proposal: Enterprise
 Category: class
 Tags: bizlegfoss,foss
+---
 
 > List your other team members below
 

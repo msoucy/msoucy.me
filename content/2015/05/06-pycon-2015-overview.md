@@ -1,7 +1,9 @@
+---
 Title: Adventures at PyCon 2015
 Category: life
 Tags: python, bizlegfoss, foss
 Series: PyCon 2015
+---
 
 This spring was unusual for me - apart from my rather [irritating illness][pneumonia], I also had the honor of going to [PyCon 2015][].
 Surprisingly, I was there "on business" - I was working for the [FOSS@MAGIC][] program, and when I wasn't visiting talks I was manning our table, talking about the work that the students involved have done.

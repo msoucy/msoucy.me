@@ -1,6 +1,8 @@
+---
 Title: RESTZZZ Final Thoughts
 Category: code
 Tags: advfoss
+---
 
 Since my [previous][RESTZZZ Proposal] [posts][RESTZZZ Update], I've made enough progress with `RESTZZZ` that I've been able to [release] something that I consider a working demo. `RESTZZZ` started as a project with not quite clearly-defined goals, just the objective of creating a more convenient way to access 0mq messages.
 

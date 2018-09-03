@@ -1,6 +1,8 @@
+---
 Title: Lit Review: Company Promises
 Category: class
 Tags: bizlegfoss
+---
 
 One interesting thing that some companies do is create promises concerning software patents.
 Among these are [Red Hat][], [IBM][], and [Google][].

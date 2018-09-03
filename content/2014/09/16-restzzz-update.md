@@ -1,7 +1,9 @@
+---
 Title: RESTZZZ Status Update
 Category: code
 Tags: advfoss
 Series: RESTZZZ
+---
 
 Although it's been a couple of weeks, I have a bit of a status update on the [project] from before.
 

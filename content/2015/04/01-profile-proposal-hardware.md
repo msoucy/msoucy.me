@@ -1,6 +1,8 @@
+---
 title: Project Profile Team Profile 2: Hardware Product
 category: class
 tags: bizlegfoss,foss
+---
 
 > Team Members
 

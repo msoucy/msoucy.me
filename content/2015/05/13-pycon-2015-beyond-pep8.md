@@ -1,7 +1,9 @@
+---
 Title: PyCon 2015: Beyond PEP8
 Category: code
 Tags: python,bizlegfoss,foss,d
 Series: PyCon 2015
+---
 
 One of the talks I attended at [PyCon 2015][] was called [Beyond PEP8][].
 

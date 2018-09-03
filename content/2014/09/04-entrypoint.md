@@ -1,6 +1,8 @@
+---
 Title: Entry Point
 Category: code
 Tags: foss,advfoss,python,c++
+---
 
 Recently, I found myself getting frustrated at the lack of control I had over shell scripts. Many times, I caught myself realizing that a single C function could do all that I needed.
 

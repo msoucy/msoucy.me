@@ -1,6 +1,8 @@
+---
 Title: BizLegFOSS: Answers to Final Questions
 Category: class
 Tags: foss,bizlegfoss
+---
 
 As a group, the [bizlegfoss][] class decided on the questions that we wanted to have on the final.
 These questions aren't submitted in class, though, but as a blog post.

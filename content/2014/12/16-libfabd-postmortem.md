@@ -1,6 +1,8 @@
+---
 Title: Postmortem: libfabd
 Category: code
 Tags: advfoss
+---
 
 My final project for advfoss, [libfabd], was different than the first two.
 

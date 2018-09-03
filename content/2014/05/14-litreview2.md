@@ -1,6 +1,8 @@
+---
 Title: Literature Review 2: Rhetological Fallacies
 Category: life
 Tags: hfoss
+---
 
 - Who
 	- David McCandless

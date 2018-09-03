@@ -1,6 +1,8 @@
+---
 Title: Playing with Golang
 Category: code
 Tags: hackathons
+---
 
 As part of the Spring 2014 [Hack Upstate], my team decided to create our project in Go (AKA Golang, AKA [Issue 9]). [One friend] will be using it for an upcoming co-op, and [the other friend] and I figured that it would be an interesting language to learn. Here are some of the random thoughts we have on the language:
 

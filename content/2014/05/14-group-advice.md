@@ -1,6 +1,8 @@
+---
 Title: Group Advice
 Category: life
 Tags: hfoss
+---
 
 Sometimes, things just get to be too much.
 

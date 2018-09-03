@@ -1,8 +1,10 @@
+---
 Title: Aspect-based events in Python
 Category: code
 Tags: advfoss
+---
 
-###### This post is modified from a [presentation](/seminars/aspects) I gave a while back
+*This post is modified from a [presentation](/seminars/aspects) I gave a while back*
 
 # What are events?
 

@@ -1,5 +1,7 @@
+---
 Title: Thinking Inside the (FOSS) Box
 Category: life
+---
 
 One of the groups that I'm involved in on campus is the [FOSS Box](http://foss.rit.edu).
 We describe ourselves as the "center of gravity for all things free and open source at RIT", which is a pretty apt description.

@@ -1,6 +1,8 @@
+---
 Title: Pull Request: Nintendo DWC Emulator
 Category: code
 Tags: hfoss,foss,python
+---
 
 I've found that I enjoy cleaning up code - specifically, code that was written for a language it clearly isn't being programmed in.
 The classic example happened when I was grading CS1 assignments in Python - the people who had come from a Java-based background were a bit clueless about the way certain things worked, and so would often reimplement things that are built in to the syntax or libraries.

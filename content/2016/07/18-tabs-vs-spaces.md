@@ -1,6 +1,8 @@
+---
 Title: Tabs vs Spaces
 Category: code
 Tags: humor
+---
 
 In honor of the fantastic [Silicon Valley][] third season, I felt like posting to show that not only have I not completely vanished off the face of the earth, but I also have an opinion on one of the greatest (and most useless) debates of computing: [tabs vs spaces][].
 

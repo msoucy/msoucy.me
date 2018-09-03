@@ -1,6 +1,8 @@
+---
 Title: Literature Review: What Is Open Source
 Category: life
 Tags: hfoss
+---
 
 In our HFOSS course, we are reading segments from a collection of freely-available textbooks. One particular chapter that we're reading is [What Is Open Source], by Steve Weber.
 

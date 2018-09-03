@@ -1,5 +1,7 @@
+---
 Title: SECOND: Returning to FIRST
 Category: life
+---
 
 Over winter break I try to stay busy. A little bit of intern work, a little bit of video games...and a little bit of [FIRST].
 

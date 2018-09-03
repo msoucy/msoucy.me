@@ -1,6 +1,8 @@
+---
 Title: Community Contribution: DUB+FISH
 Category: code
 Tags: advfoss,foss
+---
 
 Back in the summer, I noticed a post about [bash completions] for [dub], the D package manager. This is awesome, and works nicely for bash, but some people [use other shells][FISH problems].
 

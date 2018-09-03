@@ -1,5 +1,7 @@
+---
 Title: Mental Health
 Category: life
+---
 
 Not enough people talk about mental illness, though many suffer from one. I need to get something off my chest.
 

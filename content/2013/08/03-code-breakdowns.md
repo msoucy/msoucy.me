@@ -1,5 +1,7 @@
+---
 Title: Code Breakdowns
 Category: code
+---
 
 At work, I notice a lot of strange things.
 Legacy code, written in "C++" by developers who were only really familiar with C, or places where the developers fought the existing tools (and lost).

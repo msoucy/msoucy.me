@@ -1,6 +1,8 @@
+---
 Title: Linux Software Development: Nautical Proposal
 Category: code
 Tags: linux-dev,c++,foss,bizlegfoss
+---
 
 This post is slightly late, because my server had some unexpected downtime...
 

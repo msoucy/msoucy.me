@@ -1,6 +1,8 @@
+---
 Title: Lit Review: Common Trademark Issues
 Category: class
 Tags: bizlegfoss
+---
 
 Today's reading was chapter 5 from the [SFLC FOSS Primer][primer], "Common Trademark Issues".
 

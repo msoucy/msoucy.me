@@ -1,7 +1,9 @@
+---
 Title: Hack Upstate, part 2
 Category: life
 Tags: hackathons
 Series: Hack Upstate 2013
+---
 
 What is a hackathon?
 The only way I can describe it is "a meeting of the minds, where people from all over come together to make the infeasable possible".

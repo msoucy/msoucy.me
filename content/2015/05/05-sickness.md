@@ -1,6 +1,8 @@
+---
 Title: Why I've Vanished
 Category: life
 Tags: bizlegfoss, linux-dev
+---
 
 I've been away for a while now (close to a month), so I figured that I should write a post explaining why.
 

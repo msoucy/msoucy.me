@@ -1,6 +1,8 @@
+---
 Title: ADVFOSS Hack Proposal 2
 Category: code
 Tags: advfoss
+---
 
 For Hack 2 of the [ADVFOSS] course, we should have two project proposals again.
 

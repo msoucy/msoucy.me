@@ -1,5 +1,7 @@
+---
 Title: I broke tmux
 Category: code
+---
 
 Normally I like making things, but on occasion I've been known to break them.
 

@@ -1,6 +1,8 @@
+---
 Title: Community Contribution: HAROLD (x6 Pull Request Combo)
 Category: code
 Tags: advfoss
+---
 
 I have a problem.
 

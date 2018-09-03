@@ -1,6 +1,8 @@
+---
 Title: Vid Review: Trademarks and Your Free and Open Source Project
 Category: class
 Tags: bizlegfoss
+---
 
 The most recent video we watched was "[Trademarks and Your Free and Open Source Project][video]".
 

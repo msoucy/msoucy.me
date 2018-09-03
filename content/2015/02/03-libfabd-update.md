@@ -1,6 +1,8 @@
+---
 Title: libfabd post update
 Category: code
 Tags: foss
+---
 
 When I wrote an [old post] about libfabd, I included a code sample:
 
@@ -42,7 +44,7 @@ private string takeown(char* cptr)
 }
 ```
 
-###### This doesn't use `fromStringz` found in the most recent version of phobos, as it's not available in all compilers yet.
+*This doesn't use `fromStringz` found in the most recent version of phobos, as it's not available in all compilers yet.*
 
 The function could be used easily, tacking it on the end of a call to a C function:
 

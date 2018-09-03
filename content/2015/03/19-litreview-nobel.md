@@ -1,6 +1,8 @@
+---
 Title: Lit Review: Nobel Prize in Economic Sciences
 Category: class
 Tags: bizlegfoss,foss
+---
 
 This week we read a [report][lit] about Jean Tirole, the 2014 recepient of the Nobel Prize in Economic Sciences.
 
