@@ -79,6 +79,7 @@ def mastodonSnippet(text):
 
     return wrapper
 
+
 def youtubeSnippet(text):
     from markdown.util import etree
 
@@ -93,14 +94,23 @@ def youtubeSnippet(text):
     return video
 
 
+def gistSnippet(text):
+    from markdown.util import etree
+
+    tag = etree.Element('script')
+    tag.set('src', 'https://gist.github.com/' + text + '.js')
+    return tag
+
 
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {},
         'markdown.extensions.extra': {},
         'markdown.extensions.sane_lists': {},
-        'mdx_snippets': { 'configs': {
+        'mdx_snippets': {
+            'configs': {
                 'handlers': {
+                    'gist': gistSnippet,
                     'mastodon': mastodonSnippet,
                     'youtube': youtubeSnippet
                 }
