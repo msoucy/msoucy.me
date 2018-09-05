@@ -28,11 +28,13 @@ def main(argv):
     argv = argv or sys.argv
     args = parse_args(argv[1:])
     with open(os.path.join("drafts", args.slug + ".md"), 'w') as fi:
+        print("---", file=fi)
         print(template.format(args), file=fi)
         if args.tags:
             print("Tags: {0}".format(",".join(args.tags)), file=fi)
         if args.parts:
             print("Parts: {0}".format(",".join(args.parts)), file=fi)
+        print("---", file=fi)
         print("", file=fi)
 
 
