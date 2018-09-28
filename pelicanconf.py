@@ -38,10 +38,13 @@ LINKS = (
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'assets',
-    'sitemap',
-    'series',
+    'better_code_samples',
+    'filetime_from_git',
     'neighbors',
+    'pelican-open_graph',
     'render_math',
+    'series',
+    'sitemap',
 ]
 
 SITEMAP = {"format": "xml"}

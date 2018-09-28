@@ -11,6 +11,9 @@ markdown = "*"
 pyscss = "*"
 cssmin = "*"
 webassets = "*"
+"beautifulsoup4" = "*"
+"html5lib" = "*"
+gitpython = "*"
 
 [requires]
 python_version = "3.6"
