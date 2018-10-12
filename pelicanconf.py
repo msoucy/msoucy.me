@@ -38,7 +38,6 @@ LINKS = (
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'assets',
-    'better_code_samples',
     'filetime_from_git',
     'neighbors',
     'pelican-open_graph',
