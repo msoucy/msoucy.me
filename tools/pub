@@ -10,20 +10,20 @@ parser = argparse.ArgumentParser()
 parser.add_argument("slug")
 args = parser.parse_args()
 
-fold = time.strftime("content/%Y/%m")
+folder = time.strftime("content/%Y/%m")
 try:
-    os.makedirs(fold)
+    os.makedirs(folder)
 except OSError:
     pass
 rawslug = os.path.basename(args.slug)
 rawslug = os.path.splitext(rawslug)[0]
-newfile = path.join(fold, time.strftime('%d-') + rawslug + ".md")
+newfile = path.join(folder, time.strftime('%d-') + rawslug + ".md")
 oldfile = args.slug
 if not os.path.isfile(oldfile):
-    oldfile = path.join("drafts", args.slug + ".md")
+    oldfile = path.join("content", "drafts", args.slug + ".md")
 
-with open(oldfile) as infi:
-    with open(newfile, 'w') as outfi:
-        for line in (line for line in infi if "Status: draft" not in line):
+with open(oldfile) as infi, open(newfile, 'w') as outfi:
+    for line in infi:
+        if "Status: draft" not in line:
             print(line, end='', file=outfi)
 os.remove(oldfile)

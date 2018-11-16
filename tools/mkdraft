@@ -27,7 +27,7 @@ def parse_args(argv):
 def main(argv):
     argv = argv or sys.argv
     args = parse_args(argv[1:])
-    with open(os.path.join("drafts", args.slug + ".md"), 'w') as fi:
+    with open(os.path.join("content", "drafts", args.slug + ".md"), 'w') as fi:
         print("---", file=fi)
         print(template.format(args), file=fi)
         if args.tags:

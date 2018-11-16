@@ -7,7 +7,6 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
-DRAFTDIR=drafts
 
 SSH_HOST=msoucy.me
 SSH_PORT=22
@@ -30,7 +29,6 @@ help:
 	@echo '                                                                       '
 
 pub: rsync_upload
-
 
 html: clean $(OUTPUTDIR)/index.html
 
@@ -56,15 +54,12 @@ stopserver:
 	kill -9 `cat srv.pid`
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
-drafts:
-	rsync -ruv --delete $(DRAFTDIR) $(INPUTDIR)
-
 presentations:
 	$(MAKE) -C Presentations
 	mkdir -p $(OUTPUTDIR)/seminars
 	cp -r Presentations/output/* $(INPUTDIR)/seminars
 
-publish: presentations drafts
+publish: presentations
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	find output -name ".webassets-cache" | xargs rm -rf
 
@@ -74,4 +69,4 @@ ssh_upload: publish
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload drafts
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload presentations
