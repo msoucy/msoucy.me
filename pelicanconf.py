@@ -59,7 +59,6 @@ STATIC_PATHS = ['images', 'seminars', 'resources', 'extras']
 EXTRA_PATH_METADATA = {
     "extras/keybase.txt": {"path": "keybase.txt"}
 }
-DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 
