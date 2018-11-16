@@ -4,28 +4,28 @@ from __future__ import unicode_literals
 from collections import OrderedDict
 
 THEME = 'themes/msoucy'
-AUTHOR = u'Matt Soucy'
-SITENAME = u'msoucy.me'
-TAGLINE = u'Code, games, and sarcasm'
-SITEURL = 'http://msoucy.me'
-META_IMAGE = SITEURL + '/images/me.png'
+AUTHOR = 'Matt Soucy'
+SITENAME = 'msoucy.me'
+TAGLINE = 'Code, games, and sarcasm'
+SITEURL = ''
 
+PATH = 'content'
 GITHUB_URL = 'https://github.com/msoucy/'
 
 TIMEZONE = 'America/New_York'
 
-DEFAULT_LANG = u'en'
-
-PATH = 'content'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-        # ('RIT FOSSBox', 'http://fossr.it'),
+        ('FOSS@RIT', 'https://fossrit.github.io'),
         ('RIT CSH', 'http://csh.rit.edu'),
         # ('Helixoide Blog', 'http://blog.helixoide.com'),
         ('ryansb', 'http://rsb.io'),
@@ -59,6 +59,8 @@ STATIC_PATHS = ['images', 'seminars', 'resources', 'extras']
 EXTRA_PATH_METADATA = {
     "extras/keybase.txt": {"path": "keybase.txt"}
 }
+DEFAULT_PAGINATION = 10
+# RELATIVE_URLS = True
 
 
 def mastodonSnippet(text):

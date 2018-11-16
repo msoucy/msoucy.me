@@ -10,12 +10,13 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://msoucy.me'
+# If your site is available via HTTPS, make sure SITEURL begins with https://
+SITEURL = 'https://msoucy.me'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/category/%s.atom.xml'
-TAG_FEED_ATOM = 'feeds/tag/%s.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/category/{slug}.atom.xml'
+TAG_FEED_ATOM = 'feeds/tag/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 LOAD_CONTENT_CACHE = True
@@ -25,3 +26,4 @@ CACHE_CONTENT = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = 'insoucyant'
+#GOOGLE_ANALYTICS = ""
