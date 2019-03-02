@@ -18,12 +18,12 @@ The meetup was decent, because of the talks, but I still felt like I was looking
 
 [Advanced FOSS]: http://advfoss-ritigm.rhcloud.com/
 [RocPy]: http://www.rocpy.org/
-[February]: {filename}/2014/02/19-rocpy.md
-[restzzz]: {filename}/2014/09/16-restzzz-update.md
+[February]: {static}/2014/02/19-rocpy.md
+[restzzz]: {static}/2014/09/16-restzzz-update.md
 [Ryan Brown]: http://rsb.io/
 [hflossk]: https://github.com/decause/hflossk
 [One YAML to Rule Them All]: https://github.com/decause/hflossk/issues/473
 [RossDylan]: http://blog.helixoide.com/
 [Liam]: http://gearchicken.com/
 [surprise]: http://decausegonewild.reddit.com
-[Stallman Beards]: {filename}/2014/02/19-stallman-beard.md
+[Stallman Beards]: {static}/2014/02/19-stallman-beard.md

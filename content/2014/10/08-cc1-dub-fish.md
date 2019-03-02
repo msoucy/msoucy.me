@@ -15,6 +15,6 @@ I made it to the release notes!
 
 [bash completions]: http://forum.dlang.org/thread/syrdtxxkwcghkiuogxgq@forum.dlang.org#post-lptegj:2448d:241:40digitalmars.com
 [dub]: http://code.dlang.org/
-[FISH problems]: {filename}/2014/09/29-awesome-startup.md
+[FISH problems]: {static}/2014/09/29-awesome-startup.md
 [pull request]: https://github.com/D-Programming-Language/dub/pull/375
 [dub release post]: http://forum.dlang.org/thread/lvoqdv$2m78$1@digitalmars.com

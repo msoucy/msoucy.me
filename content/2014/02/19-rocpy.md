@@ -14,7 +14,7 @@ Overall, the meetup was alright, but I felt somewhat unsatisfied when I left. Th
 
 [RocPY]: http://www.rocpy.org/
 [A friend]: http://blog.gonyeo.com/ "Derek Gonyeo"
-[RepBot]: {filename}/2014/02/05-repbot.md
+[RepBot]: {static}/2014/02/05-repbot.md
 [another friend]: http://blog.helixoide.com/ "Ross Delinger"
-[Stallman Beards]: {filename}/2014/02/19-stallman-beard.md
+[Stallman Beards]: {static}/2014/02/19-stallman-beard.md
 
