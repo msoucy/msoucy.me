@@ -3,7 +3,11 @@ Title: Mental Health Quiz
 Category: life
 ...
 
-Below is a mental health quiz, provided with no context for now.
+Below is a mental health quiz that I took at one point.
+Fill in the answers based on the following:
+
+- 1 means "Rarely Applies"
+- 5 means "Consistently Applies"
 
 <div id="quizbody">
 </div>
@@ -61,7 +65,7 @@ Below is a mental health quiz, provided with no context for now.
             selector.setAttribute("value", "3")
             selector.setAttribute("id", "quiz-question-" + idx)
             quizBody.appendChild(selector)
-            quizBody.appendChild(document.createTextNode(el))
+            quizBody.appendChild(document.createTextNode(idx + ": " + el))
             quizBody.appendChild(document.createElement("br"))
             idx++
         })
