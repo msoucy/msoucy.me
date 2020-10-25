@@ -11,7 +11,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 SSH_HOST=msoucy.me
 SSH_PORT=22
 SSH_USER=msoucy
-SSH_TARGET_DIR=/var/www/html
+SSH_TARGET_DIR=/var/www/msoucy.me
 
 
 DEBUG ?= 0

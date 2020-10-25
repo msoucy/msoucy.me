@@ -137,4 +137,4 @@ These changes rely on a few C++11 features:
 
 The big change I'm happy about is that the wrapper parts are still standalone, and require minimal changes to adapt old code to the new system, where "new system" means "tie_cb and Environment". Although those could be made part of the DataSource library anyways, that kind of puts too much functionality in places that it doesn't belong in. The way the code above behaves, it merely uses C++11 function types instead of direct function pointers, with a forwarding function in place to handle the IFTI and conversion, which is a non-breaking change that is (quite possibly) more maintainable.
 
-[an earlier post]: {static}/2013/08/10-metadata-aware-callbacks.md
+[an earlier post]: {filename}/2013/08/10-metadata-aware-callbacks.md

@@ -54,7 +54,7 @@ ARTICLE_SAVE_AS = ARTICLE_URL + "index.html"
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_EXCLUDES = ['seminars', 'pages']
-STATIC_PATHS = ['images', 'seminars', 'resources', 'extras']
+STATIC_PATHS = ['images', 'seminars', 'extras']
 
 EXTRA_PATH_METADATA = {
     "extras/keybase.txt": {"path": "keybase.txt"}

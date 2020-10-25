@@ -18,8 +18,8 @@ I wrote a simple chat program a few years ago, as a way to test my [D bindings] 
 
 There is no easily accessible list of tools using 0mq, but I tried to make the tool as simple to use as possible.
 
-[RESTZZZ Proposal]: {static}/2014/09/02-advfoss-hack0.md
-[RESTZZZ Update]: {static}/2014/09/16-restzzz-update.md
+[RESTZZZ Proposal]: {filename}/2014/09/02-advfoss-hack0.md
+[RESTZZZ Update]: {filename}/2014/09/16-restzzz-update.md
 [release]: https://pypi.python.org/pypi/restzzz
 [repository]: http://code.msoucy.me/RESTZZZ
 [Weechat]: http://weechat.org
