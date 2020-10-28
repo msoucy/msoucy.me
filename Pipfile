@@ -14,6 +14,7 @@ webassets = "*"
 "beautifulsoup4" = "*"
 "html5lib" = "*"
 gitpython = "*"
+pelican-webassets = "*"
 
 [requires]
 python_version = "3.9"
