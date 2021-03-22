@@ -37,13 +37,13 @@ LINKS = (
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
-    'pelican_webassets',
+    'pelican.plugins.webassets',
+    'pelican.plugins.neighbors',
+    'pelican.plugins.render_math',
+    'pelican.plugins.series',
+    'pelican.plugins.sitemap',
     'filetime_from_git',
-    'neighbors',
     'pelican-open_graph',
-    'render_math',
-    'series',
-    'sitemap',
 ]
 
 SITEMAP = {"format": "xml"}
@@ -148,6 +148,6 @@ AUTHOR_DATA = OrderedDict([
 ])
 FBADMINS = "1188604437"
 
-ASSET_SOURCE_PATHS = [
+WEBASSET_SOURCE_PATHS = [
     'static',
 ]

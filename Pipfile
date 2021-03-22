@@ -7,14 +7,18 @@ name = "pypi"
 
 [packages]
 pelican = "*"
-markdown = "*"
-pyscss = "*"
 cssmin = "*"
 webassets = "*"
 "beautifulsoup4" = "*"
 "html5lib" = "*"
-gitpython = "*"
 pelican-webassets = "*"
+pelican-neighbors = "*"
+pelican-sitemap = "*"
+pelican-series = "*"
+pelican-render-math = "*"
+Markdown = "*"
+pyScss = "*"
+GitPython = "*"
 
 [requires]
 python_version = "3.9"
