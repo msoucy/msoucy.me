@@ -29,6 +29,7 @@ public class Arm {
 ```
 
 This had several flaws that we noticed:
+
 - It didn't seem to scale very well
 - It didn't have any grouping of items
 - There was no way to tell how the constants were supposed to be used

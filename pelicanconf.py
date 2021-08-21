@@ -44,6 +44,7 @@ PLUGINS = [
     'pelican.plugins.sitemap',
     'filetime_from_git',
     'pelican-open_graph',
+    'shortcodes',
 ]
 
 SITEMAP = {"format": "xml"}
