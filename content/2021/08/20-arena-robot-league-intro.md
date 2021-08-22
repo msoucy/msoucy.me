@@ -2,7 +2,7 @@
 Title: Arena Robot League Introduction
 Category: games
 Tags: game design
-Parts: Arena Robot League
+Series: Arena Robot League
 ---
 
 A long time ago, I had an idea to make a board game.
