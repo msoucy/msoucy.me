@@ -6,11 +6,10 @@ import os
 import sys
 
 
-template = r'''
+template = r'''---
 Title: {0.title}
 Category: {0.category}
-Status: draft
-'''.strip()
+Status: draft'''
 
 
 def parse_args(argv):
@@ -19,8 +18,7 @@ def parse_args(argv):
     parser.add_argument('--title', '-t', help="Page title", default="")
     parser.add_argument("--category", "-c", help="Page category", default="")
     parser.add_argument("--tags", nargs="+", default=[], help="Page tags")
-    parser.add_argument("--parts", "-p",
-                        nargs="+", default=[], help="Page parts")
+    parser.add_argument("--series", "-s", help="Series")
     return parser.parse_args(argv)
 
 
@@ -28,14 +26,12 @@ def main(argv):
     argv = argv or sys.argv
     args = parse_args(argv[1:])
     with open(os.path.join("content", "drafts", args.slug + ".md"), 'w') as fi:
-        print("---", file=fi)
         print(template.format(args), file=fi)
         if args.tags:
             print("Tags: {0}".format(",".join(args.tags)), file=fi)
-        if args.parts:
-            print("Parts: {0}".format(",".join(args.parts)), file=fi)
-        print("---", file=fi)
-        print("", file=fi)
+        if args.series:
+            print("Series:", args.series, file=fi)
+        print("---\n", file=fi)
 
 
 if __name__ == '__main__':
