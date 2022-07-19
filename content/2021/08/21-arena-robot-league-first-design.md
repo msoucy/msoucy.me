@@ -63,5 +63,5 @@ The first round problem was also easy to solve.
 Instead of starting with one student and no robots, each player can start with the same student, plus a Freshman student (no skill boosts but versatile), and a simple robot.
 This allows more freedom for the opening few moves.
 
-I'm still in the process of writing up these rule changes and the actual card effects based on them, but it's heplful for me to put my game design ideas down in a more prosaic form first.
+I'm still in the process of writing up these rule changes and the actual card effects based on them, but it's helpful for me to put my game design ideas down in a more prosaic form first.
 This way I have a record of what decisions I've made, and why, and hopefully some people can learn from my mistakes!
