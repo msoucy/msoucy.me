@@ -54,7 +54,7 @@ ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + "index.html"
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
-ARTICLE_EXCLUDES = ['seminars', 'pages']
+ARTICLE_EXCLUDES = ['seminars']
 STATIC_PATHS = ['images', 'seminars', 'extras']
 
 EXTRA_PATH_METADATA = {
@@ -65,7 +65,7 @@ EXTRA_PATH_METADATA = {
 
 def mastodonSnippet(text):
     from urllib import parse
-    from markdown.util import etree
+    import xml.etree.ElementTree as etree
 
     wrapper = etree.Element('div')
 
@@ -85,7 +85,7 @@ def mastodonSnippet(text):
 
 
 def youtubeSnippet(text):
-    from markdown.util import etree
+    import xml.etree.ElementTree as etree
 
     video = etree.Element('iframe')
     video.set('width', '560')
@@ -99,7 +99,7 @@ def youtubeSnippet(text):
 
 
 def gistSnippet(text):
-    from markdown.util import etree
+    import xml.etree.ElementTree as etree
 
     tag = etree.Element('script')
     tag.set('src', 'https://gist.github.com/' + text + '.js')
@@ -112,12 +112,10 @@ MARKDOWN = {
         'markdown.extensions.extra': {},
         'markdown.extensions.sane_lists': {},
         'mdx_snippets': {
-            'configs': {
-                'handlers': {
-                    'gist': gistSnippet,
-                    'mastodon': mastodonSnippet,
-                    'youtube': youtubeSnippet
-                }
+            'handlers': {
+                'gist': gistSnippet,
+                'mastodon': mastodonSnippet,
+                'youtube': youtubeSnippet
             }
         }
     }

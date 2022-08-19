@@ -8,9 +8,7 @@ Snippet markdown filter
 
 ## Format
 
-```
 {{< tagname "data" >}}
-```
 """
 
 import markdown
@@ -19,7 +17,7 @@ import markdown
 class SnippetExtension(markdown.Extension):
     """ Snippet Extension for Python-Markdown. """
 
-    def __init__(self, configs):
+    def __init__(self, **kwargs):
         """
         Create an instance of the Snippet extension
 
@@ -28,54 +26,44 @@ class SnippetExtension(markdown.Extension):
         """
         # Set extension defaults
         self.config = {
-            'handlers': [{}, 'Handler callbacks']
+            'handlers': [{}, "Handler callbacks"]
         }
         # Override defaults with user settings
-        self.setConfigs(configs)
+        super().__init__(**kwargs)
 
-    def add_inline(self, md, name, pattern_class, pattern):
+    def extendMarkdown(self, md):
         """
         Add new functionality to the Markdown instance.
 
         Keyword arguments:
         * md: The Markdown instance.
-        * md_globals: markdown's global variables.
         """
-        objPattern = pattern_class(pattern, self.config)
-        objPattern.md = md
-        objPattern.ext = self
-        md.inlinePatterns.add(name, objPattern, "<reference")
-
-    def extendMarkdown(self, md, md_globals):
         prefix = r'\{\{<\s*'
         tag = '((?:[a-z][a-z]+))'
         space = r'\s+'
-        text = '(".*?")'
+        text = '"(.*?)"'
         suffix = r'\s*>\}\}'
         fullRe = prefix + tag + space + text + suffix
-        self.add_inline(md, "mastodon", BasicSnippetPattern, fullRe)
+        md.inlinePatterns.register(
+            SnippetPattern(fullRe, self.getConfig("handlers", {}), md),
+            "snippets", 0)
 
 
-class BasicSnippetPattern(markdown.inlinepatterns.Pattern):
-    def __init__(self, pattern, config):
+class SnippetPattern(markdown.inlinepatterns.InlineProcessor):
+
+    def __init__(self, pattern, handlers, md=None):
         self.pattern = pattern
-        self.config = config
-        super(BasicSnippetPattern, self).__init__(pattern)
+        self.handlers = handlers
+        super().__init__(pattern, md)
 
-    def handleMatch(self, match):
+    def handleMatch(self, match, data):
 
-        if match:
-            # Group 1 is "everything before this"
-            tag = str(match.group(2))
-            # Remove the quotes
-            text = str(match.group(3))[1:-1]
+        tag = str(match.group(1))
+        text = str(match.group(2))
 
-            handlerList = self.config['handlers'][0]
-            func = handlerList.get(tag, lambda id: id)
+        func = self.handlers.get(tag, lambda id: id)
 
-            return func(text)
-        else:
-            return ""
+        return func(text), match.start(0), match.end(0)
 
 
 def makeExtension(*args, **kwargs):
@@ -86,6 +74,7 @@ if __name__ == "__main__":
     import doctest
     print(doctest.testmod())
     print("-" * 8)
-    md = markdown.Markdown(extensions=['snippet'])
+    handlers = {"tagname": lambda id: id+id}
+    md = markdown.Markdown(extensions=[SnippetExtension(handlers=handlers)])
     print(md.convert(__doc__))
 
