@@ -2,7 +2,7 @@
 Title: Arena Robot League Design Update
 Category: games
 Tags: game design
-Series: Arena Robot League
+Series: Bot Builders
 ---
 
 Since my [last post], I've made a lot of progress on Arena Robot League!

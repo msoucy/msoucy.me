@@ -2,7 +2,7 @@
 Title: Arena Robot League First Design
 Category: games
 Tags: game design
-Series: Arena Robot League
+Series: Bot Builders
 ---
 
 Previously, I wrote about the history toward my first real game design.
