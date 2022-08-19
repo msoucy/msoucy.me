@@ -22,10 +22,10 @@ Resources including the Pring and Play and testing information can be found in t
 
 ## Playtesting
 
-Current playtesting is on Screentop and Tabletop Playground.
+Current playtesting is available at the following locations:
 
-- Screentop Mod is available at https://screentop.gg/@msoucy/bot-builders
-- Tabletop Playground mod is available at https://mod.io/g/tabletopplayground/m/bot-builders
+- [Screentop.gg](https://screentop.gg/@msoucy/bot-builders)
+- [Tabletop Playground](https://mod.io/g/tabletopplayground/m/bot-builders)
 
 
 [Protospiel Online]: https://protospiel.online/
