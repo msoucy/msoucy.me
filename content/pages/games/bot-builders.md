@@ -12,13 +12,19 @@ Play takes around 30-90 minutes.
 Your goal is to create and customize a group of robots to earn points in an arena game.
 To do this, you'll need to build up your team of engineering students.
 
+<center>
+{{< youtube "jPgZF41CEv4" >}}
+</center>
+
 ## Status
 
 Bot Builders has been tested at [Protospiel Online][], and is currently in preparation to pitch to publishers.
 In addition to the core game, there are several planned mechanics that could be made as separate expansions.
 The goal for future development is to put out focused expansions that each add a new mechanic or archetype to mix up gameplay.
 
-Resources including the Pring and Play and testing information can be found in the [Assets][] link, currently a Google Drive folder.
+The [Sell Sheet][] is available for download here.
+
+Resources including the Print and Play and testing information can be found in the [Assets][] link, currently a Google Drive folder.
 
 ## Playtesting
 
@@ -30,3 +36,4 @@ Current playtesting is available at the following locations:
 
 [Protospiel Online]: https://protospiel.online/
 [Assets]: https://short.msoucy.me/botbuilders-assets
+[Sell Sheet]: {attach}bot-builders-sell-sheet.pdf
