@@ -142,7 +142,8 @@ AUTHOR_DATA = OrderedDict([
     ("resume", SITEURL + "/extras/resume.pdf"),
     ("github", GITHUB_URL),
     ("linkedin", "https://www.linkedin.com/in/msoucy"),
-    ("mastodon", "https://mastodon.social/@msoucy"),
+    #("mastodon", "https://mastodon.social/@msoucy"),
+    ("mastodon", "https://tech.lgbt/@msoucy"),
     ("twitter", "https://twitter.com/msoucy93"),
 ])
 FBADMINS = "1188604437"
