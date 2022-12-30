@@ -1,6 +1,7 @@
 ---
 Title: Election Night Hackathon 2014
 Category: code
+Date: "2014-12-01"
 Tags:
 - advfoss
 ---

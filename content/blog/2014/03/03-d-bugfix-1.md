@@ -1,6 +1,7 @@
 ---
 title: "Fixing Bugs: D/Phobos"
 Category: code
+Date: "2014-03-03"
 Tags:
 - hfoss
 ---

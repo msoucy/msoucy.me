@@ -1,6 +1,7 @@
 ---
 title: "SECOND: Returning to FIRST"
 Category: life
+Date: "2014-01-27"
 ---
 
 Over winter break I try to stay busy. A little bit of intern work, a little bit of video games...and a little bit of [FIRST].

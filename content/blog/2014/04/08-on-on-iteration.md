@@ -1,6 +1,7 @@
 ---
 Title: On "On Iteration"
 Category: code
+Date: "2014-04-08"
 ---
 
 *This post was originally on an internal group for a class I'm in involving design patterns and architecture. It was slightly updated to suit this blog.*

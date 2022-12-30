@@ -1,6 +1,7 @@
 ---
 Title: Code Breakdowns
 Category: code
+Date: "2013-08-03"
 ---
 
 At work, I notice a lot of strange things.

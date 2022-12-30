@@ -1,6 +1,7 @@
 ---
 Title: Playing with Portable Linux
 Category: code
+Date: "2014-07-18"
 ---
 
 The other day, I came to a realization: I have too many flash drives.

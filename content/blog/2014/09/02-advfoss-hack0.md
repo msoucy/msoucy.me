@@ -1,6 +1,7 @@
 ---
 title: "Advanced FOSS: Hack 0"
 Category: code
+Date: "2014-09-02"
 Tags:
 - advfoss
 Series: RESTZZZ

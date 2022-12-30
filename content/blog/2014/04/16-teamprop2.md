@@ -1,6 +1,7 @@
 ---
 Title: HFOSS Final Project Team Proposal
 Category: code
+Date: "2014-04-16"
 Tags:
 - hfoss
 ---

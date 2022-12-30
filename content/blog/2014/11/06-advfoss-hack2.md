@@ -1,6 +1,7 @@
 ---
 Title: ADVFOSS Hack Proposal 2
 Category: code
+Date: "2014-11-06"
 Tags:
 - advfoss
 ---

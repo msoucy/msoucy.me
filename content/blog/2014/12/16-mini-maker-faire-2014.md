@@ -1,6 +1,7 @@
 ---
 Title: Rochester Mini Maker Faire 2014
 Category: code
+Date: "2014-12-16"
 Tags:
 - advfoss
 - hackathons

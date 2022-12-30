@@ -1,6 +1,7 @@
 ---
 Title: Aspect-based events in Python
 Category: code
+Date: "2014-12-16"
 Tags:
 - advfoss
 ---

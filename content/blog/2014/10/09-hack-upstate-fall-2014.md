@@ -1,6 +1,7 @@
 ---
 title: "Hack Upstate: Fall 2014"
 Category: code
+Date: "2014-10-09"
 Tags:
 - advfoss
 - hackathons

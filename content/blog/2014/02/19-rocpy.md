@@ -1,6 +1,7 @@
 ---
 title: "RocPy: Rochester Python Meetup"
 Category: life
+Date: "2014-02-19"
 Tags:
 - hfoss
 ---

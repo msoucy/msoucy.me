@@ -1,6 +1,7 @@
 ---
 title: "Pull Request: Nintendo DWC Emulator"
 Category: code
+Date: "2014-05-23"
 Tags:
 - hfoss
 - foss

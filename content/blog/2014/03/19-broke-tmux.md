@@ -1,6 +1,7 @@
 ---
 Title: I broke tmux
 Category: code
+Date: "2014-03-19"
 ---
 
 Normally I like making things, but on occasion I've been known to break them.

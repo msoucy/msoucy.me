@@ -1,6 +1,7 @@
 ---
 Title: Home Stretch Hackathon
 Category: code
+Date: "2014-12-16"
 Tags:
 - advfoss
 - hackathons

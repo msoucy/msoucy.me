@@ -1,6 +1,7 @@
 ---
 title: "Literature Review: What Is Open Source"
 Category: life
+Date: "2014-02-10"
 Tags:
 - hfoss
 ---

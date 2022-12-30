@@ -1,6 +1,7 @@
 ---
 Title: Humanitarian FOSS
 Category: life
+Date: "2014-02-02"
 Tags:
 - hfoss
 ---

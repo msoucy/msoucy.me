@@ -1,6 +1,7 @@
 ---
 Title: HFOSS Quiz 1
 Category: code
+Date: "2014-02-12"
 Tags:
 - hfoss
 slug: hfoss-quiz1

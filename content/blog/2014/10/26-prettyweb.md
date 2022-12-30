@@ -1,6 +1,7 @@
 ---
 title: "Hack 1: PrettyWeb concept"
 Category: code
+Date: "2014-10-26"
 Tags:
 - advfoss
 ---

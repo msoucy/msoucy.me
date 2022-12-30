@@ -1,6 +1,7 @@
 ---
 Title: Developer Names
 Category: code
+Date: "2014-04-10"
 Tags:
 - humor
 ---

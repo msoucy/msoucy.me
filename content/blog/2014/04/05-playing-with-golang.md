@@ -1,6 +1,7 @@
 ---
 Title: Playing with Golang
 Category: code
+Date: "2014-04-05"
 Tags:
 - hackathons
 ---

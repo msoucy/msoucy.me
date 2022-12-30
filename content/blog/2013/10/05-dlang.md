@@ -1,6 +1,7 @@
 ---
 Title: D, or "C++ Done Right(er)"
 Category: code
+Date: "2013-10-05"
 ---
 
 One of the languages that I spend a lot of time using is the [D Programming Language](http://dlang.org).

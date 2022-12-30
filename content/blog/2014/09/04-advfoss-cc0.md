@@ -1,6 +1,7 @@
 ---
 title: "Community Contribution: Rebase Gone Wrong"
 Category: code
+Date: "2014-09-04"
 Tags:
 - advfoss
 ---

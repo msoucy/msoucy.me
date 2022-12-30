@@ -2,6 +2,7 @@
 Title: Journey, part one
 Category: life
 Series: Journey Concert 2013
+Date: "2013-08-03"
 ---
 
 Six years ago, I did a program at MIT where high school students could take courses taught by college students.

@@ -1,6 +1,7 @@
 ---
 Title: Thinking Inside the (FOSS) Box
 Category: life
+Date: "2013-09-19"
 ---
 
 One of the groups that I'm involved in on campus is the [FOSS Box](http://foss.rit.edu).

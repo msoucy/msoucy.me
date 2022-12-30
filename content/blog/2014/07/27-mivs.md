@@ -1,6 +1,7 @@
 ---
 title: "MIVS: Medical Image Viewing System"
 Category: code
+Date: "2014-07-27"
 ---
 
 Last semester at school, I decided to take a course on software architecture. The class was heavily focused on two main assignments, exercises in creating a design for a program and refactoring an existing design into something that resembled sane.

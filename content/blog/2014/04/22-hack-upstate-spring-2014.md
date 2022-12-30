@@ -1,6 +1,7 @@
 ---
 title: "Hack Upstate: Spring 2014"
 Category: code
+Date: "2014-04-22"
 Tags:
 - hackathons, hfoss
 ---
