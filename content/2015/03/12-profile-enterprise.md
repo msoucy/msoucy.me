@@ -1,7 +1,9 @@
 ---
 title: "Project Profile: Enterprise"
 Category: class
-Tags: bizlegfoss,foss
+Tags:
+- bizlegfoss
+- foss
 ---
 
 The project profile that was [proposed][proposal] has been [posted][presentation].

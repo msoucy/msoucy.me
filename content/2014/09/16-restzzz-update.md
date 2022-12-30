@@ -1,7 +1,8 @@
 ---
 Title: RESTZZZ Status Update
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 Series: RESTZZZ
 ---
 

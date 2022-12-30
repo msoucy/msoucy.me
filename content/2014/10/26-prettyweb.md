@@ -1,7 +1,8 @@
 ---
 title: "Hack 1: PrettyWeb concept"
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 For Hack 1 for the Advanced FOSS class, I decided to go with the first of [my ideas]. I did the bulk of that work at [Hack Upstate], but never really posted about it.

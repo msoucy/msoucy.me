@@ -1,7 +1,8 @@
 ---
 title: "Lit Review: Three Agreements"
 Category: class
-Tags: bizlegfoss
+Tags:
+- bizlegfoss
 ---
 
 This time we had to read through three documents: the [iTunes TOS][iTunes], the [Fedora Project Contributor Agreement][FPCA], and the [Python Software Foundation Contributor's License Agreement][PSFCLA].

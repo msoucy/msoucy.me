@@ -2,7 +2,8 @@
 title: "FIRST Software Architecture: Programming in F#"
 Category: code
 Series: FIRST Software Architecture
-Tags: frc
+Tags:
+- frc
 ---
 
 # Introduction

@@ -1,7 +1,9 @@
 ---
 title: "Lit Review: Common Organizational Issues"
 Category: class
-Tags: bizlegfoss,foss
+Tags:
+- bizlegfoss
+- foss
 ---
 
 [Chapter 3 of the FOSS Primer][foss-primer]

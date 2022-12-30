@@ -1,7 +1,8 @@
 ---
 title: "Hack Upstate: Spring 2014"
 Category: code
-Tags: hackathons, hfoss
+Tags:
+- hackathons, hfoss
 ---
 
 A couple of weeks ago, I attended yet another [Hack] [Upstate]. I already [posted about some of my experiences][Go Rant], and [Derek posted about our experience][Derek's Post], so I figured that I should do the same.

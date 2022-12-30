@@ -1,7 +1,8 @@
 ---
 Title: Implementing PrettyWeb
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 In the process of implementing [PrettyWeb], I ran into some issues.

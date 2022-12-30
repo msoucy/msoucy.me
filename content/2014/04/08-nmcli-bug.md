@@ -1,7 +1,8 @@
 ---
 Title: Little fixes add up - nmcli
 Category: code
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 Sometimes you have to seek out opportunities, and sometimes they fall into your lap.

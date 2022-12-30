@@ -1,7 +1,8 @@
 ---
 Title: Removing Analytics
 Category: code
-Tags: foss
+Tags:
+- foss
 ---
 
 I have disabled Google Analytics on this website.

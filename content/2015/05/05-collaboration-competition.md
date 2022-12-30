@@ -1,7 +1,10 @@
 ---
 Title: Collaboration/Competition in FOSS
 Category: code
-Tags: bizlegfoss, foss, linux-dev
+Tags:
+- bizlegfoss
+- foss
+- linux-dev
 ---
 
 Open source communities are interesting.

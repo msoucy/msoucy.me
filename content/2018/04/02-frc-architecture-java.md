@@ -2,7 +2,8 @@
 title: "FIRST Architecture: Back to Java"
 Category: code
 Series: FIRST Software Architecture
-Tags: frc
+Tags:
+- frc
 ---
 
 # 2018 Season

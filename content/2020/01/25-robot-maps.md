@@ -1,7 +1,9 @@
 ---
 Title: Robot Maps in FRC Code
 Category: code
-Tags: frc,java
+Tags:
+- frc
+- java
 ---
 
 One of the things that my robotics team does differently from other teams, is that we've created an abstraction layer for the hardware.

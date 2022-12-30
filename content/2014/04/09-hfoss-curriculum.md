@@ -1,7 +1,8 @@
 ---
 title: "HFOSS: 4th Grade Math Curriculums"
 Category: life
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 For the HFOSS course, we had to examine the [New York] and [Massachusetts] curriculums for fourth grade math.

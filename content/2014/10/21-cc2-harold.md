@@ -1,7 +1,8 @@
 ---
 title: "Community Contribution: HAROLD (x6 Pull Request Combo)"
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 I have a problem.

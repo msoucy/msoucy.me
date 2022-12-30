@@ -1,7 +1,9 @@
 ---
 title: "Project Profile Team Profile 1: Organization"
 Category: class
-Tags: bizlegfoss,foss
+Tags:
+- bizlegfoss
+- foss
 ---
 
 >  Team Members

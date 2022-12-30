@@ -1,7 +1,10 @@
 ---
 Title: Adventures at PyCon 2015
 Category: life
-Tags: python, bizlegfoss, foss
+Tags:
+- python
+- bizlegfoss
+- foss
 Series: PyCon 2015
 ---
 

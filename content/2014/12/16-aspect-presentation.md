@@ -1,7 +1,8 @@
 ---
 Title: Aspect and Event Design Lightning Talk
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 During an Advanced FOSS class recently, I gave a small presentation on two similar, though slightly different, techniques.

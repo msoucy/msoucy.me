@@ -1,7 +1,8 @@
 ---
 Title: Developer Names
 Category: code
-Tags: humor
+Tags:
+- humor
 ---
 
 After talking with [a friend](http://rsb.io "Ryan Scott Brown"), we started debating the names given to programmers who develop in different languages. Here are some of the gems:

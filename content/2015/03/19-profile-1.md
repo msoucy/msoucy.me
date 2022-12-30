@@ -1,7 +1,9 @@
 ---
 title: "Project Profile: Investors"
 Category: class
-Tags: bizlegfoss,foss
+Tags:
+- bizlegfoss
+- foss
 ---
 
 [Profile 1][proposal] (because they're zero-indexed) is now [posted][presentation]

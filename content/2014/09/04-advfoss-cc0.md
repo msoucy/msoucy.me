@@ -1,7 +1,8 @@
 ---
 title: "Community Contribution: Rebase Gone Wrong"
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 "Just rebase, it won't be that bad!"

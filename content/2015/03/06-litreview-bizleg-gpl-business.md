@@ -1,7 +1,9 @@
 ---
 title: "Lit Review: GPL & Open Source for Business"
 Category: class
-Tags: bizlegfoss,foss
+Tags:
+- bizlegfoss
+- foss
 ---
 
 This review was for two documents: [Using GPL'd Software In-House][gpl] and [Open Source Case for Business: Advocacy][osi].

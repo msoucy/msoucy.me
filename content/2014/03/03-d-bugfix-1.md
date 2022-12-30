@@ -1,7 +1,8 @@
 ---
 title: "Fixing Bugs: D/Phobos"
 Category: code
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 A large part of open development is giving back to projects that you use.

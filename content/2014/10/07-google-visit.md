@@ -1,7 +1,8 @@
 ---
 Title: A Visit from Google
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 Last week was the week of the Job Fair at RIT. As always, this involved a number of alumni invading classes to talk about the class and their current employer. One in particular visited the Advanced FOSS course, an excellent fellow by the name of [Russ].

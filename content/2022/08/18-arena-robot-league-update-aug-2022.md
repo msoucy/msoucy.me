@@ -1,7 +1,8 @@
 ---
 Title: Arena Robot League Update and Rename
 Category: games
-Tags: game-design
+Tags:
+- game-design
 Series: Bot Builders
 ---
 

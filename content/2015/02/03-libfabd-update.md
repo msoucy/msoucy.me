@@ -1,7 +1,8 @@
 ---
 Title: libfabd post update
 Category: code
-Tags: foss
+Tags:
+- foss
 ---
 
 When I wrote an [old post] about libfabd, I included a code sample:

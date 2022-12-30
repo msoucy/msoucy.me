@@ -1,7 +1,8 @@
 ---
 Title: CommArch Team Proposal
 Category: code
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 ## Team Members

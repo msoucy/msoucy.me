@@ -1,7 +1,8 @@
 ---
 Title: Arena Robot League Introduction
 Category: games
-Tags: game-design
+Tags:
+- game-design
 Series: Bot Builders
 ---
 

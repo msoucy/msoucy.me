@@ -2,7 +2,8 @@
 Title: HFOSS First Flight
 Date: 2014-02-05 13:50
 Category: life
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 As part of the HFOSS course, we're supposed to make a blog post introducing ourselves. Though I feel that I have [already written a decent introduction][introduction], I suppose I should write a less poetic one.

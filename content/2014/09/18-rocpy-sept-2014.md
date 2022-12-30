@@ -1,7 +1,8 @@
 ---
 Title: RocPy 09/2014
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 As part of [Advanced FOSS], I went to [RocPy] with the class to talk about Python. I posted about my experience back in [February], and I found that this month's meetup lived up to the expectations from last time.

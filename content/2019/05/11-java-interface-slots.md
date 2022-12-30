@@ -1,7 +1,8 @@
 ---
 Title: Java Interfaces and Extensions
 Category: code
-Tags: java
+Tags:
+- java
 ---
 
 Recently I ran into a small issue in Java.

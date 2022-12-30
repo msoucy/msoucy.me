@@ -1,7 +1,8 @@
 ---
 Title: Searching through a file with Python
 Category: code
-Tags: python
+Tags:
+- python
 ---
 
 At work, I had to deal with a situation involving scanning a file to find matches.

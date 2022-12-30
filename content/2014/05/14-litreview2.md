@@ -1,7 +1,8 @@
 ---
 title: "Literature Review 2: Rhetological Fallacies"
 Category: life
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 - Who

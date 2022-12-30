@@ -2,7 +2,8 @@
 title: "FIRST Software Architecture: Command Based Programming Summary"
 Category: code
 Series: FIRST Software Architecture
-Tags: frc
+Tags:
+- frc
 ---
 
 *This post is a modified and expanded form of a [REDDIT post] I wrote a while ago, and serves as a complement to a more in-depth post*

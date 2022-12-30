@@ -1,7 +1,8 @@
 ---
 Title: Commarch Presentation
 Category: code
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 My team whipped up [some slides] for the CommArch presentation, as discussed in previous blog posts.

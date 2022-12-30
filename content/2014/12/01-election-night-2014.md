@@ -1,7 +1,8 @@
 ---
 Title: Election Night Hackathon 2014
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 Though it happened a while ago, I didn't have a chance to write about it yet - I helped set up for, and hacked during, the 2014 Election Night Hackathon.

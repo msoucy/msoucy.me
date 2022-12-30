@@ -1,7 +1,9 @@
 ---
 title: "Business and Legal Aspects of FOSS: Three Questions"
 Category: class
-Tags: bizlegfoss,foss
+Tags:
+- bizlegfoss
+- foss
 ---
 
 It's interesting having a class ask you questions that you think should be on the final exam.

@@ -1,7 +1,9 @@
 ---
 title: "Lit Review: Quantifying the Value of Open Source Hardware Development"
 Category: class
-Tags: bizlegfoss,foss
+Tags:
+- bizlegfoss
+- foss
 ---
 
 [Quantifying the Value of Open Source Hardware Development][fosh]

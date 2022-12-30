@@ -1,7 +1,8 @@
 ---
 Title: Awesome WM startup fix
 Category: code
-Tags: foss
+Tags:
+- foss
 ---
 
 I was browsing the [Awesome WM wiki][Awesome wiki] to try to figure out how to autostart some commands on startup. The code at the end of the "Simple way" section seemed simple, but for some reason refused to work. I tried everything I could think of, blaming the `pgrep` command, but nothing seemed to work. Finally, I got frustrated, and forced Awesome to print out the entire command that was being run, then tried shoving that into my terminal.

@@ -1,7 +1,8 @@
 ---
 Title: HFOSS Quiz 1
 Category: code
-Tags: hfoss
+Tags:
+- hfoss
 slug: hfoss-quiz1
 ---
 

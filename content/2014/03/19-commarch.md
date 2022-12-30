@@ -1,6 +1,7 @@
 ---
 Title: CommArch
-Tags: hfoss
+Tags:
+- hfoss
 Category: code
 ---
 

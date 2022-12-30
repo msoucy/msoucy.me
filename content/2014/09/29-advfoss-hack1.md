@@ -1,7 +1,8 @@
 ---
 Title: ADVFOSS Hack Proposal 1
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 ---
 
 For Hack 1 of the [ADVFOSS] course, we need to have two different proposals. Both of mine are relatively simple ideas based on "replacing/enhancing web technology"

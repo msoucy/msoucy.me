@@ -1,7 +1,8 @@
 ---
 Title: Humanitarian FOSS
 Category: life
-Tags: hfoss
+Tags:
+- hfoss
 ---
 
 My journey with the FOSS Box has taken me to new places. This time, I'm returning to class, though unlike most classes I've been involved in before.

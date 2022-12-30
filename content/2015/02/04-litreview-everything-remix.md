@@ -1,7 +1,8 @@
 ---
 title: "Lit Review: Everything's a Remix"
 Category: class
-Tags: bizlegfoss
+Tags:
+- bizlegfoss
 ---
 
 Everything is a Remix.

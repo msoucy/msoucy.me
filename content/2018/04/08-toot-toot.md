@@ -1,7 +1,8 @@
 ---
 Title: Experiencing Mastodon
 Category: life
-Tags: foss
+Tags:
+- foss
 ---
 
 Recently I made a few changes concerning my social media accounts.

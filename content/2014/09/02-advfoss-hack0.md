@@ -1,7 +1,8 @@
 ---
 title: "Advanced FOSS: Hack 0"
 Category: code
-Tags: advfoss
+Tags:
+- advfoss
 Series: RESTZZZ
 ---
 

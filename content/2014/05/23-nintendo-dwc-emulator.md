@@ -1,7 +1,10 @@
 ---
 title: "Pull Request: Nintendo DWC Emulator"
 Category: code
-Tags: hfoss,foss,python
+Tags:
+- hfoss
+- foss
+- python
 ---
 
 I've found that I enjoy cleaning up code - specifically, code that was written for a language it clearly isn't being programmed in.

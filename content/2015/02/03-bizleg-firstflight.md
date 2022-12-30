@@ -1,7 +1,9 @@
 ---
 title: "BizLegFOSS/Linux Dev: First Flight"
 Category: code
-Tags: bizlegfoss, linux-dev
+Tags:
+- bizlegfoss
+- linux-dev
 ---
 
 This is my third time taking a course using the [ofCourse][] system,
