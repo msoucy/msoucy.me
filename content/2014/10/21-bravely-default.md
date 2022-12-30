@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Review: Bravely Default"
 Category: games
 ---
 

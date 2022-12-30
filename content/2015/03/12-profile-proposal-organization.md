@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Project Profile Team Profile 1: Organization"
 Category: class
 Tags: bizlegfoss,foss
 ---

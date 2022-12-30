@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "FIRST Software Architecture: Programming in F#"
 Category: code
 Series: FIRST Software Architecture
 Tags: frc

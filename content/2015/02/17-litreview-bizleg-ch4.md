@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Lit Review: Patent Defenses for FOSS Developers"
 Category: class
 Tags: bizlegfoss,foss
 ---

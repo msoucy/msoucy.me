@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Lit Review: Nobel Prize in Economic Sciences"
 Category: class
 Tags: bizlegfoss,foss
 ---

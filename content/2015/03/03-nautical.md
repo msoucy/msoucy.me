@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Linux Software Development: Nautical Proposal"
 Category: code
 Tags: linux-dev,c++,foss,bizlegfoss
 ---

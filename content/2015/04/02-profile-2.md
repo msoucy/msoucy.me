@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Project Profile: Hardware"
 Category: class
 Tags: bizlegfoss,foss
 ---

@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Review: Etrian Odyssey 2 Untold"
 Category: games
 ---
 

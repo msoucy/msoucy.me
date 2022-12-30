@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Lit Review: Guide to GPL Compliance"
 Category: class
 Tags: bizlegfoss
 ---

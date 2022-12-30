@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Hack 1: PrettyWeb concept"
 Category: code
 Tags: advfoss
 ---

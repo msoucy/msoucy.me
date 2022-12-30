@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Pull Request: Nintendo DWC Emulator"
 Category: code
 Tags: hfoss,foss,python
 ---

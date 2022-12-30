@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Lit Review: Common Trademark Issues"
 Category: class
 Tags: bizlegfoss
 ---

@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Vid Review: Trademarks and Your Free and Open Source Project"
 Category: class
 Tags: bizlegfoss
 ---

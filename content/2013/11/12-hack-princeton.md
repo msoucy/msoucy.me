@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Hack Princeton: The Good, The Bad, and The Ugly"
 Category: life
 Tags: hackathons
 ---

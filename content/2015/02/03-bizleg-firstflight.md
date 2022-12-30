@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "BizLegFOSS/Linux Dev: First Flight"
 Category: code
 Tags: bizlegfoss, linux-dev
 ---

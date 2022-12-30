@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "FIRST Software Architecture: Command Based Programming Summary"
 Category: code
 Series: FIRST Software Architecture
 Tags: frc

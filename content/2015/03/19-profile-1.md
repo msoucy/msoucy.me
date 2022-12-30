@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Project Profile: Investors"
 Category: class
 Tags: bizlegfoss,foss
 ---

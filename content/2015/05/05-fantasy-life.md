@@ -1,5 +1,5 @@
 ---
-title: "$1"
+title: "Review: Fantasy Life"
 Category: games
 ---
 
