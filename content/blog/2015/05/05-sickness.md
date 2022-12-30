@@ -1,6 +1,7 @@
 ---
 Title: Why I've Vanished
 Category: life
+Date: "2015-05-05"
 Tags:
 - bizlegfoss
 - linux-dev

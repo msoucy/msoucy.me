@@ -1,6 +1,7 @@
 ---
 title: "Lit Review: FOSS Primer"
 Category: class
+Date: "2015-02-05"
 Tags:
 - bizlegfoss
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Project Profile Team Proposal: Enterprise"
 Category: class
+Date: "2015-03-05"
 Tags:
 - bizlegfoss
 - foss

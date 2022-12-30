@@ -1,6 +1,7 @@
 ---
 title: "Business and Legal Aspects of FOSS: Three Questions"
 Category: class
+Date: "2015-05-06"
 Tags:
 - bizlegfoss
 - foss

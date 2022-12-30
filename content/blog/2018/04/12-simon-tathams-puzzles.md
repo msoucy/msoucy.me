@@ -1,6 +1,7 @@
 ---
 title: "Review: Simon Tatham's Puzzles"
 Category: games
+Date: "2018-04-12"
 ---
 
 Sometimes, you stumble across something that's just too good not to share.

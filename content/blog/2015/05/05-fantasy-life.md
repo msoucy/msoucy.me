@@ -1,6 +1,7 @@
 ---
 title: "Review: Fantasy Life"
 Category: games
+Date: "2015-05-05"
 ---
 
 This time around, I decided to review a charming little 3DS game called [Fantasy Life][].

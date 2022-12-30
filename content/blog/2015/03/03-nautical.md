@@ -1,6 +1,7 @@
 ---
 title: "Linux Software Development: Nautical Proposal"
 Category: code
+Date: "2015-03-03"
 Tags:
 - linux-dev
 - c++

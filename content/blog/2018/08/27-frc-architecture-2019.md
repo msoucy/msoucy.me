@@ -2,6 +2,7 @@
 Title: FRC Programming Ideas for 2019
 Category: code
 Series: FIRST Software Architecture
+Date: "2018-08-27"
 Tags:
 - frc
 - java

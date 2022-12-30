@@ -1,6 +1,7 @@
 ---
 Title: Intersecting Interfaces in Java
 Category: code
+Date: "2018-08-09"
 Tags:
 - java
 ---

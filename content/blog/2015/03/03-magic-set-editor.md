@@ -1,6 +1,7 @@
 ---
 Title: Magic Set Editor
 Category: code
+Date: "2015-03-03"
 Tags:
 - linux-dev
 - foss

@@ -2,6 +2,7 @@
 title: "FIRST Software Architecture: Command Based Programming Summary"
 Category: code
 Series: FIRST Software Architecture
+Date: "2017-08-28"
 Tags:
 - frc
 ---

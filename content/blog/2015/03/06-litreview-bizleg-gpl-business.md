@@ -1,6 +1,7 @@
 ---
 title: "Lit Review: GPL & Open Source for Business"
 Category: class
+Date: "2015-03-06"
 Tags:
 - bizlegfoss
 - foss

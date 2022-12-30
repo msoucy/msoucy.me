@@ -2,6 +2,7 @@
 title: "FIRST Software Architecture: Programming in C#"
 Category: code
 Series: FIRST Software Architecture
+Date: "2017-08-30"
 Tags:
 - frc
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Project Profile Team Profile 2: Hardware Product"
 category: class
+Date: "2015-04-01"
 tags:
 - bizlegfoss
 - foss

@@ -1,6 +1,7 @@
 ---
 Title: Adventures at PyCon 2015
 Category: life
+Date: "2015-05-06"
 Tags:
 - python
 - bizlegfoss

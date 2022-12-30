@@ -1,6 +1,7 @@
 ---
 title: "Project Profile: Hardware"
 Category: class
+Date: "2015-04-02"
 Tags:
 - bizlegfoss
 - foss

@@ -1,6 +1,7 @@
 ---
 title: "Project Profile: Investors"
 Category: class
+Date: "2015-03-19"
 Tags:
 - bizlegfoss
 - foss

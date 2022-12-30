@@ -2,6 +2,7 @@
 title: "FIRST Architecture: Back to Java"
 Category: code
 Series: FIRST Software Architecture
+Date: "2018-04-02"
 Tags:
 - frc
 ---

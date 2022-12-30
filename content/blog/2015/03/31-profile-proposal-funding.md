@@ -1,6 +1,7 @@
 ---
 title: "Project Profile Team Profile 3: Funding"
 Category: class
+Date: "2015-03-31"
 Tags:
 - bizlegfoss
 - foss

@@ -1,6 +1,7 @@
 ---
 Title: Magic Set Editor - Development
 Category: code
+Date: "2015-10-22"
 ---
 
 For my independent study this semester, I've been working on revitalizing a project that I started working on last year:

@@ -1,6 +1,7 @@
 ---
 title: "PyCon 2015: Beyond PEP8"
 Category: code
+Date: "2015-05-13"
 Tags:
 - python
 - bizlegfoss

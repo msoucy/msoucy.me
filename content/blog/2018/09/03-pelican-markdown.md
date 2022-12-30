@@ -3,6 +3,7 @@ Title: Extending Pelican with Markdown
 Category: code
 Tags:
 - python
+Date: "2018-09-03"
 ---
 
 Recently, I noticed a preview of a blog post. In it, there were some custom embedded macros, that looked like:

@@ -1,6 +1,7 @@
 ---
 title: "Project Profile Team Profile 1: Organization"
 Category: class
+Date: "2015-03-12"
 Tags:
 - bizlegfoss
 - foss
