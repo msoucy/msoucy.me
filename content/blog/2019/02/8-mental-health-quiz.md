@@ -1,6 +1,7 @@
 ---
 Title: Mental Health Quiz
 Category: life
+Date: "2019-02-08"
 ---
 
 Below is a mental health quiz that I took at one point.

@@ -1,6 +1,7 @@
 ---
 Title: Arena Robot League Update and Rename
 Category: games
+Date: "2022-08-18"
 Tags:
 - game-design
 Series: Bot Builders

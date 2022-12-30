@@ -1,6 +1,7 @@
 ---
 Title: Arena Robot League Design Update
 Category: games
+Date: "2022-07-18"
 Tags:
 - game-design
 Series: Bot Builders
