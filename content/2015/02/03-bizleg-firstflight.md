@@ -1,5 +1,5 @@
 ---
-Title: BizLegFOSS/Linux Dev: First Flight
+title: "$1"
 Category: code
 Tags: bizlegfoss, linux-dev
 ---

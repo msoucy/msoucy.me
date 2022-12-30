@@ -1,5 +1,5 @@
 ---
-Title: Postmortem: libfabd
+title: "$1"
 Category: code
 Tags: advfoss
 ---

@@ -1,5 +1,5 @@
 ---
-Title: Community Contribution: DUB+FISH
+title: "$1"
 Category: code
 Tags: advfoss,foss
 ---

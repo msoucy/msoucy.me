@@ -1,5 +1,5 @@
 ---
-Title: HFOSS: 4th Grade Math Curriculums
+title: "$1"
 Category: life
 Tags: hfoss
 ---

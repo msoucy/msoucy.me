@@ -1,5 +1,5 @@
 ---
-Title: HFOSS Quiz 2: Rhetological Fallacies
+title: "$1"
 Category: life
 Tags: hfoss
 ---

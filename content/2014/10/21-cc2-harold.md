@@ -1,5 +1,5 @@
 ---
-Title: Community Contribution: HAROLD (x6 Pull Request Combo)
+title: "$1"
 Category: code
 Tags: advfoss
 ---

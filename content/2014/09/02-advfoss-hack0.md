@@ -1,5 +1,5 @@
 ---
-Title: Advanced FOSS: Hack 0
+title: "$1"
 Category: code
 Tags: advfoss
 Series: RESTZZZ

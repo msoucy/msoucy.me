@@ -1,5 +1,5 @@
 ---
-title: Project Profile Team Profile 2: Hardware Product
+title: "$1"
 category: class
 tags: bizlegfoss,foss
 ---

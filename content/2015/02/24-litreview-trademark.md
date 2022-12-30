@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: Common Trademark Issues
+title: "$1"
 Category: class
 Tags: bizlegfoss
 ---

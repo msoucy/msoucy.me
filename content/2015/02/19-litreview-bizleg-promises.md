@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: Company Promises
+title: "$1"
 Category: class
 Tags: bizlegfoss
 ---

@@ -1,5 +1,5 @@
 ---
-Title: Business and Legal Aspects of FOSS: Three Questions
+title: "$1"
 Category: class
 Tags: bizlegfoss,foss
 ---

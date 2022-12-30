@@ -1,5 +1,5 @@
 ---
-Title: FIRST Software Architecture: Command Based Programming Summary
+title: "$1"
 Category: code
 Series: FIRST Software Architecture
 Tags: frc

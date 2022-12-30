@@ -1,7 +1,7 @@
 ---
 Title: Mental Health Quiz
 Category: life
-...
+---
 
 Below is a mental health quiz that I took at one point.
 Fill in the answers based on the following:

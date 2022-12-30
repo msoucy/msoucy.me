@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: Guide to GPL Compliance
+title: "$1"
 Category: class
 Tags: bizlegfoss
 ---

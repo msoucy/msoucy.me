@@ -1,5 +1,5 @@
 ---
-Title: SECOND: Returning to FIRST
+title: "$1"
 Category: life
 ---
 

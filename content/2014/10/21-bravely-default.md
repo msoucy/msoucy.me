@@ -1,5 +1,5 @@
 ---
-Title: Review: Bravely Default
+title: "$1"
 Category: games
 ---
 

@@ -1,5 +1,5 @@
 ---
-Title: FIRST Architecture: Back to Java
+title: "$1"
 Category: code
 Series: FIRST Software Architecture
 Tags: frc

@@ -1,5 +1,5 @@
 ---
-Title: Review: Etrian Odyssey 2 Untold
+title: "$1"
 Category: games
 ---
 

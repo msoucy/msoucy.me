@@ -1,5 +1,5 @@
 ---
-Title: Project Profile Team Profile 1: Organization
+title: "$1"
 Category: class
 Tags: bizlegfoss,foss
 ---

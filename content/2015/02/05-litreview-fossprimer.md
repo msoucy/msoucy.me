@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: FOSS Primer
+title: "$1"
 Category: class
 Tags: bizlegfoss
 ---

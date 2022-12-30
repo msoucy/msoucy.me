@@ -1,5 +1,5 @@
 ---
-Title: Hack Upstate: Fall 2014
+title: "$1"
 Category: code
 Tags: advfoss,hackathons,foss
 ---

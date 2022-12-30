@@ -1,5 +1,5 @@
 ---
-Title: Review: Simon Tatham's Puzzles
+title: "$1"
 Category: games
 ---
 

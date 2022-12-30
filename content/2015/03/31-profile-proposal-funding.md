@@ -1,5 +1,5 @@
 ---
-Title: Project Profile Team Profile 3: Funding
+title: "$1"
 Category: class
 Tags: bizlegfoss,foss
 ---

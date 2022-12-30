@@ -1,5 +1,5 @@
 ---
-Title: Hack 1: PrettyWeb concept
+title: "$1"
 Category: code
 Tags: advfoss
 ---

@@ -1,5 +1,5 @@
 ---
-Title: Community Contribution: Rebase Gone Wrong
+title: "$1"
 Category: code
 Tags: advfoss
 ---

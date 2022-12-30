@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: Quantifying the Value of Open Source Hardware Development
+title: "$1"
 Category: class
 Tags: bizlegfoss,foss
 ---

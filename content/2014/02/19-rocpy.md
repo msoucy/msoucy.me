@@ -1,5 +1,5 @@
 ---
-Title: RocPy: Rochester Python Meetup
+title: "$1"
 Category: life
 Tags: hfoss
 ---

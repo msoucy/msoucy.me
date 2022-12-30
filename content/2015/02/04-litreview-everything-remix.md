@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: Everything's a Remix
+title: "$1"
 Category: class
 Tags: bizlegfoss
 ---

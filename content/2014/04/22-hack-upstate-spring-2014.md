@@ -1,5 +1,5 @@
 ---
-Title: Hack Upstate: Spring 2014
+title: "$1"
 Category: code
 Tags: hackathons, hfoss
 ---

@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: GPL & Open Source for Business
+title: "$1"
 Category: class
 Tags: bizlegfoss,foss
 ---

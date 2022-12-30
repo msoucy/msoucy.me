@@ -1,5 +1,5 @@
 ---
-Title: MIVS: Medical Image Viewing System
+title: "$1"
 Category: code
 ---
 

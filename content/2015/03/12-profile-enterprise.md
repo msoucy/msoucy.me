@@ -1,5 +1,5 @@
 ---
-Title: Project Profile: Enterprise
+title: "$1"
 Category: class
 Tags: bizlegfoss,foss
 ---

@@ -1,5 +1,5 @@
 ---
-Title: Literature Review 2: Rhetological Fallacies
+title: "$1"
 Category: life
 Tags: hfoss
 ---

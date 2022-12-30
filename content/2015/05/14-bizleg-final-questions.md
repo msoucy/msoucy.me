@@ -1,5 +1,5 @@
 ---
-Title: BizLegFOSS: Answers to Final Questions
+title: "$1"
 Category: class
 Tags: foss,bizlegfoss
 ---

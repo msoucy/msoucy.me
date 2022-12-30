@@ -1,5 +1,5 @@
 ---
-Title: Vid Review: Trademarks and Your Free and Open Source Project
+title: "$1"
 Category: class
 Tags: bizlegfoss
 ---

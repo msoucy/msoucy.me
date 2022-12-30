@@ -1,5 +1,5 @@
 ---
-Title: Pull Request: Nintendo DWC Emulator
+title: "$1"
 Category: code
 Tags: hfoss,foss,python
 ---

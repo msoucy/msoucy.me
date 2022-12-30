@@ -1,5 +1,5 @@
 ---
-Title: FIRST Software Architecture: Programming in C#
+title: "$1"
 Category: code
 Series: FIRST Software Architecture
 Tags: frc

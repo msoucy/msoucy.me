@@ -1,5 +1,5 @@
 ---
-Title: PyCon 2015: Beyond PEP8
+title: "$1"
 Category: code
 Tags: python,bizlegfoss,foss,d
 Series: PyCon 2015

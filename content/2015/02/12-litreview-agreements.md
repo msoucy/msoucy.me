@@ -1,5 +1,5 @@
 ---
-Title: Lit Review: Three Agreements
+title: "$1"
 Category: class
 Tags: bizlegfoss
 ---

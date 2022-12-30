@@ -1,5 +1,5 @@
 ---
-Title: Fixing Bugs: D/Phobos
+title: "$1"
 Category: code
 Tags: hfoss
 ---
