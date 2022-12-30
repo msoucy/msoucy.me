@@ -30,4 +30,4 @@ Tags:
 	- A fairly good graphic, useful to review and get an idea of some of the most common fallacies. 8/8 [Stallman Beards]
 
 [Infographic]: http://hfoss-fossrit.rhcloud.com/static/books/rhetological_fallacies.png
-[Stallman Beards]: {filename}/2014/02/19-stallman-beard.md
+[Stallman Beards]: {{< ref "/blog/2014/02/19-stallman-beard.md" >}}

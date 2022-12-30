@@ -21,5 +21,5 @@ At the moment it'll just host a link to the assets page, but in the future I int
 
 I will also be entering Bot Builders into [Protospiel Online][] for August 2022, but at this point it's more settled than it was even four months ago.
 
-[Bot Builders]: {filename}/pages/games/bot-builders.md
+[Bot Builders]: {{< ref "/pages/games/bot-builders.md" >}}
 [Protospiel Online]: https://protospiel.online/

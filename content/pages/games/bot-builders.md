@@ -12,9 +12,7 @@ Play takes around 30-90 minutes.
 Your goal is to create and customize a group of robots to earn points in an arena game.
 To do this, you'll need to build up your team of engineering students.
 
-<center>
-{{< youtube "jPgZF41CEv4" >}}
-</center>
+{{< youtube jPgZF41CEv4 >}}
 
 ## Status
 

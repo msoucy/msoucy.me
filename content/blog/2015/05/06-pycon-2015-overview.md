@@ -25,7 +25,7 @@ I'll be able to post more about specific talks later, but overall PyCon was an a
 Meeting so many great developers, talking about open source culture and development, sharing knowledge and learning, was intense.
 I sat and worked on the Python interpreter at the same table with Guido Van Rossum...though I admit that I was much less successful in fixing the bug than I had hoped.
 
-[pneumonia]: {filename}/2015/05/05-sickness.md
+[pneumonia]: {{< ref "/blog/2015/05/05-sickness.md" >}}
 [PyCon 2015]: http://us.pycon.org/2015
 [FOSS@MAGIC]: http://foss.rit.edu
 [ofCourse]: https://github.com/ryansb/ofCourse/

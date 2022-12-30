@@ -17,5 +17,5 @@ I have a few "stretch goals" in mind for the future:
 - Store the set icon as SVG, or have a way to import from SVG
 - Possibly a Python-based filetype instead of the custom language currently in place
 
-[MSE post]: {filename}/2015/03/03-magic-set-editor.md
+[MSE post]: {{< ref "/blog/2015/03/03-magic-set-editor.md" >}}
 [fork]: http://github.com/msoucy/magicseteditor

@@ -80,5 +80,5 @@ My dream is to get it signed with a publisher, so I won't have to worry about ar
 
 At that point I'll have created and brought to life my passion project game!
 
-[last post]: {filename}/2021/08/21-arena-robot-league-first-design.md
+[last post]: {{< ref "/blog/2021/08/21-arena-robot-league-first-design.md" >}}
 [Protospiel Online]: https://protospiel.online/

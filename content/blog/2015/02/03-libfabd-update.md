@@ -59,4 +59,4 @@ string apply_color(String)(String text, Color c)
 }
 ```
 
-[old post]: {filename}/2014/12/16-libfabd-postmortem.md
+[old post]: {{< ref "/blog/2014/12/16-libfabd-postmortem.md" >}}

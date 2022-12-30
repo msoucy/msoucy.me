@@ -14,8 +14,8 @@ This time, I started work on [hack 1], and made a surprising amount of progress.
 
 I was with a decent RIT crowd, including [everline], which was a fantastic project by three FOSSBoxers that won the Evernote award. They recently put up a [demo][everline demo] which is great, but needs a little bit of cleanup and error fixing.
 
-[Hack Upstate Fall 2013]: {filename}/2013/10/17-hack-upstate-part-1.md
-[Hack Upstate Spring 2014]: {filename}/2014/04/22-hack-upstate-spring-2014.md
+[Hack Upstate Fall 2013]: {{< ref "/blog/2013/10/17-hack-upstate-part-1.md" >}}
+[Hack Upstate Spring 2014]: {{< ref "/blog/2014/04/22-hack-upstate-spring-2014.md" >}}
 [Hack Upstate]: http://hackupstate.com/
 [hack 1]: http://msoucy.me/2014/09/advfoss-hack1/
 [prettyweb]: https://github.com/msoucy/prettyweb

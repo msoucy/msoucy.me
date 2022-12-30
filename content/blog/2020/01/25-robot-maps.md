@@ -139,4 +139,4 @@ Future Work
 - Kotlin allows the same concepts but substantially smaller
 
 [chopshoplib]: https://github.com/chopshop-166/chopshoplib
-[wrapper classes]: {filename}/2018/08/09-intersecting-interfaces.md
+[wrapper classes]: {{< ref "/blog/2018/08/09-intersecting-interfaces.md" >}}

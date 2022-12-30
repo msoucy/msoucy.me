@@ -31,9 +31,9 @@ I met up with some hackers I had talked with at previous Hack Upstates, and we s
 
 Overall, the hackathon was a ton of fun. Hack Upstate has always been one of my favorite hackathons, not just because of the change of scenery but also because of the connections made with others. I personally feel that all young developers should go to at least one hackathon before they graduate, both for the networking opportunities it allows and for the "real-world" experience.
 
-[Hack]: {filename}/2013/10/17-hack-upstate-part-1.md
-[Upstate]: {filename}/2013/10/30-hack-upstate-part-2.md
-[Go Rant]: {filename}/2014/04/05-playing-with-golang.md "Golang Rant"
+[Hack]: {{< ref "/blog/2013/10/17-hack-upstate-part-1.md" >}}
+[Upstate]: {{< ref "/blog/2013/10/30-hack-upstate-part-2.md" >}}
+[Go Rant]: {{< ref "/blog/2014/04/05-playing-with-golang.md" >}} "Golang Rant"
 [Derek's Post]: http://blog.gonyeo.com/hfoss-hack-upstate.html
 [Bootleg]: https://github.com/robgssp/movienet "Bootleg"
 [plex.tv]: http://plex.tv
