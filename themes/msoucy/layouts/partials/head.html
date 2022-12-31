@@ -13,7 +13,7 @@
   {{ end -}}
 
 
-  <title>{% block title %}{{ .Title }}{%endblock%}</title>
-  <meta name="description" content="{% block description %}{% endblock %}" />
-  {% include 'metadata.html' %}
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Description }}" />
+  {{- partial "metadata.html" . -}}
 </head>

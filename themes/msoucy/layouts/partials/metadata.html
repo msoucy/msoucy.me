@@ -1,0 +1,36 @@
+<link rel="canonical" href="{{.Permalink}}" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="/extras/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/extras/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/extras/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/extras/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/extras/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/extras/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/extras/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/extras/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/extras/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/extras/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/extras/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/extras/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/extras/favicon-16x16.png">
+<link rel="manifest" href="/extras/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/extras/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+{{ $twitter := .Site.Params.twitter -}}
+{{ if $twitter -}}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@{{$twitter}}" />
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ .Description }}"/>
+<meta name="twitter:creator" content="@{{$twitter}}" />
+<meta name="twitter:image:src" content="/images/me.png"/>
+{{- end }}
+
+{{ $fb := .Site.Params.fb -}}
+{{ if $fb -}}
+<meta property="fb:admins" content="{{$fb}}" />
+{{- end }}
+
+<meta name="theme-color" content="#153a4d" />

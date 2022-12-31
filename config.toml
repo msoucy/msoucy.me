@@ -4,6 +4,11 @@ title = 'msoucy.me'
 theme = 'msoucy'
 enableGitInfo = true
 
+[params]
+  author = 'Matt Soucy'
+  twitter = 'msoucy93'
+  fb = "1188604437"
+
 [taxonomies]
   category = 'categories'
   tag = 'tags'
