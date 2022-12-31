@@ -1,5 +1,10 @@
 baseURL = 'http://msoucy.me/'
 languageCode = 'en-us'
 title = 'msoucy.me'
-theme = 'ananke'
+theme = 'msoucy'
 enableGitInfo = true
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'

@@ -1,0 +1,10 @@
+{{- define "main" }}
+<article itemid="mainEntityOfPage" itemscope itemtype="http://schema.org/Article">
+  {{- partial "article_infos.html" . -}}
+  {{ .Content }}
+  {{ if not .Page.Draft }}
+  {{- partial "neighbors.html" . -}}
+  {{ template "_internal/disqus.html" . }}
+  {{ end }}
+</article>
+{{- end }}

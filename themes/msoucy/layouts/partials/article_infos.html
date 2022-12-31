@@ -1,0 +1,10 @@
+<h2 itemprop="name headline" property="name headline"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></h2>
+<div id="meta">
+    <link itemprop="mainEntityOfPage" href="{{ .Page.Permalink }}" />
+    <abbr class="published" title="{{ .Page.Date }}"><time itemprop="datePublished" property="datePublished" datetime="{{.Page.PublishDate}}">{{.Page.PublishDate}}</time></abbr>
+    {{ if eq (.Page.Lastmod) (.Page.Date) }}
+    (modified <abbr class="published" title="{{.Page.Lastmod}}"><time itemprop="dateModified" property="dateModified" datetime="{{.Page.Lastmod}}">{{.Page.Lastmod}}</time></abbr>)
+    {{ end }}
+    in <a href="/categories/{{index .Params.categories 0}}">{{ index .Params.categories 0 }}</a>
+    - <a href="#disqus_thread">Comments</a>
+</div>
