@@ -13,4 +13,4 @@ I do have experience with numerous other languages, though, and pick up language
 
 I can be contacted via any of the contact links above, and my resume can be found [here][Resume].
 
-[Resume]: {static}/extras/resume.pdf
+[Resume]: /resume.pdf
