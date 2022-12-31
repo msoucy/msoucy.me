@@ -1,5 +1,15 @@
-<h1>Articles</h1>
-  {{- range first 10 .Data.Pages }}
-    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+{{- define "main" }}
+<article>
+  <h2>{{ .Title }}</h2>
+  <table>
+  {{- range .Data.Pages }}
+  <tr>
+    <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+    <td>{{if .Params.author}}{{.Params.author}}{{else}}{{ .Site.Params.author }}{{end}}</td>
+    <td><a href="/category/{{ .Params.categories }}">{{ .Params.categories }}</a></td>
+    <td>{{ .Date }}</td>
+  </tr>
   {{- end }}
-  <h4><a href="{{ .Site.BaseURL }}">Home</a></h4>
+  </table>
+</article>
+{{- end }}
