@@ -1,6 +1,6 @@
 ---
 Title: Magic Set Editor
-Category: code
+categories: [code]
 Date: "2015-03-03"
 Tags:
 - linux-dev

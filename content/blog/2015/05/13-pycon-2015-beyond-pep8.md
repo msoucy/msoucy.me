@@ -1,6 +1,6 @@
 ---
 title: "PyCon 2015: Beyond PEP8"
-Category: code
+categories: [code]
 Date: "2015-05-13"
 Tags:
 - python

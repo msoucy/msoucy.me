@@ -1,6 +1,6 @@
 ---
 title: "Review: Fantasy Life"
-Category: games
+categories: [games]
 Date: "2015-05-05"
 ---
 

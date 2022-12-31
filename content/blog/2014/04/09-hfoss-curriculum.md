@@ -1,6 +1,6 @@
 ---
 title: "HFOSS: 4th Grade Math Curriculums"
-Category: life
+categories: [life]
 Date: "2014-04-09"
 Tags:
 - hfoss

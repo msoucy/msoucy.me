@@ -1,6 +1,6 @@
 ---
 Title: Searching through a file with Python
-Category: code
+categories: [code]
 Date: "2014-07-06"
 Tags:
 - python

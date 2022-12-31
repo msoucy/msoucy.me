@@ -1,6 +1,6 @@
 ---
 title: "Lit Review: Nobel Prize in Economic Sciences"
-Category: class
+categories: [class]
 Date: "2015-03-19"
 Tags:
 - bizlegfoss

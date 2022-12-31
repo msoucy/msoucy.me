@@ -1,6 +1,6 @@
 ---
 Title: Group Advice
-Category: life
+categories: [life]
 Date: "2014-05-14"
 Tags:
 - hfoss

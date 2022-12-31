@@ -1,6 +1,6 @@
 ---
 Title: Implementing PrettyWeb
-Category: code
+categories: [code]
 Date: "2014-11-02"
 Tags:
 - advfoss

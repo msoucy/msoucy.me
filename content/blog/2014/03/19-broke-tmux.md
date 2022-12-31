@@ -1,6 +1,6 @@
 ---
 Title: I broke tmux
-Category: code
+categories: [code]
 Date: "2014-03-19"
 ---
 

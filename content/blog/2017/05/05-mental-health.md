@@ -1,6 +1,6 @@
 ---
 Title: Mental Health
-Category: life
+categories: [life]
 Date: "2017-05-05"
 ---
 

@@ -1,6 +1,6 @@
 ---
 Title: Metadata-aware Callbacks
-Category: code
+categories: [code]
 Date: "2013-08-10"
 Tags:
 - c++

@@ -1,6 +1,6 @@
 ---
 title: "Hack Princeton: The Good, The Bad, and The Ugly"
-Category: life
+categories: [life]
 Date: "2013-11-12"
 Tags:
 - hackathons

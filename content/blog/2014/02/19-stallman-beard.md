@@ -1,6 +1,6 @@
 ---
 Title: Stallman Beards
-Category: life
+categories: [life]
 Date: "2014-02-19"
 Tags:
 - hfoss

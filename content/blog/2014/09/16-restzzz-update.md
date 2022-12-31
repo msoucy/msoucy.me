@@ -1,6 +1,6 @@
 ---
 Title: RESTZZZ Status Update
-Category: code
+categories: [code]
 Date: "2014-09-16"
 Tags:
 - advfoss

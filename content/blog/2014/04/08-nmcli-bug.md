@@ -1,6 +1,6 @@
 ---
 Title: Little fixes add up - nmcli
-Category: code
+categories: [code]
 Date: "2014-04-08"
 Tags:
 - hfoss

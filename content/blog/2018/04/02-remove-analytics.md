@@ -1,6 +1,6 @@
 ---
 Title: Removing Analytics
-Category: code
+categories: [code]
 Date: "2018-04-02"
 Tags:
 - foss

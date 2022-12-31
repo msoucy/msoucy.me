@@ -1,6 +1,6 @@
 ---
 Title: Mental Health Quiz
-Category: life
+categories: [life]
 Date: "2019-02-08"
 ---
 

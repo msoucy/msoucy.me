@@ -1,6 +1,6 @@
 ---
 Title: Magic Set Editor - Development
-Category: code
+categories: [code]
 Date: "2015-10-22"
 ---
 

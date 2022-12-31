@@ -1,6 +1,6 @@
 ---
 Title: Java Interfaces and Extensions
-Category: code
+categories: [code]
 Date: "2019-05-11"
 Tags:
 - java

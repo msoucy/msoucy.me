@@ -1,6 +1,6 @@
 ---
 title: "Literature Review 2: Rhetological Fallacies"
-Category: life
+categories: [life]
 Date: "2014-05-14"
 Tags:
 - hfoss

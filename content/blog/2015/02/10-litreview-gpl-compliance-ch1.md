@@ -1,6 +1,6 @@
 ---
 title: "Lit Review: Guide to GPL Compliance"
-Category: class
+categories: [class]
 Date: "2015-02-10"
 Tags:
 - bizlegfoss

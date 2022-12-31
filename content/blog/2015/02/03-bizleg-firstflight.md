@@ -1,6 +1,6 @@
 ---
 title: "BizLegFOSS/Linux Dev: First Flight"
-Category: code
+categories: [code]
 Date: "2015-02-03"
 Tags:
 - bizlegfoss

@@ -1,6 +1,6 @@
 ---
 Title: Experiencing Mastodon
-Category: life
+categories: [life]
 Date: "2018-04-08"
 Tags:
 - foss

@@ -1,6 +1,6 @@
 ---
 Title: Awesome WM startup fix
-Category: code
+categories: [code]
 Date: "2014-09-29"
 Tags:
 - foss

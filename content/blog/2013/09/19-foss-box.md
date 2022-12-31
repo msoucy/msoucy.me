@@ -1,6 +1,6 @@
 ---
 Title: Thinking Inside the (FOSS) Box
-Category: life
+categories: [life]
 Date: "2013-09-19"
 ---
 

@@ -1,6 +1,6 @@
 ---
 Title: D, or "C++ Done Right(er)"
-Category: code
+categories: [code]
 Date: "2013-10-05"
 ---
 

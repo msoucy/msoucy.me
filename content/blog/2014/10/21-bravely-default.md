@@ -1,6 +1,6 @@
 ---
 title: "Review: Bravely Default"
-Category: games
+categories: [games]
 Date: "2014-10-21"
 ---
 

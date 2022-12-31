@@ -1,6 +1,6 @@
 ---
 title: "Project Profile: Enterprise"
-Category: class
+categories: [class]
 Date: "2015-03-12"
 Tags:
 - bizlegfoss

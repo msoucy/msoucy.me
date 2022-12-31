@@ -1,6 +1,6 @@
 ---
 title: "SECOND: Returning to FIRST"
-Category: life
+categories: [life]
 Date: "2014-01-27"
 ---
 

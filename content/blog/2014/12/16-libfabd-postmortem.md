@@ -1,6 +1,6 @@
 ---
 title: "Postmortem: libfabd"
-Category: code
+categories: [code]
 Date: "2014-12-16"
 Tags:
 - advfoss

@@ -1,6 +1,6 @@
 ---
 title: "Community Contribution: HAROLD (x6 Pull Request Combo)"
-Category: code
+categories: [code]
 Date: "2014-10-21"
 Tags:
 - advfoss

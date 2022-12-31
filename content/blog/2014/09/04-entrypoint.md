@@ -1,6 +1,6 @@
 ---
 Title: Entry Point
-Category: code
+categories: [code]
 Date: "2014-09-04"
 Tags:
 - foss

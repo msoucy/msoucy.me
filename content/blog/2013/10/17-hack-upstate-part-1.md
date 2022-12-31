@@ -1,6 +1,6 @@
 ---
 Title: Hack Upstate, part 1
-Category: life
+categories: [life]
 Date: "2013-10-17"
 Tags:
 - hackathons

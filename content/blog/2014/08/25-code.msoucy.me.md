@@ -1,6 +1,6 @@
 ---
 Title: Code Hosting
-Category: code
+categories: [code]
 Date: "2014-08-25"
 ---
 

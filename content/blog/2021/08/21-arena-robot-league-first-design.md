@@ -1,6 +1,6 @@
 ---
 Title: Arena Robot League First Design
-Category: games
+categories: [games]
 Date: "2021-08-21"
 Tags:
 - game-design

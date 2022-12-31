@@ -1,6 +1,6 @@
 ---
 Title: Journey, part one
-Category: life
+categories: [life]
 Series: Journey Concert 2013
 Date: "2013-08-03"
 ---

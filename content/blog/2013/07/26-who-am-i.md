@@ -1,6 +1,6 @@
 ---
 Title: Who am I?
-Category: life
+categories: [life]
 Summary: Who am I? I'm a college student. I'm a hacker. I'm a musician. I'm a geek. I'm a person.
 Date: "2013-07-26"
 ---

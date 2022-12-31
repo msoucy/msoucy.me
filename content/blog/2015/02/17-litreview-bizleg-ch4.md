@@ -1,6 +1,6 @@
 ---
 title: "Lit Review: Patent Defenses for FOSS Developers"
-Category: class
+categories: [class]
 Date: "2015-02-17"
 Tags:
 - bizlegfoss

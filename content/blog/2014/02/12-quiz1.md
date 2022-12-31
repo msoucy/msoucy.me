@@ -1,6 +1,6 @@
 ---
 Title: HFOSS Quiz 1
-Category: code
+categories: [code]
 Date: "2014-02-12"
 Tags:
 - hfoss

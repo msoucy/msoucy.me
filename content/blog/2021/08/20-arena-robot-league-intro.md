@@ -1,6 +1,6 @@
 ---
 Title: Arena Robot League Introduction
-Category: games
+categories: [games]
 Date: "2021-08-20"
 Tags:
 - game-design

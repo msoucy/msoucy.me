@@ -1,6 +1,6 @@
 ---
 title: "Vid Review: Trademarks and Your Free and Open Source Project"
-Category: class
+categories: [class]
 Date: "2015-02-26"
 Tags:
 - bizlegfoss

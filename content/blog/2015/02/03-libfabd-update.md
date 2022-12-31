@@ -1,6 +1,6 @@
 ---
 Title: libfabd post update
-Category: code
+categories: [code]
 Date: "2015-02-03"
 Tags:
 - foss

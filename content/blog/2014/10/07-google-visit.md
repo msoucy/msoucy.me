@@ -1,6 +1,6 @@
 ---
 Title: A Visit from Google
-Category: code
+categories: [code]
 Date: "2014-10-07"
 Tags:
 - advfoss

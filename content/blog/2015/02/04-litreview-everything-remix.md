@@ -1,6 +1,6 @@
 ---
 title: "Lit Review: Everything's a Remix"
-Category: class
+categories: [class]
 Date: "2015-02-04"
 Tags:
 - bizlegfoss

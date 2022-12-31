@@ -1,6 +1,6 @@
 ---
 Title: RESTZZZ Final Thoughts
-Category: code
+categories: [code]
 Date: "2014-09-28"
 Tags:
 - advfoss

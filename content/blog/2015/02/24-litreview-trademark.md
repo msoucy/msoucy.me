@@ -1,6 +1,6 @@
 ---
 title: "Lit Review: Common Trademark Issues"
-Category: class
+categories: [class]
 Date: "2015-02-24"
 Tags:
 - bizlegfoss

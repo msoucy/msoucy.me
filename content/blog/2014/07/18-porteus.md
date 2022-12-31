@@ -1,6 +1,6 @@
 ---
 Title: Playing with Portable Linux
-Category: code
+categories: [code]
 Date: "2014-07-18"
 ---
 

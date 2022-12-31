@@ -1,6 +1,6 @@
 ---
 Title: Collaboration/Competition in FOSS
-Category: code
+categories: [code]
 Date: "2015-05-05"
 Tags:
 - bizlegfoss

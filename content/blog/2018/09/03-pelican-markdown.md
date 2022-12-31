@@ -1,6 +1,6 @@
 ---
 Title: Extending Pelican with Markdown
-Category: code
+categories: [code]
 Tags:
 - python
 Date: "2018-09-03"

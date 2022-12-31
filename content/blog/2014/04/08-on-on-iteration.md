@@ -1,6 +1,6 @@
 ---
 Title: On "On Iteration"
-Category: code
+categories: [code]
 Date: "2014-04-08"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Lit Review: Three Agreements"
-Category: class
+categories: [class]
 Date: "2015-02-12"
 Tags:
 - bizlegfoss

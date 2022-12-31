@@ -1,6 +1,6 @@
 ---
 title: "BizLegFOSS: Answers to Final Questions"
-Category: class
+categories: [class]
 Date: "2015-05-14"
 Tags:
 - foss

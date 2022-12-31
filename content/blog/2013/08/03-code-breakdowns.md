@@ -1,6 +1,6 @@
 ---
 Title: Code Breakdowns
-Category: code
+categories: [code]
 Date: "2013-08-03"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "MIVS: Medical Image Viewing System"
-Category: code
+categories: [code]
 Date: "2014-07-27"
 ---
 

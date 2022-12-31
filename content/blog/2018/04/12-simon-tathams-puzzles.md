@@ -1,6 +1,6 @@
 ---
 title: "Review: Simon Tatham's Puzzles"
-Category: games
+categories: [games]
 Date: "2018-04-12"
 ---
 

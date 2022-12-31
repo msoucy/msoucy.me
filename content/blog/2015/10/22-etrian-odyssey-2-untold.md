@@ -1,6 +1,6 @@
 ---
 title: "Review: Etrian Odyssey 2 Untold"
-Category: games
+categories: [games]
 Date: "2015-10-22"
 ---
 

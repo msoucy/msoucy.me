@@ -1,7 +1,7 @@
 ---
 Title: RepBot - A lesson in refactoring
 Date: 2014-02-05 18:10
-Category: code
+categories: [code]
 ---
 
 For the last two years, I have been slowly developing an IRC bot to track a recurring joke.

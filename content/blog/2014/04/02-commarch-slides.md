@@ -1,6 +1,6 @@
 ---
 Title: Commarch Presentation
-Category: code
+categories: [code]
 Date: "2014-04-02"
 Tags:
 - hfoss

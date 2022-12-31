@@ -1,6 +1,6 @@
 ---
 title: "FIRST Software Architecture: Programming in F#"
-Category: code
+categories: [code]
 Series: FIRST Software Architecture
 Date: "2017-08-31"
 Tags:
