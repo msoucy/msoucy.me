@@ -1,0 +1,41 @@
+{{ $quickbar := 5 }}{{ if isset .Site.Params "quickbar" }}{{ $quickbar = .Site.Params.quickbar }}{{ end }}
+<ul>
+    <li>
+        <h3>categories</h3>
+        {{- partial "postlist.html" .Site.Taxonomies.categories -}}
+    </li>
+    <li>
+        <h3>tags</h3>
+        {{- partial "postlist.html" .Site.Taxonomies.tags -}}
+    </li>
+  <li>
+    <h3>seminars</h3>
+    <ul>
+      {{ range $sem := (index $.Site.Data "seminars") -}}
+      {{ $semName := index $sem 0 -}}
+      {{ $semLoc := index $sem 1 -}}
+      <li><a href="/seminars/{{ $semLoc }}">{{ $semName }}</a></li>
+      {{ end }}
+    </ul>
+  </li>
+  {{/*
+    {% if LINKS %}
+  <li>
+    <h3>links</h3>
+  <ul>
+{% for ttl, lnk in LINKS %}
+      <li><a href="{{ lnk }}">{{ ttl }}</a></li>
+{% endfor %}
+  </ul>
+  </li>
+{% endif %}
+  <li>
+    <h3>about</h3>
+    <ul>
+{% for text, link in AUTHOR_DATA.items() %}
+      <li><a rel="me" href="{{ link }}">{{ text }}</a></li>
+{% endfor %}
+    </ul>
+  </li>
+  */}}
+</ul>

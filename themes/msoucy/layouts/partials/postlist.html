@@ -1,0 +1,16 @@
+{{ $quickbar := 5 }}{{ if isset .Site.Params "quickbar" }}{{ $quickbar = .Site.Params.quickbar }}{{ end -}}
+<ul>
+{{ range $name, $posts := . }}
+  <li>
+  <h3><a href="/categories/{{ $name }}">{{ $name }}</a></h3>
+    <ul>
+      {{ range $article := first $quickbar $posts }}
+      <li><a href="{{ $article.Permalink }}">{{ $article.Title }}</a></li>
+      {{ end }}
+      {{ if gt (len $posts) $quickbar }}
+      <li><a href="/categories/{{ $name }}">...</a></li>
+      {{ end }}
+    </ul>
+  </li>
+  {{ end }}
+</ul>
