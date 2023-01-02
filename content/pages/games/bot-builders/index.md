@@ -3,6 +3,8 @@ Title: Bot Builders
 Slug: bot-builders
 Date: 1970-01-01 00:01
 Template: page
+aliases:
+    - /bot-builders
 ---
 
 {{< text-center >}}

@@ -2,6 +2,8 @@
 Title: About
 Slug: about
 Date: 1970-01-01 00:01
+aliases:
+    - /about
 ---
 
 I'm a software engineer, and a graduate from the Rochester Institute of Technology.
