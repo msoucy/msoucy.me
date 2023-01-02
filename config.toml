@@ -9,7 +9,6 @@ enableGitInfo = true
   twitter = 'msoucy93'
   fb = "1188604437"
   subtitle = "Code, games, and sarcasm"
-  quickbar = 5
 
 [taxonomies]
   category = 'categories'
