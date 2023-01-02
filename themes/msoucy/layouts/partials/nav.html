@@ -1,21 +1,20 @@
 <ul>
-    <li>
-        <h3>categories</h3>
-        {{- partial "postlist.html" .Site.Taxonomies.categories -}}
-    </li>
-    <li>
-        <h3>tags</h3>
-        {{- partial "postlist.html" .Site.Taxonomies.tags -}}
-    </li>
   <li>
-    <h3>seminars</h3>
-    <ul>
-      {{ range $sem := (index $.Site.Data "seminars") -}}
-      {{ $semName := index $sem 0 -}}
-      {{ $semLoc := index $sem 1 -}}
-      <li><a href="/seminars/{{ $semLoc }}">{{ $semName }}</a></li>
-      {{ end }}
-    </ul>
+      <h3>categories</h3>
+      {{- partial "postlist.html" .Site.Taxonomies.categories -}}
+  </li>
+  <li>
+      <h3>tags</h3>
+      {{- partial "postlist.html" .Site.Taxonomies.tags -}}
+  </li>
+  <li>
+      <h3>seminars</h3>
+      {{- $sems := (index (where .Site.Sections "Type" "seminars") 0) -}}
+      <ul>
+        {{ range $name, $sem := $sems.Pages -}}
+        <li><a href="{{ $sem.Permalink }}">{{ $sem.Title }}</a></li>
+        {{- end }}
+      </ul>
   </li>
   <li>
     <h3>links</h3>

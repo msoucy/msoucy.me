@@ -6,7 +6,6 @@
   <tr>
     <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
     <td>{{if .Params.author}}{{.Params.author}}{{else}}{{ .Site.Params.author }}{{end}}</td>
-    <td><a href="/category/{{ .Params.categories }}">{{ .Params.categories }}</a></td>
     <td>{{ .Date }}</td>
   </tr>
   {{- end }}
