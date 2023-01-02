@@ -5,6 +5,10 @@ outputs = ["Reveal"]
 date = "November 18, 2014"
 +++
 
+# Using Python for Prototyping off of a C Library
+
+by Matt Soucy
+
 ---
 
 # So we have some C code...
@@ -27,6 +31,8 @@ void cmi_dealloc_router(Router);
 # Echo server
 
 Motivation: doing some testing on part of the framework. Tried to create a server that will just echo back what it receives.
+
+---
 
 ```c
 #include <cmi.h>
@@ -90,7 +96,7 @@ Already looks a bit cleaner!
 
 ---
 
-# Let's make a Buffer class
+### Let's make a Buffer class
 
 ```python
 # File: cmi.py
@@ -188,14 +194,15 @@ with cmi.Router() as r:
 # Why is this cool?
 
 - It's super simple to create a wrapper!
-- Modeled after code I did on co-op
 - Rapid Prototyping
 - Ease tool development
 	- Communication written in C, but tools (GUIs, logic) done in Python
 	- Existing tools were limited to Windows only, because of GUI
 	- Python is more cross-platform for the tool-based stuff, only need to worry about the messaging
 
-I made several tools based off of this:
+---
+
+I made several tools based off of this on co-op:
 
 - Echo server
 - Byte-swapped echo server
@@ -209,7 +216,6 @@ I made several tools based off of this:
 - Requires some boilerplate code (but `.h` files aren't much better)
 - The echo server was SLIGHTLY slower...but only slightly
 - Python couldn't be easily used to write any production-level code (embedded on a proprietary system)
-- Management was worried I was getting bored
 
 ---
 

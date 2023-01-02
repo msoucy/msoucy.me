@@ -5,7 +5,15 @@ outputs = ["Reveal"]
 date = "February 8, 2014"
 +++
 
+# Style Guidelines
+
+by Matt Soucy
+
+---
+
 # Illegible code
+
+---
 
 ```java
 public class Customer implements VendingMachine {
@@ -34,8 +42,6 @@ What's wrong with this code?
 
 ---
 
-# Style guidelines
-
 Having a consistent style for all code in a project can be very helpful
 
 - Indentation
@@ -54,8 +60,6 @@ Having a consistent style for all code in a project can be very helpful
 
 ---
 
-# Indentation (Tabs vs Spaces)
-
 I personally prefer "tabs for indenting, space for formatting"
 
 ```java
@@ -65,6 +69,8 @@ public class Foo {
 	                            // This is indented further with spaces
 }
 ```
+
+---
 
 - Spaces
     - Code looks the same in every editor
@@ -76,8 +82,6 @@ public class Foo {
 It doesn't matter what you choose, as long as the project chooses only one
 
 ---
-
-# Indentation (Spacing)
 
 The typical rule is "each logical block is indented exactly one more time"
 
@@ -97,6 +101,8 @@ public class Foo {
 
 # Line lengths
 
+---
+
 Some places enforce line character lengths.
 This is to help prevent programmers from scrolling around all the time.
 
@@ -109,6 +115,8 @@ General rule: A line should fit entirely on a line without scrolling.
 
 # Additional concerns
 
+---
+
 - Spaces inside of parenthesis
 - Spaces between parenthesis and attached braces
 
@@ -117,8 +125,6 @@ General rule: A line should fit entirely on a line without scrolling.
 # Braces
 
 ---
-
-# Braces (Attachment)
 
 Braces are typically considered "attached" or "detached" from a line
 
@@ -133,11 +139,9 @@ else
 
 ---
 
-# Braces (Indentation)
-
 Some styles involve indenting the parenthesis.
 
-```
+```java
 if(something)
 	{
 	something_else()
@@ -152,8 +156,6 @@ Don't. Just...don't.
 
 ---
 
-# Comments
-
 Comments are your friend.
 
 ```cpp
@@ -161,12 +163,16 @@ Comments are your friend.
 memfrob(some_ptr, 166); // What does this do?
 ```
 
+---
+
 When used properly, comments can help you recall code
 
 ```cpp
 // Better, but talks about the function call itself
 memfrob(some_ptr, 166); // Frobnicates 166 bytes of memory
 ```
+
+---
 
 The best comments aren't line-by-line but describe the intent
 
@@ -177,14 +183,14 @@ memfrob(some_ptr, 166); // "Encrypts" our values
 
 ---
 
-# Block Comments
-
 Block comments should be used in front of each method to explain the following:
 
 - High-level overview
 - Description of all arguments
 - Explaination of return value, if any
 - Exceptions thrown (if any)
+
+---
 
 Classes should also have a block comment explaining:
 
@@ -209,6 +215,8 @@ int timesPressed;
 Victor leftFrontWheel;
 ```
 
+---
+
 Variables should NOT be named after what they're inside:
 
 ```java
@@ -229,6 +237,8 @@ Robot.claw.closeClaw(); // Redundant
 
 # Formatting
 
+---
+
 A couple of different ways to capitalize and split words:
 
 ```java
@@ -241,6 +251,8 @@ int LeadingCamel; // Good for C/C++/Java Classes
 ---
 
 # Nouns vs Verbs
+
+---
 
 Variables are nouns by nature. They are THINGS.
 
@@ -262,6 +274,8 @@ int getValue() {return 0;}
 
 # Booleans
 
+---
+
 Boolean values are `true` or `false`. 99% of the time, you want to name them using `is` or `has`
 
 ```java
@@ -276,8 +290,6 @@ public boolean isClosed() {return true;}
 # Astyle
 
 ---
-
-# Astyle Overview
 
 Astyle is a convenient code formatter for C/C++/Java.
 

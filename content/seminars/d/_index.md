@@ -4,14 +4,22 @@ author = "Matt Soucy"
 outputs = ["Reveal"]
 +++
 
+# The D Programming Language: A new take on C++
+
+by Matt Soucy
+
+---
 # What is D?
 
-## "Great, the last thing I need is another D in programming!" - Walter Bright
+> "Great, the last thing I need is another D in programming!" - Walter Bright
 
 - Developed by:
     - Walter Bright (Digital Mars, first native C++ compiler)
     - Andrei Alexandrescu (_Modern C++ Design_, Facebook)
     - Many contributors (Phobos standard library)
+
+---
+
 - Designed to be "C++ Done Right"
 - Compiles to native code
 - Community driven, multi-paradigm, buzzword-filled (but in a good way!)
@@ -20,11 +28,14 @@ outputs = ["Reveal"]
 
 ---
 
-# Six instantly-useful features
+### Six instantly-useful features
 
 - Garbage collection, unless you want manual memory management, in which case you can use it or turn the GC off.
 - Arrays know their length, and assigning to their length resizes them.
 - Strings are treated as arrays of characters, and have access to all array properties.
+
+---
+
 - `const` types are actually const, and you can't circumvent the type system to change this.
 - Compile time is insanely short. (Downside is there's less time for shenanigans)
 - Object-oriented, but only when you want it - doesn't limit you to a specific paradigm.
@@ -51,6 +62,8 @@ void main() {
 Because expressions, especially those returned from some functions, can have long or complex names,
 the `auto` keyword can be used to create variables where the exact type isn't needed or important.
 
+---
+
 ```d
 import std.algorithm;
 import std.stdio;
@@ -70,6 +83,8 @@ void main() {
 # Variable declaration syntax
 
 C is infamous for having an unintuitive syntax for complex function declaration.
+
+---
 
 ```c
 // C style:
@@ -102,8 +117,6 @@ int (*(*x[3])())[5];
 #### Examples from K&R Sec 5.12
 
 ---
-
-# Variable declaration syntax (D style)
 
 Isn't it nicer to just do it the D way?
 
@@ -219,6 +232,8 @@ void main() {
 }
 ```
 
+---
+
 Output:
 
 ```
@@ -232,6 +247,8 @@ Output:
 # Scripting in D
 
 D is designed so that you can even use it in scripts "without compiling"!
+
+---
 
 Example script:
 
@@ -264,8 +281,6 @@ void main(){
 
 ---
 
-# Switch statements
-
 D continues C's style of a switch statement, but with a few tricks:
 
 ```d
@@ -294,7 +309,9 @@ case 'a' : .. case 'z': // Matches anything between a-z
 
 Templates, combined with compile-time duck typing, allow for some powerful and simple type manipulation.
 
-Their syntax is significantly cleaner than in C++, due to using a single binary operator `!` instead of overloading `<>`:
+Their syntax is significantly cleaner than in C++, due to using a single binary operator `!` instead of overloading `<>`
+
+---
 
 ```d
 template Foo(T, U) {
@@ -335,7 +352,9 @@ int x = factorial!5; // Same as "int x = 120;"
 
 The factorial example is simple, but in a lot of cases you'd prefer to be able to do a calculation both at compile and run time.
 For this reason, D allows compile-time function execution.
-Any variable what is created with `enum` or `static` is determined at compile-time.
+Any variable that is created with `enum` or `static` is determined at compile-time.
+
+---
 
 ```d
 int factorial(int n) {
@@ -353,6 +372,8 @@ static int x = factorial(5); // x is statically initialized to 120
 
 D's standard library uses the concept of `Range`s instead of `Iterator`s like C++.
 
+---
+
 Iterators have some conceptual issues:
 
 - There is no single, simple definition of what an iterator is
@@ -366,7 +387,7 @@ Iterators have some conceptual issues:
 
 ---
 
-# <s>Iterators</s> Ranges
+# Ranges!
 
 A range is a single interface that allows for an alternative method of iteration.
 
@@ -386,8 +407,6 @@ template isInputRange(R)
 ```
 
 ---
-
-# Ranges
 
 More importantly, it simplifies iterating over things that may not be a "real" range.
 
@@ -417,12 +436,16 @@ struct Reversed
 
 The standard library (Phobos) takes a "batteries included" approach like python
 
+---
+
 Phobos contains many different modules, such as:
 
 - `std.regex` or `std.conv` to handle string processing and conversion
 - `std.csv`, `std.json`, `std.xml`, and `std.zip` to handle many different file formats
 - `std.concurrency` and `std.process` for processes and tasks
 - `std.socket` for network sockets
+
+---
 
 Much like C++'s STL and iterators, Phobos is designed almost entirely around ranges.
 
@@ -435,6 +458,8 @@ including a large number of algorithms for acting on those ranges (`std.algorith
 
 There are often instances when one is using a library that for some reason they cannot alter,
 but you want to add functionality to a certain class or type.
+
+---
 
 ```d
 // D allows this through the use of UFCS, which converts any call to:
@@ -453,6 +478,8 @@ generator(5).take(10).writeln();
 
 Andrei discovered an interesting interaction between `auto` and declaring structs inside a function:
 **Voldemort types** are types that cannot be named.
+
+---
 
 ```d
 import std.stdio;
@@ -518,6 +545,8 @@ Deimos is a set of D bindings to various C libraries, such as:
 - ncurses
 - 0MQ (zeroMQ)
 
+---
+
 Much like Phobos, Deimos is supported by the open source community, and is constantly updating.
 
 **This means you can link (almost) any C library to D, and it will work normally.**
@@ -537,6 +566,9 @@ void main() {
 - [D Programming Language's homepage (http://dlang.org)](http://dlang.org)
 - [GDC (Planned integration into GCC 4.8) (https://bitbucket.org/goshawk/gdc/)](https://bitbucket.org/goshawk/gdc/)
 - [LDC (LLVM-based D compiler) (https://github.com/ldc-developers/ldc)](https://github.com/ldc-developers/ldc)
+
+---
+
 - The D Programming Language (TDPL)
     - http://www.amazon.com/The-Programming-Language-Andrei-Alexandrescu/dp/0321635361
     - Published by one of the main developers
@@ -547,8 +579,7 @@ void main() {
 
 ---
 
-# foreach(question;audience) presenter.answer(question);
-
----
-
-# return 0;
+```d
+foreach(question; audience)
+	presenter.answer(question);
+```

@@ -4,6 +4,10 @@ author = "Matt Soucy"
 outputs = ["Reveal"]
 +++
 
+# Build Systems Suck
+
+by Matt Soucy
+
 ---
 
 # In the beginning...
@@ -193,8 +197,6 @@ If you have just a test file `main.c`, you can run `make main` without a makefil
 - `cmake`
 
 ---
-
-# Language specific?
 
 Language | Tool
 ---------|-----

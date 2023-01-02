@@ -5,9 +5,15 @@ outputs = ["Reveal"]
 date = "October 9, 2014"
 +++
 
+# Injecting Code with Python
+
+by Matt Soucy
+
 ---
 
 # Getting Dirty
+
+---
 
 Assume we have a code sample:
 
@@ -29,6 +35,8 @@ somemod() # Error, module is not callable
 
 # What can we do?
 
+---
+
 Well, many things in Python are flexible...
 
 > Why would you want to call a module?
@@ -38,6 +46,8 @@ Not my problem.
 ---
 
 # What if we make a new module?
+
+---
 
 ```python
 # modulehack.py

@@ -5,6 +5,12 @@ outputs = ["Reveal"]
 date = "December 9, 2014"
 +++
 
+# Aspect-based events in Python
+
+by Matt Soucy
+
+---
+
 # What are events?
 
 The super simple explaination: "on this, do this"
@@ -13,7 +19,7 @@ Functions are added to a "callback list" that happen when an event is triggered
 
 ---
 
-# Event sample usage
+### Event sample usage
 
 ```python
 def foo():
@@ -24,7 +30,7 @@ myButton.onClick.add(foo)
 
 ---
 
-# Observer pattern
+### Observer pattern
 
 Events are sort of a variation of the observer pattern
 
@@ -47,7 +53,7 @@ Things that weave their way throughout the program:
 
 ---
 
-# Sample aspect usage
+### Sample aspect usage
 
 ```python
 # In a totally-made-up "AspectPY", based on AspectJ
@@ -64,7 +70,7 @@ itertools.chain("abc", "def")
 
 ---
 
-# Why are these two in one presentation?
+### Why are these two in one presentation?
 
 When refactoring code, you might accidentally stumble upon this.
 
@@ -90,7 +96,7 @@ This code has all of these together:
 
 ---
 
-# Splitting logging out
+### Splitting logging out
 
 Let's not care about calling it, at first.
 
@@ -108,7 +114,7 @@ class LogFileAspect(HaroldAspect):
 
 ---
 
-# Other "cross-cutting" concerns
+### Other "cross-cutting" concerns
 
 GPIO is a nice one
 
@@ -133,7 +139,7 @@ class GPIOAspect(HaroldAspect):
 
 ---
 
-# What did these have in common?
+### What did these have in common?
 
 Notice the `on_play` functions:
 
@@ -155,7 +161,7 @@ Both happen at the "same time"!
 
 ---
 
-# Triggering our events
+### Triggering our events
 
 We have cross-cutting concerns located in their own aspect classes
 
@@ -172,7 +178,7 @@ class AspectWeaver(object):
 
 ---
 
-# What happened to aspects?
+### What happened to aspects?
 
 The two were put together pretty seamlessly:
 
@@ -183,7 +189,7 @@ The two were put together pretty seamlessly:
 
 ---
 
-# Unplanned design
+### Unplanned design
 
 The original code was designed as "what's architecture?"
 
@@ -192,11 +198,10 @@ The original code was designed as "what's architecture?"
 
 ---
 
-# Why does this design rock?
+### Why does this design rock?
 
-Code for each subsystem (GPIO, logging, etc) is in one place
-
-Code triggering parts of each subsystem is in one place:
+- Code for each subsystem (GPIO, logging, etc) is in one place
+- Code triggering parts of each subsystem is in one place:
 
 ```python
 class Harold(AspectWeaver):
@@ -218,7 +223,7 @@ class Harold(AspectWeaver):
 
 ---
 
-# Why does this design not work all the time?
+### Why does this design not work all the time?
 
 - Any sort of "inter-Aspect communication" requires intermediaries
 	- Might not be considered "separate aspects" if that's needed
@@ -227,19 +232,19 @@ class Harold(AspectWeaver):
 
 ---
 
-# Events vs AOP vs my design
+### Events vs AOP vs my design
 
 - My `self.trigger` is a "call all aspects here"
 - An AOP "Pointcut" injects itself into locations instead of relying on being called
 - AOP allows you to introduce behavior `before/after/around` arbitrary calls
 	- Python has decorators as a sort of `around`
-	- My design is essentially `before` calls for `lambda:None`{.python}
+	- My design is essentially `before` calls for `lambda:None`
 - AOP allows adding methods/values to classes
 	- Monkey Patching, so built-in language support
 
 ---
 
-# Future work
+### Future work
 
 - Use exceptions to allow for more discrete control
 	- Return values

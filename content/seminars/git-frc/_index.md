@@ -6,6 +6,8 @@ outputs = ["Reveal"]
 
 # The importance of version control
 
+---
+
 - Most developers start off not using any
 - Tolerable for small projects on one's own
 - What happens when you make a mistake?
@@ -17,6 +19,8 @@ outputs = ["Reveal"]
 ---
 
 # Old ways of tracking changes
+
+---
 
 - Undo/Redo
 	- This is silly, but usable, for fixing small mistakes that you make
@@ -31,6 +35,8 @@ outputs = ["Reveal"]
 ---
 
 # Older version control systems we used
+
+---
 
 - Subversion
 	- Centralizes the code
@@ -52,6 +58,8 @@ outputs = ["Reveal"]
 
 # Git
 
+---
+
 - More powerful and widely used than Mercurial
 - Doesn't restrict you to using one development pattern
 	- But the mentors will
@@ -61,6 +69,8 @@ outputs = ["Reveal"]
 ---
 
 # Using git
+
+---
 
 - Most commonly, people use the command line for this
 - We don't have time to fully teach command line git properly
@@ -72,6 +82,8 @@ outputs = ["Reveal"]
 
 # Branches
 
+---
+
 - A branch is just a name for a line of changesets
 - All repositories have a branch called `master`
 	- This branch is similar to the `default` branch from `hg`
@@ -80,6 +92,8 @@ outputs = ["Reveal"]
 ---
 
 # Forks & Pull Requests
+
+---
 
 - A copy of the repository with some changes
 - Owned by someone else
@@ -92,6 +106,8 @@ outputs = ["Reveal"]
 ---
 
 # The team's workflow
+
+---
 
 - Use the GitHub application
 - The [ChopShop repository][] is the "canonical" repository
@@ -112,11 +128,15 @@ outputs = ["Reveal"]
 
 # Pull Request Image
 
+---
+
 ![Pull Request](pull-request.png)
 
 ---
 
 # Conclusion
+
+---
 
 - Version control is very good for keeping code organized
 - Git lets people work in their own branches
@@ -127,6 +147,8 @@ outputs = ["Reveal"]
 
 # Further Reading
 
+---
+
 - [Git Tutorial](http://git-scm.com/docs/gittutorial)
 - [Atlassian Tutorials](https://www.atlassian.com/git/tutorials/)
 - [Ryan Brown's presentation](http://rsb.io/talks/git/)
@@ -134,7 +156,6 @@ outputs = ["Reveal"]
 - [gitref](http://gitref.org)
 - [Pro Git](http://progit.org)
 - [Git Cheat Sheet](http://cheat.errtheblog.com/s/git)
-<!-- - [BitBucket tutorial](https://bitbucket.org/spooning/) -->
 
 [GitHub]: http://github.com/
 [ChopShop repository]: http://github.com/ChopShop-166/frc-2016

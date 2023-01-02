@@ -5,9 +5,11 @@ outputs = ["Reveal"]
 date = "December 2, 2014"
 +++
 
----
+# Berkeley Software Distribution
 
-# History
+by Matt Soucy
+
+---
 
 | Version   | Released        | System       |
 | :-------- | :-------------- | :----------- |
@@ -19,6 +21,8 @@ date = "December 2, 2014"
 | 4.2BSD    | August 1983     | VAX etc.     |
 | 4.3BSD    | June 1986       | VAX etc.     |
 | 4.4BSD    | June 1994       | VAX etc.     |
+
+---
 
 - 1BSD was actually an add-on for Version 6 Unix
 - 2.9BSD (1983) - first version that was a full OS on its own
@@ -45,8 +49,6 @@ Support a wide variety of architectures (Itanium, x86-64, MIPS, ...)
 - Once released as its own OS, used for time-sharing systems
 
 ---
-
-# Inter-Process Communication and Context Switching
 
 BSD Sockets
 

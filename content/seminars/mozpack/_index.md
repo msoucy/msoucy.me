@@ -5,6 +5,10 @@ outputs = ["Reveal"]
 date = "October 30, 2014"
 +++
 
+# Packaging Firefox Addons
+
+by Matt Soucy
+
 ---
 
 # Let's make an addon!

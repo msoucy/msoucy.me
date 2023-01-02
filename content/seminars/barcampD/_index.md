@@ -5,6 +5,12 @@ outputs = ["Reveal"]
 date = "April 14, 2012"
 +++
 
+# The D Programming Language - A new take on C++
+
+by Matt Soucy
+
+---
+
 # What is D?
 
 > "Great, the last thing I need is another D in programming!" - Walter Bright
@@ -13,6 +19,9 @@ date = "April 14, 2012"
     - Walter Bright (Digital Mars, first native C++ compiler)
     - Andrei Alexandrescu (_Modern C++ Design_, Facebook)
     - Many developers (Phobos standard library)
+
+---
+
 - Designed to be "C++ Done Right"
 - Compiles to native code
 - Community driven, multi-paradigm, buzzword-filled
@@ -39,6 +48,8 @@ void main() {
 Because expressions, especially those returned from some functions, can have long or complex names,
 the `auto` keyword can be used to create variables where the exact type isn't needed or important.
 
+---
+
 ```d
 import std.algorithm;
 import std.stdio;
@@ -58,6 +69,8 @@ void main() {
 # Variable declaration syntax
 
 C is infamous for having an unintuitive syntax for complex function declaration.
+
+---
 
 ```c
 // C style:
@@ -93,6 +106,8 @@ int (*(*x[3])())[5];
 # Variable declaration syntax (D style)
 
 Isn't it nicer to just do it the D way?
+
+---
 
 ```d
 // D style:
@@ -132,7 +147,9 @@ Arrays in D can behave more like C++'s `std::vector`
 - Resizable
 - Length+data
 
-C-style arrays are also supported:
+C-style arrays are also supported
+
+---
 
 ```d
 int* p; // Same as in C
@@ -189,6 +206,8 @@ void main() {
 }
 ```
 
+---
+
 Output:
 
 ```
@@ -203,7 +222,7 @@ Output:
 
 D is nice enough that you can even use it in scripts "without compiling"!
 
-Example script:
+---
 
 ```d
 #!/usr/bin/dmd -run
@@ -237,7 +256,9 @@ void main(){
 
 # Switch statements
 
-D continues C's style of a switch statement, but with a few tricks:
+D continues C's style of a switch statement, but with a few tricks
+
+---
 
 ```d
 string s;
@@ -257,7 +278,6 @@ default:
 
 ---
 
-<!--
 # WORLD-WIDE AWESOMENESS
 
 D source text can be in one of the following formats:
@@ -268,6 +288,8 @@ D source text can be in one of the following formats:
  *  UTF-16LE
  *  UTF-32BE
  *  UTF-32LE
+
+ ---
 
 Copied verbatim from the D newsgroups:
 
@@ -280,7 +302,6 @@ int main()
 ```
 
 (In case you're wondering, "العربية" means "Arabic")
--->
 
 ---
 
@@ -296,6 +317,8 @@ However, they are significantly more awesome than C++'s.
 
 The standard library (Phobos) takes a "batteries included" approach like python
 
+---
+
 Phobos contains many different modules, such as:
 
 - `std.regex` or `std.conv` to handle string processing and conversion
@@ -304,8 +327,6 @@ Phobos contains many different modules, such as:
 - `std.socket` for network sockets
 
 ---
-
-# Compile time
 
 As if this wasn't awesome enough, you can do crazy function calls at compile time:
 
@@ -351,6 +372,8 @@ Deimos is a set of D bindings to various C libraries, such as:
 - ncurses
 - 0MQ (zeroMQ)
 
+---
+
 Much like Phobos, Deimos is supported by the open source community, and is constantly updating.
 
 *This means you can link any C library to D, and it will work fine!*
@@ -370,6 +393,9 @@ void main() {
 - [D Programming Language's homepage (http://dlang.org)](http://dlang.org)
 - [GDC (Planned integration into GCC 4.8) (https://bitbucket.org/goshawk/gdc/)](https://bitbucket.org/goshawk/gdc/)
 - [LDC (LLVM-based D compiler) (https://github.com/ldc-developers/ldc)](https://github.com/ldc-developers/ldc)
+
+---
+
 - The D Programming Language (TDPL)
     - http://www.amazon.com/The-Programming-Language-Andrei-Alexandrescu/dp/0321635361
     - Published by one of the main developers

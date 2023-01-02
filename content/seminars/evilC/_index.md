@@ -4,7 +4,15 @@ author = "Matt Soucy"
 outputs = ["Reveal"]
 +++
 
-# Prerequisites
+Evil C++: C and C++ Standard tricks to bemuse and befuddle
+
+by Matt Soucy
+
+---
+
+### Prerequisites
+
+---
 
 Some of these tricks may require knowledge of the following:
 
@@ -21,12 +29,18 @@ Some of these tricks may require knowledge of the following:
 
 # Warnings
 
+---
+
 The tricks involved in this presentation may exploit definitions found in the standard, or they may merely be things that aren't commonly known.
 Either way, in 99.9999% of the cases where you wonder if you need to use them, you definitely don't.
+
+---
 
 > The people who actually need them know with certainty that they need them, and don't need an explaination about why
 
 >> Python Guru Tim Peters
+
+---
 
 This presentation is designed to show the effects of:
 
@@ -45,6 +59,8 @@ If you use these in production code, you will be ***REDACTED***.
 
 # String Concatenation
 
+---
+
 Two string literals, placed "next to" each other, will be treated as one:
 
 ```cpp
@@ -56,6 +72,9 @@ This is useful for long strings (such as insanely complex printf formatting stri
 ---
 
 # Octal
+
+---
+
 There is a HUGE difference between the following:
 
 ```cpp
@@ -70,8 +89,12 @@ There are very few uses for this syntax, but it's important to know about it to 
 
 # Void pointers
 
+---
+
 Can be used as any pointer type, and point to any data type
 In order to use it as anything other than just a pointer, it must be cast
+
+---
 
 ```cpp
 #include <stdio.h>
@@ -90,7 +113,10 @@ Many C library functions use void* to accept pointers because they implicitly ca
 
 ---
 
-# Commenting out/testing values
+### Commenting out/testing values
+
+---
+
 If you need to change a value really quick to test something:
 
 ```cpp
@@ -99,6 +125,8 @@ int x =
 	Testing_value
 	;
 ```
+
+---
 
 Debug versions of code can use different values:
 
@@ -119,11 +147,16 @@ int x =
 ---
 
 # sizeof
-Most people have heard of the sizeof command, however, they are unaware that sizeof doesn't actually evaluate its contents.
+
+---
+
+Most people have heard of the `sizeof` command, however, they are unaware that `sizeof` doesn't actually evaluate its contents.
 
 The entire thing is performed at compile time, but not executed - it returns the size of the result of the expression, and compiles that in.
 
 The original code doesn't actually make it to the executable.
+
+---
 
 ```cpp
 // Notice the lack of a body there
@@ -136,6 +169,8 @@ printf("Length of an array: %d\n",sizeof(Array(x)));
 
 # The comma operator
 
+---
+
 Commas are useful for more than just separating function arguments:
 
 ```cpp
@@ -146,6 +181,8 @@ int baz() {return 7;}
 int x = (foo(),bar(),baz());
 cout << x; // Outputs 7
 ```
+
+---
 
 You may be familiar with the comma in for loops and variable declarations:
 
@@ -165,9 +202,13 @@ if(cin>>x,x*=2,x<8) { /*do stuff*/}
 
 # Conditional Scope
 
+---
+
 Conditionals require *expressions*.
 The difference between expressions and statements is that expressions have a value.
 Variable declarations are expressions, not statements.
+
+---
 
 This means that this is possible, limiting the scope of the variable to the body of the if statement and its else clause(s)
 
@@ -182,6 +223,8 @@ if(int ret = someFunction()) {
 ---
 
 # Bitfields
+
+---
 
 It's possible to compact a group of variables into the size of a single variable.
 This is called bitfields.
@@ -201,7 +244,8 @@ struct Bitfield {
 
 ---
 
-# Array and pointer indexing
+Array and pointer indexing
+
 Given:
 
 ```cpp
@@ -214,6 +258,8 @@ We know that:
  * `&arr` is a pointer to an array
  * `&arr[0]` is the location of/a pointer to the first element of the array
 
+---
+
 Therefore, each of these is equivalent:
 
 ```cpp
@@ -225,8 +271,6 @@ arr[5]
 This is assuming, of course, that arr is a pointer/array, and not a class with `operator[]` overloaded
 
 ---
-
-# By extension
 
 String literals have a type of `const char*`.
 
@@ -245,6 +289,8 @@ Because of this, you're allowed to do something like this:
 
 # The ternary operator
 
+---
+
 The ternary operator, using the format `(x?y:z)`, becomes `y` if `x` is true, otherwise `z`
 
 Here's a simple example:
@@ -258,7 +304,9 @@ int main() {
 }
 ```
 
-However, it actually much more diabolical uses:
+---
+
+However, it actually has much more diabolical uses:
 
 ```cpp
 int x,y,z;
@@ -279,9 +327,13 @@ cin>>x>>y;
 
 # Abusing destructors
 
+---
+
 Destructors are called when a class (or struct) leaves scope.
 
 This includes when the program is cleaning up after itself when it's exiting main.
+
+---
 
 ```cpp
 #include <iostream>
@@ -302,8 +354,12 @@ int main() {
 
 # Function Pointers
 
+---
+
 Since you can create a pointer to a variable, it makes sense that you can create a pointer to a function.
 The syntax is rather ugly though...
+
+---
 
 ```cpp
 #include <stdio.h>
@@ -336,6 +392,8 @@ int main() {
 
 # Unions
 
+---
+
 Unions are a C++ construct that seem to be horribly misused.
 Their purpose is to *save memory*, by placing several variable types in the same block of memory.
 The behavior of writing to one type and reading from another is undefined.
@@ -346,6 +404,8 @@ union Number {
 	float decimal;
 };
 ```
+
+---
 
 This undefined behavior is often abused for type punning, or the rough equivalent of:
 
@@ -363,10 +423,14 @@ basically, anything a struct can contain that doesn't involve inheritance or vir
 
 # Const References
 
+---
+
 Everyone knows that you can't make a reference to the return value of a function.
 That's because the return value is a temporary, and once it leaves the function's scope the temporary is invalid.
 
 Unless it's `const`.
+
+---
 
 When you create a `const` reference to a temporary variable,
 it extends the lifetime of the temporary to the lifetime of the reference.
@@ -375,6 +439,8 @@ What this means is, this is completely valid:
 ```cpp
 const int & cir = 1+1; // OK to use cir = 2 after this line
 ```
+
+---
 
 Andrei Alexandrescu used this to create a "Scope Guard", to allow cleanup inside scope blocks.
 He even described it as "the most important **const** I ever wrote."
@@ -400,6 +466,8 @@ Example taken from [Herb Stutter's Guru of the Week (88)](http://herbsutter.com/
 
 # Trigraphs
 
+---
+
 In order to support those poor programmers who don't have access to such exotic keys as {}, C/C++ support the following:
 
 | Trigraph | Equivalent | Trigraph | Equivalent | Trigraph | Equivalent |
@@ -407,6 +475,8 @@ In order to support those poor programmers who don't have access to such exotic 
 | ??= | # | ??/ | \ | ??' | ^ |
 | ??( | [ | ??) | ] | ??! | &#124; |
 | ??< | { | ??> | } | ??- | ~ |
+
+---
 
 Important:
 
@@ -420,15 +490,19 @@ Important:
 
 # Digraphs
 
+---
+
 There are also digraphs, meant to be more readable:
 
- Digraph | Equivalent
----------|-----------
- <: | [
- >: | ]
- <% | {
- %> | }
- %: | #
+| Digraph | Equivalent |
+|---------|------------|
+| <: | [ |
+| >: | ] |
+| <% | { |
+| %> | } |
+| %: | # |
+
+---
 
 Differences between trigraphs and digraphs:
 
@@ -441,7 +515,9 @@ Differences between trigraphs and digraphs:
 
 # X-Macros
 
-The preprocessor uses a textual replace for #include, replacing the #include with the (preprocessed) body of the file.
+---
+
+The preprocessor uses a textual replace for `#include`, replacing the #include with the (preprocessed) body of the file.
 
 Someone unfamiliar with the preprocessor may be confused by this,
 because it's common for beginners to assume that the preprocessor must produce complete tokens.
@@ -450,8 +526,6 @@ However,
 This means that the preprocesser can be used to generate some types of code.
 
 ---
-
-# X-macros Example
 
 ### colors.def
 ```cpp
@@ -485,9 +559,7 @@ int main() {
 
 ---
 
-# X-Macros final result
-
-### The end result:
+The end result:
 
 ```cpp
 #include <stdio.h>
@@ -517,6 +589,8 @@ Example blatantly stolen from [Randy Meyers](http://www.drdobbs.com/the-new-c-x-
 
 # Supermacros
 
+---
+
 By using `#undef` within the X-macro file, any code that uses it won't have to clean up after itself.
 
 You can use #define and X-macros together to simulate passing a parameter to the included header file.
@@ -524,6 +598,8 @@ You can use #define and X-macros together to simulate passing a parameter to the
 ---
 
 # Unary + operator
+
+---
 
 Everyone knows that the + operator is used to sum two values.
 However, it can also be used as a unary operator.
@@ -539,6 +615,8 @@ Alone, it's somewhat useless, but it has some interesting side effects.
 
 # Unary + on enums
 
+---
+
 When used on an enum, unary + is the same as a cast to int.
 
 ```cpp
@@ -553,6 +631,8 @@ printf("%d",+val); // +val is an int
 ---
 
 # Unary + to create const ref
+
+---
 
 Sometimes, a function requires a const reference, but you want to pass it something else.
 When this happens, you can use + to create a "temporary reference" to a value.
@@ -581,12 +661,16 @@ Taken from [Johannes Schaub](http://stackoverflow.com/questions/75538/hidden-fea
 
 # Unary + to convert arrays to pointers
 
+---
+
 On occasion, you'll need to send a pointer to a function. Typically, your options are:
 
 ```cpp
 &arr[0];
 (int*)arr[0];
 ```
+
+---
 
 However, using unary + you can convert any array into a pointer while remaining easy-to-read.
 
@@ -608,6 +692,8 @@ Taken from [Johannes Schaub](http://stackoverflow.com/questions/75538/hidden-fea
 ---
 
 # Switch Statements
+
+---
 
 How do switch statements work?
 
@@ -632,8 +718,6 @@ default:
 
 ---
 
-# Switch Statements (Fallthrough)
-
 Regular switch statements, by default, have a unique scope for the whole switch (as shown by the {}).
 
 However, if you want to pass through to the next case, this poses problems and will error:
@@ -656,8 +740,6 @@ default:
 ```
 
 ---
-
-# Switch Statements (Blocks)
 
 This can be used to properly handle scope for each case, as well as group statements together logically:
 
@@ -683,8 +765,6 @@ default: {
 ```
 
 ---
-
-# Switch Interlacing
 
 We're able to combine switch and if in some convoluted ways:
 
@@ -714,8 +794,6 @@ default: {
 ```
 
 ---
-
-# Switch Interlacing Example
 
 This trick can be extended to work with if(){}else{}:
 
@@ -752,6 +830,8 @@ Credit to Ben Russel (benrr101) for this snippet
 ---
 
 # Duff's Device
+
+---
 
 This trick was used with a for loop for this lovely, famous (but slightly modified) bit of code:
 
@@ -808,6 +888,8 @@ template<typename T> struct MyType {
 };
 ```
 
+---
+
 In this case, `T` is used as a type determined at compile time:
 
 ```cpp
@@ -817,6 +899,8 @@ MyType<int> x = MyType(5); // "typename T" matches "int"
 ---
 
 # Template turing-completeness
+
+---
 
 C++ templates are turing-complete:
 
@@ -839,6 +923,8 @@ int main() {
 
 # Templates on unions (C++11)
 
+---
+
 Templates can be done on the types in a union as well:
 
 ```cpp
@@ -859,6 +945,8 @@ Type punning didn't stop being undefined, by the way.
 ---
 
 # Templates on bitfields
+
+---
 
 Templates can be used for integral values, not just types.
 They must be calculatable in compile-time.
@@ -882,6 +970,8 @@ int main() {
 
 # Lambdas (C++11)
 
+---
+
 Lambda functions are basically anonymous functions.
 These can make some of the standard library's functions much more usable.
 
@@ -893,6 +983,8 @@ generate(x.begin(),x.end(),[]() {
 printf("Number of odd values: ",count_if(x.begin(), x.end(), [](int i){
 	return i%2;}));
 ```
+
+---
 
 However they can VERY easily confuse anyone who is unaware:
 
@@ -915,6 +1007,8 @@ int main() {
 
 # Range-based For Loops (C++11)
 
+---
+
 C++11 allows the use of foreach loops using a somewhat familiar syntax:
 
 ```cpp
@@ -923,6 +1017,8 @@ for(int i : vec) {
 	cout << i << endl;
 }
 ```
+
+---
 
 The trick is that this can operate on C-style arrays, initializer lists, and types that have .begin() and .end() functions.
 
@@ -938,6 +1034,8 @@ for(auto _iter = vec.begin(); _iter != vec.end(); _iter++) {
 ---
 
 # Exploiting ranges
+
+---
 
 This can be exploited to use foreach over things that aren't "real" collections.
 
@@ -976,6 +1074,8 @@ for(int i : Count(5,3)) {
 
 # Disclaimer
 
+---
+
 This last trick is NOT for the faint of heart.
 If you are squeamish or think that you may be unable to handle this monstrosity, please stop reading.
 
@@ -984,6 +1084,8 @@ It abuses some rules in the C++ syntax that should probably never be abused
 ---
 
 # Void Type Expressions
+
+---
 
 A void function is normally assumed to not return anything.
 In fact, you can leave the return out of the end of a void function.
@@ -1005,8 +1107,6 @@ int main() {
 
 ---
 
-# Void Type Expression Details
-
 Some common void-type expressions:
 
  - Functions returning void
@@ -1021,18 +1121,18 @@ Other places a void-type expression can be used:
 
 # Conclusion
 
+---
+
 I actually can't produce a piece of code that encorporates MOST of these tricks, let alone ALL.
 Such code should probably never exist.
 
 Reminder: Most of these should only be used if there is literally no other way to do what you want to do.
 They give you more control over your code, at the expense of readability and maintainability.
 
+---
+
 Always remember that it's always a good idea to "Code for the Maintainer":
 
 > Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.
 
 >> *I usually maintain my own code, so the as-if is true*
-
----
-
-# return 0;

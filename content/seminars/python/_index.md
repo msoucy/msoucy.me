@@ -5,9 +5,15 @@ outputs = ["Reveal"]
 date = "November 6, 2015"
 +++
 
+# Python for RIT Students
+
+by Matt Soucy
+
 ---
 
 # Topics
+
+---
 
 - Environments
 - Tuples
@@ -24,6 +30,8 @@ date = "November 6, 2015"
 
 # Environments
 
+---
+
 Stop using IDLE, it's not sufficient for your needs
 
 - Jupyter (formerly IPython)
@@ -38,12 +46,16 @@ Stop using IDLE, it's not sufficient for your needs
 
 # Tuples
 
+---
+
 Basically, an immutable collection of data:
 
 ```python
 tup = (1,3,5)
 print type(tup) # tuple
 ```
+
+---
 
 Different from lists how?
 
@@ -57,11 +69,15 @@ Different from lists how?
 
 ---
 
-# Tuple Packing/Unpacking
+# Tuple Packing and Unpacking
+
+---
 
 You can create tuples "containing" lvalues.
 
 #### For those who are unfamiliar, lvalues are "things you can assign to"
+
+---
 
 ```python
 x, y = 5, 7 # same as `x=5;y=7`
@@ -72,6 +88,8 @@ for root, dirs, files in os.walk("."): pass
 ---
 
 # Functions you might not know about
+
+---
 
 ```python
 # Gives index, value pairs
@@ -91,12 +109,14 @@ reduce(function, sequence[, initial])
 dir([object])
 
 # "zip up" several sequences
-zip(seq1 p, seq1 [...]]) # -> [(seq1[0], seq2[0], ...), (...)]
+zip(seq1, seq1 [...]]) # -> [(seq1[0], seq2[0], ...), (...)]
 ```
 
 ---
 
 # Special syntax
+
+---
 
 You can unzip a sequence when passing as arguments:
 
@@ -107,6 +127,8 @@ def add(a, b):
 print(add(*data))
 ```
 
+---
+
 It's also possible to have a function take an arbitrary number of arguments:
 
 ```python
@@ -115,6 +137,8 @@ def sayAll(*args):
 		print(arg)
 sayAll("hello", "world", 5, 42 "stuff")
 ```
+
+---
 
 A similar syntax also works with keyword arguments:
 
@@ -127,6 +151,8 @@ keywords(hello="world", this="that")
 ---
 
 # Magic functions
+
+---
 
 How the CS department has taught classes:
 
@@ -147,14 +173,13 @@ b = mkVector(1,1)
 print(strVector(addVectors(a,b)))
 ```
 
+---
+
 If you do this in the real world, you will be laughed out of any workplace.
 
 ---
 
-# Magic functions
-
 Python supports constructors and operator overloading:
-
 
 ```python
 class Vector(object):
@@ -172,8 +197,6 @@ print(a+b)
 ```
 
 ---
-
-# Useful magic functions
 
 Some of the most useful magic functions are:
 
@@ -197,6 +220,8 @@ class Vector(struct):
 	_slots = ("x", "y")
 ```
 
+---
+
 `rit_lib`'s `struct` is like a mutable `namedtuple` that you can't iterate over
 
 ```python
@@ -207,6 +232,8 @@ Vector = namedtuple("Vector", ["x", "y"])
 ---
 
 # Statements vs. Expressions
+
+---
 
 ```python
 # An expression is basically "something that has a value"
@@ -227,7 +254,11 @@ except: pass
 
 # Comprehensions
 
+---
+
 Comprehensions help convert large blocks that build lists or dictionaries into single expressions.
+
+---
 
 ```python
 # Let's implement a "map"-like function
@@ -247,8 +278,6 @@ def doubleItems(seq):
 ```
 
 ---
-
-# Complex comprehensions
 
 Comprehensions, much like for loops, can be nested, possibly with conditionals:
 
@@ -273,9 +302,13 @@ def getLines(allFilenames):
 
 # Generators
 
+---
+
 Generators are basically a way to create and manipulate sequences without actually storing the full sequence in memory
 
 They can almost be considered "functions that return several times as the function runs"
+
+---
 
 ```python
 def genDoubles(maxVal):
@@ -294,9 +327,13 @@ print(val.next())
 
 # Comprehensions vs generators
 
+---
+
 Generators can also be produced in a similar syntax to comprehensions.
 
 The main difference is that the generator is lazy and so needs to be iterated over to operate on it
+
+---
 
 ```pycon
 >>> gen = (x * 2 for x in range(10))
@@ -321,6 +358,8 @@ The main difference is that the generator is lazy and so needs to be iterated ov
 
 # Context managers
 
+---
+
 Sometimes, you want to be able to say "return to this state after doing this", without worrying about exceptions, etc:
 
 - File handling/autoclosing
@@ -330,8 +369,6 @@ Sometimes, you want to be able to say "return to this state after doing this", w
 This concept exists in C++ as RAII, and in Python as Context Managers
 
 ---
-
-# Context managers
 
 ```python
 # Let's copy a file's contents!
@@ -344,8 +381,6 @@ outfi.close()
 ```
 
 ---
-
-# Context managers
 
 ```python
 # Let's copy a file's contents!
@@ -361,8 +396,6 @@ except IOError:
 
 ---
 
-# Context managers
-
 ```python
 # Let's copy a file's contents!
 # Let's use context managers!
@@ -372,8 +405,6 @@ with open("somefile") as inpfi:
 ```
 
 ---
-
-# Context managers
 
 ```python
 # Let's copy a file's contents!
@@ -386,6 +417,8 @@ with open("somefile") as inpfi, open("newfile", "w") as outfi:
 
 # Creating context managers
 
+---
+
 Any custom class can get context manager functionality by adding two functions:
 
 - `__enter__(self)`: do any "entry" code
@@ -396,6 +429,8 @@ There is also [contextlib](https://docs.python.org/3.4/library/contextlib.html),
 ---
 
 # First Class Functions
+
+---
 
 Functions can be thought of like variables - you can pass them into functions, assign them, etc.
 
@@ -413,6 +448,8 @@ Functions returned from other functions can retain information about their conte
 ---
 
 # Lambdas
+
+---
 
 Lambda allows you to create a function inline.
 
@@ -435,6 +472,8 @@ def getAdder(x):
 
 # Closures
 
+---
+
 You can pass functions into other functions...
 
 ```python
@@ -451,6 +490,8 @@ Notice that the function returned relies on the function passed in.
 ---
 
 # Decorators
+
+---
 
 Let's make a function that operates on other functions to provide debug information.
 
@@ -472,8 +513,6 @@ if DEBUG:
 
 ---
 
-# Decorators
-
 In fact, Python provides some even better syntax for using decorators:
 
 ```python
@@ -488,21 +527,13 @@ def debugInfo(name)
 
 @debugInfo("add")
 def add(a, b): return a+b
-
-# Equivalent to:
-debugAdd = debugInfo("add")
-@debugAdd
-def add(a, b): return a+b
-
-# Equivalent to:
-def add(a, b): return a+b
-debugAdd = debugInfo("add")
-add = debugAdd(add)
 ```
 
 ---
 
 # Virtual Environments
+
+---
 
 Sometimes you'll want to install different versions of Python libraries.
 Normally, a python app won't/can't specify the version of each library required.
@@ -515,6 +546,8 @@ The easiest way to set them up is via VirtualEnvWrapper or VirtualFish (dependin
 ---
 
 # More info
+
+---
 
 Some fun links:
 
