@@ -1,7 +1,7 @@
 [
     ["about", "/pages/about"],
     ["email", "mailto:web@msoucy.me"],
-    ["resume", "/extras/resume.pdf"],
+    ["resume", "/resume.pdf"],
     ["github", "https://github.com/msoucy"],
     ["linkedin", "https://www.linkedin.com/in/msoucy"],
     ["mastodon", "https://tech.lgbt/@msoucy"],
