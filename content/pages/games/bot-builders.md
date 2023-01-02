@@ -5,6 +5,10 @@ Date: 1970-01-01 00:01
 Template: page
 ---
 
+<center>
+![Logo][]
+</center>
+
 This page is the home of Bot Builders.
 
 Bot Builders is an tableau-building (and robot-building) game for 2-4 players ages 12 and up.
@@ -13,7 +17,7 @@ Your goal is to create and customize a group of robots to earn points in an aren
 To do this, you'll need to build up your team of engineering students.
 
 <center>
-{{< youtube "jPgZF41CEv4" >}}
+{{< youtube "nm_tXTHEkrc" >}}
 </center>
 
 ## Status
@@ -37,3 +41,4 @@ Current playtesting is available at the following locations:
 [Protospiel Online]: https://protospiel.online/
 [Assets]: https://short.msoucy.me/botbuilders-assets
 [Sell Sheet]: {attach}bot-builders-sell-sheet.pdf
+[Logo]: {attach}bot-builders-logo.png
