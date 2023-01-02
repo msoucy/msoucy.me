@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="{{ site.Language }}"
+	prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <main class="main">
+            <nav>
+                {{- partial "nav.html" . -}}
+            </nav>
+            {{- block "main" . }}{{- end }}
+        </main>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

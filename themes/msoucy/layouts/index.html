@@ -1,0 +1,11 @@
+{{- define "main" }}
+<article itemid="mainEntityOfPage" itemscope itemtype="http://schema.org/Article">
+  {{ with (index $.Site.RegularPages 0) }}
+  {{- partial "article_infos.html" . -}}
+  {{ .Content }}
+  {{ if not .Page.Draft }}
+  {{- partial "neighbors.html" . -}}
+  {{ end }}
+  {{ end }}
+</article>
+{{- end }}

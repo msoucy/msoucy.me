@@ -1,0 +1,23 @@
+baseURL = 'https://msoucy.me/'
+languageCode = 'en-us'
+title = 'msoucy.me'
+theme = ['msoucy', 'reveal-hugo']
+enableGitInfo = true
+
+[params]
+  author = 'Matt Soucy'
+  fb = "1188604437"
+  subtitle = "Code, games, and sarcasm"
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+[social]
+  twitter = 'msoucy93'
+
+[outputFormats.Reveal]
+  baseName = "index"
+  mediaType = "text/html"
+  isHTML = true

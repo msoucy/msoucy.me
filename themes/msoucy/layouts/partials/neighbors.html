@@ -1,0 +1,21 @@
+<div class="prevnextparts">
+  <hr />
+  {{- $series := .Params.series }}
+  {{ if $series }}
+  <p><em>
+    This post is part of the <a href="/series/{{$series | urlize}}">series on {{ $series }}</a>
+  </em></p>
+  {{ end }}
+  <div class="prevnext">
+  {{ if .PrevInSection }}
+    <div class="prev">
+      Previous: {{with .PrevInSection}}<a href="{{.Permalink}}">{{ .Title }}</a>{{end}}
+    </div>
+  {{ end }}
+  {{ if .NextInSection }}
+  <div class="next">
+    Next: {{with .NextInSection}}<a href="{{.Permalink}}">{{ .Title }}</a>{{end}}
+  </div>
+  {{ end }}
+  </div>
+</div>

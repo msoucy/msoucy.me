@@ -1,0 +1,14 @@
+{{- define "main" }}
+<article>
+  <h2>{{ .Title }}</h2>
+  <table>
+  {{- range .Data.Pages }}
+  <tr>
+    <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+    <td>{{if .Params.author}}{{.Params.author}}{{else}}{{ .Site.Params.author }}{{end}}</td>
+    <td>{{ .Date }}</td>
+  </tr>
+  {{- end }}
+  </table>
+</article>
+{{- end }}

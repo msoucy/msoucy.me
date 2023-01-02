@@ -2,6 +2,8 @@
 Title: About
 Slug: about
 Date: 1970-01-01 00:01
+aliases:
+    - /about
 ---
 
 I'm a software engineer, and a graduate from the Rochester Institute of Technology.
@@ -13,4 +15,4 @@ I do have experience with numerous other languages, though, and pick up language
 
 I can be contacted via any of the contact links above, and my resume can be found [here][Resume].
 
-[Resume]: {static}/extras/resume.pdf
+[Resume]: /resume.pdf

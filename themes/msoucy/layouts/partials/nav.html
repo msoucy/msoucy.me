@@ -1,0 +1,39 @@
+<ul>
+  <li>
+      <h3>categories</h3>
+      {{- partial "postlist.html" .Site.Taxonomies.categories -}}
+  </li>
+  <li>
+      <h3>tags</h3>
+      {{- partial "postlist.html" .Site.Taxonomies.tags -}}
+  </li>
+  <li>
+      <h3>seminars</h3>
+      {{- $sems := (index (where .Site.Sections "Type" "seminars") 0) -}}
+      <ul>
+        {{ range $name, $sem := $sems.Pages -}}
+        <li><a href="{{ $sem.Permalink }}">{{ $sem.Title }}</a></li>
+        {{- end }}
+      </ul>
+  </li>
+  <li>
+    <h3>links</h3>
+  <ul>
+      {{ range $link := (index $.Site.Data "links") -}}
+      {{ $linkName := index $link 0 -}}
+      {{ $linkLoc := index $link 1 -}}
+      <li><a href="{{ $linkLoc }}">{{ $linkName }}</a></li>
+      {{ end }}
+  </ul>
+  </li>
+  <li>
+    <h3>about</h3>
+    <ul>
+        {{ range $me := (index $.Site.Data "author") -}}
+        {{ $meName := index $me 0 -}}
+        {{ $meLoc := index $me 1 -}}
+      <li><a rel="me" href="{{ $meLoc }}">{{ $meName }}</a></li>
+      {{ end }}
+    </ul>
+  </li>
+</ul>

@@ -1,11 +1,6 @@
 [submodule "plugins"]
 	path = plugins
 	url = https://github.com/getpelican/pelican-plugins.git
-[submodule "themes"]
-	path = themes
-	url = ../insoucyant.theme.git
-	ignore = dirty
-[submodule "Presentations"]
-	path = Presentations
-	url = https://github.com/msoucy/Presentations.git
-	ignore = dirty
+[submodule "themes/reveal-hugo"]
+	path = themes/reveal-hugo
+	url = https://github.com/dzello/reveal-hugo.git
