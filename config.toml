@@ -1,4 +1,4 @@
-baseURL = 'http://msoucy.me/'
+baseURL = 'https://msoucy.me/'
 languageCode = 'en-us'
 title = 'msoucy.me'
 theme = 'msoucy'
