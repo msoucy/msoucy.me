@@ -6,7 +6,6 @@ enableGitInfo = true
 
 [params]
   author = 'Matt Soucy'
-  twitter = 'msoucy93'
   fb = "1188604437"
   subtitle = "Code, games, and sarcasm"
 
@@ -14,3 +13,6 @@ enableGitInfo = true
   category = 'categories'
   tag = 'tags'
   series = 'series'
+
+[social]
+  twitter = 'msoucy93'

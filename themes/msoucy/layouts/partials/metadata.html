@@ -18,15 +18,7 @@
 <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-{{ $twitter := .Site.Params.twitter -}}
-{{ if $twitter -}}
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@{{$twitter}}" />
-<meta name="twitter:title" content="{{ .Title }}"/>
-<meta name="twitter:description" content="{{ .Description }}"/>
-<meta name="twitter:creator" content="@{{$twitter}}" />
-<meta name="twitter:image:src" content="/images/me.png"/>
-{{- end }}
+{{ template "_internal/twitter_cards.html" . }}
 
 {{ $fb := .Site.Params.fb -}}
 {{ if $fb -}}
