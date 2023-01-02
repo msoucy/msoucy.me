@@ -5,6 +5,3 @@
 	path = Presentations
 	url = https://github.com/msoucy/Presentations.git
 	ignore = dirty
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke
