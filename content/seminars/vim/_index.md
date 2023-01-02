@@ -3,14 +3,7 @@ title = "Intro to Vim"
 author = "Matt Soucy"
 outputs = ["Reveal"]
 +++
-
----
-
 # What is vim?
-
-- A text editor
-- Based on "modes" (unlike most other editors)
-- Part programming language, part Editor
 
 ---
 
@@ -20,18 +13,21 @@ outputs = ["Reveal"]
 
 # Let's write something
 
+---
+
 - Open vim
     - `vim testfile.txt`
 - Go into insert mode
-    - When you first open vim if you try to type something, things aren't going to go your way.
-	- To be able to write text, press `i`.
-- Type something
+    - When you first open vim if you try to type something, things aren't going to go your way. To be able to type stuff, press `i`.
+- Type some stuff
 - Leave insert mode
     - Press `Esc` to go back to the normal mode.
 
 ---
 
 # Normal Mode
+
+---
 
 ## Moving the cursor
 
@@ -41,12 +37,12 @@ outputs = ["Reveal"]
       j
 ```
 
-Move the cursor with the `h`, `j`, `k`, and `l` keys.
-This keeps your fingers in the center of the keyboard, and means you can work more comfortably and faster.
+Move the cursor with the `h`, `j`, `k`, and `l` keys. This keeps your fingers in
+the center of the keyboard, and means you can work more comfortably and faster.
+
+> These movements are also used in nethack
 
 ---
-
-# Normal Mode (Movement)
 
 There are many more movements, including:
 
@@ -59,17 +55,19 @@ There are many more movements, including:
 
 ---
 
-# Normal Mode (Actions)
-
 ## Delete (cut) a line
 
 Want to delete a line? That's done with the **d** key. Move your cursor to a line
 you don't want anymore, and press `dd`.
 
+---
+
 ## Put (paste) a line
 
 Let's put that line you just deleted somewhere else. Put the cursor somewhere,
 and press `p`.
+
+---
 
 ## Yank (copy) a line
 
@@ -78,13 +76,12 @@ press `p` wherever you want to put it there.
 
 ---
 
-# Normal Mode (Repeating)
-
 ## Doing things more than once
 
-You can do things multiple times.
-Want to move the cursor in a direction 10 times?
-Type in `10` and then hit one of the movement keys.
+You can do things multiple times. Want to move the cursor in a direction 10
+times? Type in `10` and then hit one of the movement keys.
+
+---
 
 ## Why `dd` instead of just `d`?
 
@@ -98,18 +95,17 @@ it. This also applies to yanking.
 
 You know the following:
 
-- Movements (`$` goes to end of line, `w` goes to the next word, `_` means "entire line")
-- Actions (`d` deletes the result of a movement, `y` yanks text)
+- Movements (`$` goes to end of line, `w` goes to the next word)
+- Actions (`d` deletes the result of a movement)
 
-So, if I say that `dw` deletes one word, what do the following do?
-
-- `d$`
-- `yw`
-- `y3y` (or `y3_`)
+So, if I say that `dw` deletes one word, what does `d$` do?
+What about `yw`?
 
 ---
 
 # Visual Mode
+
+---
 
 ## Select some text
 
@@ -117,6 +113,8 @@ Counting how many lines or characters you want to delete can be a pain, so I'm
 going to show you visual mode. Press `v`, and then move the cursor. You can
 highlight text like this, and pressing `d` or `y` will delete or yank
 specifically the text you have highlighted.
+
+---
 
 ## Select some lines
 
@@ -127,6 +125,8 @@ a time, instead of characters.
 
 # Searching
 
+---
+
 ## Search forward
 
 Press `/` and then enter in your search query. When you press enter, you'll be
@@ -134,9 +134,13 @@ taken to the next occurrence of the search. You can press `n` to go to the next
 occurrence, or `N` to go to the previous, and keep going until you find what you
 want.
 
+---
+
 ## Search backwards
 
 Same thing as searching forwards, just use `?` instead of `/`.
+
+---
 
 ## Searches are regexes
 
@@ -149,16 +153,22 @@ characters into your searches.
 
 # Search and replace
 
+---
+
 ## In visual mode
 
 Let's say you have some variable named `foo`, and you want to rename it to
 `bar`. The easiest way to do this is a search and replace. Enter visual mode and
 select some text, and then type in `:s/foo/bar` and hit `Enter`.
 
+---
+
 ## Globally
 
 Let's say you want to do this on an entire file. Selecting all the lines in
 visual mode would be silly, so you can do this: `:%s/foo/bar`
+
+---
 
 ## Tips and tricks
 
@@ -172,10 +182,14 @@ visual mode would be silly, so you can do this: `:%s/foo/bar`
 
 # `:`
 
+---
+
 ## Commands
 
 The `:` character allows you to type in a command to vim. We used it in the last
 section for searching and replacing
+
+---
 
 ## Getting help
 
@@ -187,12 +201,16 @@ anything.
 
 # Write and Quit
 
+---
+
 ## Save the file
 
 Don't use `Ctrl` + `s`. Either nothing will happen, or your terminal will freeze
 (`Ctrl` + `q` unfreezes). To save the file, type in `:w` and hit `Enter`. You'll
 see something like `"testfile.txt" 153L, 4187C written` appear at the bottom of
 the screen.
+
+---
 
 ## Quit vim
 
@@ -238,10 +256,12 @@ Want to yank an entire file? `:%y`
 You can (and should) customize vim.
 
 Put settings in a text file called `~/.vim/vimrc`.
+
+---
+
 If you want to see what some CSHers have:
 
-- [msoucy](https://github.com/msoucy/dotfiles/blob/master/files/vim/.vim/vimrc).
-- [dgonyeo](https://github.com/dgonyeo/dotfiles/blob/master/.vimrc).
+- [msoucy](https://github.com/msoucy/dotfiles/blob/master/vim/.vim/vimrc).
 - [vim-sensible](https://github.com/tpope/vim-sensible)
     - Distributed as a plugin, but can copy the file as a base for your `vimrc`
 
@@ -264,6 +284,8 @@ Want to do some combinations of key 500000 times? Read up on how to use macros.
 
 # Random useful key bindings
 
+---
+
 - `I` == enter insert mode at the beginning of the line
 - `A` == enter insert mode at the end of the line
 - `o` means make a new line below the current and put the cursor there in input
@@ -281,6 +303,8 @@ Want to do some combinations of key 500000 times? Read up on how to use macros.
 
 You can edit multiple files at the same time.
 
+---
+
 ## Window splits
 
 You can view multiple parts of a file at the same time, or have multiple files
@@ -294,6 +318,8 @@ on the screen at the same time.
   Type in `:e path/to/file` in a split and it'll open the file there.
 - `:sp path/to/file` opens a file in a new split
 
+---
+
 ## Tabs
 
 Let me point you to Google.
@@ -306,10 +332,12 @@ If you have ssh access to a machine you can do:
 
 `vim scp://username@machine/path/to/file`
 
-Kudos to Ethan House for showing me this
+Kudos to Eve House for showing me this
 
 > This is done with the `netrw` plugin
 
 ---
 
-# :q
+```
+:q
+```

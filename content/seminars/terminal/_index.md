@@ -4,9 +4,15 @@ author = "Matt Soucy"
 outputs = ["Reveal"]
 +++
 
+# Intro to Bash and Vim
+
+by Matt Soucy, Claire Gonyeo
+
 ---
 
 # History of the Command Line
+
+---
 
 - Back in the good old days people used text interfaces to use computers
 - In the late 70s to the early 80s, people invented graphical user interfaces
@@ -18,6 +24,8 @@ outputs = ["Reveal"]
 ---
 
 # Operating System
+
+---
 
 You want to use Linux for this.
 
@@ -31,6 +39,8 @@ to get a small VM to work on.
 
 # Open a terminal
 
+---
+
 Open a terminal. Hooray you have a prompt!
 Most of the time, the default shell you will use is `bash`.
 
@@ -40,6 +50,8 @@ Most of the time, the default shell you will use is `bash`.
 ---
 
 # Location, Location, Location
+
+---
 
 When you're using bash, you're always at a place in your filesystem.
 It defaults to your home folder.
@@ -52,6 +64,8 @@ When you change the directory you're in, the `~` will be replaced with where you
 ---
 
 # Basic commands
+
+---
 
 Let's interact with some files!
 
@@ -66,15 +80,21 @@ Let's interact with some files!
 
 # Shortcuts
 
+---
+
 As I alluded to earlier, `~` is your home folder. `cd ~` (or just `cd`) will
 change your current directory to your home folder, no matter where you are.
 
 `/` is the root of your computer. It's the highest level directory, like `C:` in
 Windows land except without the dumb drive letter.
 
-> Why no drive letters? Because on \*nix systems, you can `mount` drives
+---
+
+Why no drive letters? Because on \*nix systems, you can `mount` drives
   anywhere! This is useful when you want to treat another drive/partition
   as if it were part of the existing filesystem.
+
+---
 
 `.` refers to the current directory you are in.
 
@@ -85,6 +105,8 @@ go up one level.
 
 # Hidden files
 
+---
+
 On Linux, to hide a file you simply make its name start with a period. That
 way, it doesn't show up in `ls`. If you want to see hidden files, use `ls -a`.
 
@@ -94,6 +116,8 @@ way, it doesn't show up in `ls`. If you want to see hidden files, use `ls -a`.
 
 # I forget. How do I ...?
 
+---
+
 If you forget or don't know the particulars of using a command, just type in
 `man command` and it'll pull up the manual page for that command. For example,
 take a look at `man mv`
@@ -102,6 +126,8 @@ take a look at `man mv`
 
 # My computer's boring, let's go somewhere else!
 
+---
+
 `ssh` is a cool tool. It lets you open a shell on a different computer. With it
 you can interact with files the exact same way you would on your local computer.
 
@@ -109,15 +135,15 @@ you can interact with files the exact same way you would on your local computer.
 
 ---
 
-# Machines to try:
-
 Run the command `ssh username@hostname` and enter in your password.
+
+---
 
 - `shell.csh.rit.edu` is the user machine for CSH, so it's a place where all of
   our members can go and do things.
 - `glados.cs.rit.edu` is a CS department machine. Everyone chooses this one at
   first, so it can be quite slow at times
-- `gibson.rit.edu` is an outdated Solaris machine, still somewhat usable)
+- `gibson.rit.edu` is an outdated Solaris machine, still somewhat usable
 - With a bit of setup, you can connect to your Koding machine as well
 
 ---
@@ -136,9 +162,9 @@ and monitor.
 
 # Find a file
 
-Let's say you want to find the file `tits.jpg`. It's somewhere under your home
+Let's say you want to find the file `foo.jpg`. It's somewhere under your home
 directory, but you don't know where. Go to the folder you want to search in, and
-type the command `find . -name tits.jpg`
+type the command `find . -name foo.jpg`
 
 ---
 
@@ -146,21 +172,25 @@ type the command `find . -name tits.jpg`
 
 Want to download a file to your current directory?
 
-`wget http://pornhub.com/tits.avi`
+`wget http://mysite.com/foo.avi`
 
 ---
 
 # Copying files between computers
 
+---
+
 Have a file on your computer you want on rancor?
 
 `scp localfile username@rancor.csh.rit.edu:`
 
+Note: when copying to a remote machine, that `:` at the end is _necessary_!
+
+---
+
 Have a file on rancor you want on your local computer?
 
 `scp username@rancor.csh.rit.edu:remotefile .`
-
-Note: when copying to a remote machine, that `:` at the end is _necessary_!
 
 ---
 
@@ -203,8 +233,8 @@ whenever.
 
 # Movies
 
-You can also watch a full movie from the terminal! Just type in `telnet
-towel.blinkenlights.nl`
+You can also watch a full movie from the terminal!
+Just type in `telnet towel.blinkenlights.nl`
 
 ---
 
@@ -221,15 +251,17 @@ first column shows the permissions on each file.
 
 ---
 
-# Understanding permissions
-
 Often the default permissions are fine, but if you want to prevent other people
 on rancor from reading your super secret love letters you keep there, I'll show
 you how to change them.
 
+---
+
 You have three sets of three boolean flags. Imagine each flag being represented
 with a binary number, 0 is not set and 1 is set. If we had the permissions read
 and write but not execute, that would be 110.
+
+---
 
 So the permissions for a file that everyone can read and write to, but no one
 can execute, would be 110 110 110. If you convert the binary numbers to decimal,
@@ -244,25 +276,25 @@ It can also sometimes be shown as a longer string, like so:
 
 ---
 
-# Setting permissions
-
 Let's say we have the file tits.avi (remember we downloaded it?), and we want to
 give everyone permission to both read from and write to the file, but not
 execute the file. The command would be:
 
-`chmod 666 tits.avi`
+`chmod 666 foo.avi`
 
 chmod stands for change mode, or change file mode bits.
 
 ---
 
-# Useful permission values:
+Useful permission values:
 
  - 777: everyone can do everything
  - 700: only you can read, write, or execute the file
  - 755: you can do anything with file, others can read and execute
  - 600: only you can read or write to the file
  - 644: you can read or write to the file, others can read the file
+
+---
 
 The execute flag means you can run the file as if it's a program, or `cd` into
 the directory if it's a directory.
@@ -296,10 +328,11 @@ In Linux, we can connect programs together with the `|` symbol.
 # `grep`
 
 `curl` is just like the `wget` command we saw earlier, except it prints out what
-it downloads instead of saving it into a file. So let's try `curl -s
-http://www.pornhub.com/`. That's a lot of text. I wonder if they use jquery...
+it downloads instead of saving it into a file.
+So let's try `curl -s http://www.google.com/`.
+That's a lot of text. I wonder if they use jquery...
 
-`curl -s http://www.pornhub.com/ | grep jquery`
+`curl -s http://www.google.com/ | grep jquery`
 
 ---
 
@@ -308,7 +341,7 @@ http://www.pornhub.com/`. That's a lot of text. I wonder if they use jquery...
 How about if you want to send a program's output to a file? The `>` symbol will
 write whatever it gets into a file. So to emulate what wget does:
 
-`curl -s http://www.pornhub.com/ > pornhub.html`
+`curl -s http://www.google.com/ > google.html`
 
 ---
 
@@ -343,6 +376,8 @@ leave that for you guys to look up on your own.
 
 # Let's write something
 
+---
+
 - Open vim
     - `vim testfile.txt`
 - Go into insert mode
@@ -354,6 +389,8 @@ leave that for you guys to look up on your own.
 ---
 
 # Normal Mode
+
+---
 
 ## Moving the cursor
 
@@ -370,8 +407,6 @@ the center of the keyboard, and means you can work more comfortably and faster.
 
 ---
 
-# Normal Mode (Movement)
-
 There are many more movements, including:
 
 - **b**eginning of word
@@ -383,17 +418,19 @@ There are many more movements, including:
 
 ---
 
-# Normal Mode
-
 ## Delete (cut) a line
 
 Want to delete a line? That's done with the **d** key. Move your cursor to a line
 you don't want anymore, and press `dd`.
 
+---
+
 ## Put (paste) a line
 
 Let's put that line you just deleted somewhere else. Put the cursor somewhere,
 and press `p`.
+
+---
 
 ## Yank (copy) a line
 
@@ -402,12 +439,12 @@ press `p` wherever you want to put it there.
 
 ---
 
-# Normal Mode
-
 ## Doing things more than once
 
 You can do things multiple times. Want to move the cursor in a direction 10
 times? Type in `10` and then hit one of the movement keys.
+
+---
 
 ## Why `dd` instead of just `d`?
 
@@ -431,12 +468,16 @@ What about `yw`?
 
 # Visual Mode
 
+---
+
 ## Select some text
 
 Counting how many lines or characters you want to delete can be a pain, so I'm
 going to show you visual mode. Press `v`, and then move the cursor. You can
 highlight text like this, and pressing `d` or `y` will delete or yank
 specifically the text you have highlighted.
+
+---
 
 ## Select some lines
 
@@ -447,6 +488,8 @@ a time, instead of characters.
 
 # Searching
 
+---
+
 ## Search forward
 
 Press `/` and then enter in your search query. When you press enter, you'll be
@@ -454,9 +497,13 @@ taken to the next occurrence of the search. You can press `n` to go to the next
 occurrence, or `N` to go to the previous, and keep going until you find what you
 want.
 
+---
+
 ## Search backwards
 
 Same thing as searching forwards, just use `?` instead of `/`.
+
+---
 
 ## Searches are regexes
 
@@ -469,16 +516,22 @@ characters into your searches.
 
 # Search and replace
 
+---
+
 ## In visual mode
 
 Let's say you have some variable named `foo`, and you want to rename it to
 `bar`. The easiest way to do this is a search and replace. Enter visual mode and
 select some text, and then type in `:s/foo/bar` and hit `Enter`.
 
+---
+
 ## Globally
 
 Let's say you want to do this on an entire file. Selecting all the lines in
 visual mode would be silly, so you can do this: `:%s/foo/bar`
+
+---
 
 ## Tips and tricks
 
@@ -492,10 +545,14 @@ visual mode would be silly, so you can do this: `:%s/foo/bar`
 
 # `:`
 
+---
+
 ## Commands
 
 The `:` character allows you to type in a command to vim. We used it in the last
 section for searching and replacing
+
+---
 
 ## Getting help
 
@@ -507,12 +564,16 @@ anything.
 
 # Write and Quit
 
+---
+
 ## Save the file
 
 Don't use `Ctrl` + `s`. Either nothing will happen, or your terminal will freeze
 (`Ctrl` + `q` unfreezes). To save the file, type in `:w` and hit `Enter`. You'll
 see something like `"testfile.txt" 153L, 4187C written` appear at the bottom of
 the screen.
+
+---
 
 ## Quit vim
 
@@ -558,10 +619,12 @@ Want to yank an entire file? `:%y`
 You can (and should) customize vim.
 
 Put settings in a text file called `~/.vim/vimrc`.
+
+---
+
 If you want to see what some CSHers have:
 
 - [msoucy](https://github.com/msoucy/dotfiles/blob/master/vim/.vim/vimrc).
-- [dgonyeo](https://github.com/dgonyeo/dotfiles/blob/master/.vimrc).
 - [vim-sensible](https://github.com/tpope/vim-sensible)
     - Distributed as a plugin, but can copy the file as a base for your `vimrc`
 
@@ -584,6 +647,8 @@ Want to do some combinations of key 500000 times? Read up on how to use macros.
 
 # Random useful key bindings
 
+---
+
 - `I` == enter insert mode at the beginning of the line
 - `A` == enter insert mode at the end of the line
 - `o` means make a new line below the current and put the cursor there in input
@@ -601,6 +666,8 @@ Want to do some combinations of key 500000 times? Read up on how to use macros.
 
 You can edit multiple files at the same time.
 
+---
+
 ## Window splits
 
 You can view multiple parts of a file at the same time, or have multiple files
@@ -614,6 +681,8 @@ on the screen at the same time.
   Type in `:e path/to/file` in a split and it'll open the file there.
 - `:sp path/to/file` opens a file in a new split
 
+---
+
 ## Tabs
 
 Let me point you to Google.
@@ -626,10 +695,12 @@ If you have ssh access to a machine you can do:
 
 `vim scp://username@machine/path/to/file`
 
-Kudos to Ethan House for showing me this
+Kudos to Eve House for showing me this
 
 > This is done with the `netrw` plugin
 
 ---
 
-# :q
+```
+:q
+```
