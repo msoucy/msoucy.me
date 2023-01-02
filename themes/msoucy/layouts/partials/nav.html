@@ -18,24 +18,24 @@
       {{ end }}
     </ul>
   </li>
-  {{/*
-    {% if LINKS %}
   <li>
     <h3>links</h3>
   <ul>
-{% for ttl, lnk in LINKS %}
-      <li><a href="{{ lnk }}">{{ ttl }}</a></li>
-{% endfor %}
+      {{ range $link := (index $.Site.Data "links") -}}
+      {{ $linkName := index $link 0 -}}
+      {{ $linkLoc := index $link 1 -}}
+      <li><a href="{{ $linkLoc }}">{{ $linkName }}</a></li>
+      {{ end }}
   </ul>
   </li>
-{% endif %}
   <li>
     <h3>about</h3>
     <ul>
-{% for text, link in AUTHOR_DATA.items() %}
-      <li><a rel="me" href="{{ link }}">{{ text }}</a></li>
-{% endfor %}
+        {{ range $me := (index $.Site.Data "author") -}}
+        {{ $meName := index $me 0 -}}
+        {{ $meLoc := index $me 1 -}}
+      <li><a rel="me" href="{{ $meLoc }}">{{ $meName }}</a></li>
+      {{ end }}
     </ul>
   </li>
-  */}}
 </ul>
