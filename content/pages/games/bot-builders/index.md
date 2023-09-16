@@ -19,7 +19,7 @@ Your goal is to create and customize a group of robots to earn points in an aren
 To do this, you'll need to build up your team of engineering students.
 
 {{< text-center >}}
-{{< youtube "nm_tXTHEkrc" >}}
+{{< youtube "gmwcToEkTqI" >}}
 {{< /text-center >}}
 
 ## Status
