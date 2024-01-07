@@ -19,7 +19,7 @@ Your goal is to create and customize a group of robots to earn points in an aren
 To do this, you'll need to build up your team of engineering students.
 
 {{< text-center >}}
-{{< youtube "gmwcToEkTqI" >}}
+{{< youtube "pbF9PKBAPRI" >}}
 {{< /text-center >}}
 
 ## Status
@@ -37,7 +37,6 @@ Resources including the Print and Play and testing information can be found in t
 Current playtesting is available at the following locations:
 
 - [Screentop.gg](https://screentop.gg/@msoucy/bot-builders)
-- [Tabletop Playground](https://mod.io/g/tabletopplayground/m/bot-builders)
 
 
 [Protospiel Online]: https://protospiel.online/
