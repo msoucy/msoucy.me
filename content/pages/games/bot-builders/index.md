@@ -8,7 +8,7 @@ aliases:
 ---
 
 {{< text-center >}}
-<img src="logo.png" />
+<img src="logo.svg" />
 {{< /text-center >}}
 
 This page is the home of Bot Builders.
