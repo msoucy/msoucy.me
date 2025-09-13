@@ -2,7 +2,7 @@
 title = "Packaging Firefox Addons"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "October 30, 2014"
+date = 2014-10-30
 +++
 
 # Packaging Firefox Addons

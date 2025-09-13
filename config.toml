@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'msoucy.me'
 theme = ['msoucy', 'reveal-hugo']
 enableGitInfo = true
+enableRobotsTXT = true
 
 [params]
   author = 'Matt Soucy'
@@ -15,7 +16,7 @@ enableGitInfo = true
   series = 'series'
 
 [social]
-  twitter = 'msoucy93'
+  bsky = 'msoucy.gay'
 
 [outputFormats.Reveal]
   baseName = "index"

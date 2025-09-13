@@ -1,6 +1,6 @@
 ---
 Title: RepBot - A lesson in refactoring
-Date: 2014-02-05 18:10
+Date: 2014-02-05T18:10:00-05:00
 categories: [code]
 ---
 

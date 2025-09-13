@@ -9,7 +9,7 @@ Date: "2018-09-03"
 Recently, I noticed a preview of a blog post. In it, there were some custom embedded macros, that looked like:
 
 ```html
-{{< mastodon "https://mastodon.social/@msoucy/99825585254720557" >}}
+{{</* mastodon "https://mastodon.social/@msoucy/99825585254720557" */>}}
 ```
 
 These links were becoming expanded to a full Mastodon embed block:

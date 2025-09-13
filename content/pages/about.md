@@ -1,7 +1,7 @@
 ---
 Title: About
 Slug: about
-Date: 1970-01-01 00:01
+Date: 1970-01-01T00:01:00-05:00
 aliases:
     - /about
 ---

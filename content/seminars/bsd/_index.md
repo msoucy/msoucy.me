@@ -2,7 +2,7 @@
 title = "Berkeley Software Distribution"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "December 2, 2014"
+date = 2014-12-02
 +++
 
 # Berkeley Software Distribution

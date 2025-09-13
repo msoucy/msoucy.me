@@ -2,7 +2,7 @@
 title = "Injecting Code with Python"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "October 9, 2014"
+date = 2014-10-09
 +++
 
 # Injecting Code with Python

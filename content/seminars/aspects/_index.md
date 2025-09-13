@@ -2,7 +2,7 @@
 title = "Aspect-based events in Python"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "December 9, 2014"
+date = 2014-12-09
 +++
 
 # Aspect-based events in Python

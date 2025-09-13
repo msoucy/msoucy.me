@@ -1,6 +1,6 @@
 ---
 Title: HFOSS First Flight
-Date: 2014-02-05 13:50
+Date: 2014-02-05T13:50:00-05:00
 categories: [life]
 Tags:
 - hfoss

@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // establishes page width and centers
 $grid-column-width: 6.81%;
 $grid-gutter-width: 1.52%;
@@ -149,8 +151,6 @@ main {
 @media only screen and (max-width: 420px) {
   @include portrait-mobile;
 }
-
-@use "sass:color";
 
 $baseFontFamily: Verdana, helvetica, arial, clean, sans-serif;
 $monoFontFamily: "Andale Mono", AndaleMono, Consolas, "Lucida Console", Monaco, monospace;
@@ -426,7 +426,7 @@ blockquote {
 
 .codehilite pre {
         border: 1px solid #dddddd;
-        background-color: scale-color($text_block_bgcolor, $lightness: -80%);
+        background-color: color.scale($text_block_bgcolor, $lightness: -80%);
         color: #f8f8f2;
         padding: 0.4em 0.4em;
         text-align: left;

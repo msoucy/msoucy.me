@@ -1,0 +1,4 @@
+License: https://msoucy.me/license.xml
+
+User-agent: *
+Allow: /

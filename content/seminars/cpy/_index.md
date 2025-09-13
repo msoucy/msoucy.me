@@ -2,7 +2,7 @@
 title = "Using Python for Prototyping off of a C Library"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "November 18, 2014"
+date = 2014-11-18
 +++
 
 # Using Python for Prototyping off of a C Library

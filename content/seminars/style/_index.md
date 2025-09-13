@@ -2,7 +2,7 @@
 title = "Style Guidelines"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "February 8, 2014"
+date = 2014-02-08
 +++
 
 # Style Guidelines

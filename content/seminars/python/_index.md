@@ -2,7 +2,7 @@
 title = "Python for RIT Students"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "November 6, 2015"
+date = 2015-11-06
 +++
 
 # Python for RIT Students

@@ -2,7 +2,7 @@
 title = "The D Programming Language - Barcamp"
 author = "Matt Soucy"
 outputs = ["Reveal"]
-date = "April 14, 2012"
+date = 2012-04-14
 +++
 
 # The D Programming Language - A new take on C++

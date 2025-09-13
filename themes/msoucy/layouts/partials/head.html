@@ -3,13 +3,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="no-referrer" />
   <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}favicon.ico" />
-  
-  {{- $sass := resources.Get "sass/theme.scss" -}}
-  {{- $style := $sass | resources.ToCSS -}}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  {{- with resources.Get "sass/theme.scss" -}}
+    {{- $styleOpts := dict
+      "targetPath" "css/main.css"
+      "transpiler" "dartsass"
+    -}}
+    {{- with . | toCSS $styleOpts -}}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- end -}}
+  {{- end -}}
 
   {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
   {{ end -}}
 
 
