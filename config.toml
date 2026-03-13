@@ -17,6 +17,7 @@ enableRobotsTXT = true
 
 [social]
   bsky = 'msoucy.gay'
+  mastodon = 'fedi.msoucy.me/@matt'
 
 [outputFormats.Reveal]
   baseName = "index"
